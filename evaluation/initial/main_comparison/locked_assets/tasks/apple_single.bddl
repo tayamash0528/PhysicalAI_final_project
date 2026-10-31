@@ -1,0 +1,13 @@
+(define (problem LIBERO_Tabletop_Manipulation)
+  (:domain robosuite)
+  (:language Pick up the apple and place it in the tray)
+  (:regions
+    (apple_start (:target main_table) (:ranges ((-0.10 0.19 -0.09 0.20))))
+    (tray_start (:target main_table) (:ranges ((0.10 0.19 0.11 0.20))))
+  )
+  (:fixtures main_table - table)
+  (:objects apple_1 - ycb_apple tray_1 - fruit_tray)
+  (:obj_of_interest apple_1 tray_1)
+  (:init (On apple_1 main_table_apple_start) (On tray_1 main_table_tray_start))
+  (:goal (And (On apple_1 tray_1)))
+)

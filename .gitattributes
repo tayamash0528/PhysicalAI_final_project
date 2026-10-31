@@ -1,0 +1,2 @@
+# 採用版LOCKのSHA256を保つため、checkout時の改行変換を無効にする。
+* -text

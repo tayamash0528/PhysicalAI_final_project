@@ -1,0 +1,7 @@
+{
+  "steps": 1250,
+  "dataset": "training/demonstrations/dataset_list.json",
+  "trainable_fp32": true,
+  "mean_recent_loss": 0.03668164923787117,
+  "ready": true
+}

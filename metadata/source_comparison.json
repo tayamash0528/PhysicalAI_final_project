@@ -1,0 +1,642 @@
+{
+  "runtime_comparisons": [
+    {
+      "saved": "evaluation/initial/main_comparison/locked_sources/run_rollout.py",
+      "current": "scripts/run_rollout.py",
+      "identical": true,
+      "saved_sha256": "14dbddaf8577b8ff467650d25aef811affd04caaf959020af771a2186b503ccf",
+      "current_sha256": "14dbddaf8577b8ff467650d25aef811affd04caaf959020af771a2186b503ccf",
+      "matches_LOCK": true
+    },
+    {
+      "saved": "evaluation/initial/main_comparison/trials/source_snapshot/run_rollout.py",
+      "current": "scripts/run_rollout.py",
+      "identical": true,
+      "saved_sha256": "14dbddaf8577b8ff467650d25aef811affd04caaf959020af771a2186b503ccf",
+      "current_sha256": "14dbddaf8577b8ff467650d25aef811affd04caaf959020af771a2186b503ccf",
+      "matches_LOCK": true
+    },
+    {
+      "saved": "evaluation/initial/main_comparison/locked_sources/active_observation.py",
+      "current": "scripts/active_observation.py",
+      "identical": true,
+      "saved_sha256": "f78cf95a91616ccf8fa183e43fc63cdc6828f30ba31c6555d8baafecc11f6efb",
+      "current_sha256": "f78cf95a91616ccf8fa183e43fc63cdc6828f30ba31c6555d8baafecc11f6efb",
+      "matches_LOCK": true
+    },
+    {
+      "saved": "evaluation/initial/main_comparison/trials/source_snapshot/active_observation.py",
+      "current": "scripts/active_observation.py",
+      "identical": true,
+      "saved_sha256": "f78cf95a91616ccf8fa183e43fc63cdc6828f30ba31c6555d8baafecc11f6efb",
+      "current_sha256": "f78cf95a91616ccf8fa183e43fc63cdc6828f30ba31c6555d8baafecc11f6efb",
+      "matches_LOCK": true
+    },
+    {
+      "saved": "evaluation/initial/main_comparison/locked_sources/occlusion_scene.py",
+      "current": "scripts/occlusion_scene.py",
+      "identical": true,
+      "saved_sha256": "fed307b9c98183fa451e6e199cd506dbdcda3ffd9bf3a71184c4610e78a91995",
+      "current_sha256": "fed307b9c98183fa451e6e199cd506dbdcda3ffd9bf3a71184c4610e78a91995",
+      "matches_LOCK": true
+    },
+    {
+      "saved": "evaluation/initial/main_comparison/trials/source_snapshot/occlusion_scene.py",
+      "current": "scripts/occlusion_scene.py",
+      "identical": true,
+      "saved_sha256": "fed307b9c98183fa451e6e199cd506dbdcda3ffd9bf3a71184c4610e78a91995",
+      "current_sha256": "fed307b9c98183fa451e6e199cd506dbdcda3ffd9bf3a71184c4610e78a91995",
+      "matches_LOCK": true
+    },
+    {
+      "saved": "evaluation/initial/main_comparison/locked_sources/placement_score.py",
+      "current": "scripts/placement_score.py",
+      "identical": true,
+      "saved_sha256": "cc426da2d21f15825face304bf9799dbbab0616073fac956643a771b1b3636de",
+      "current_sha256": "cc426da2d21f15825face304bf9799dbbab0616073fac956643a771b1b3636de",
+      "matches_LOCK": true
+    },
+    {
+      "saved": "evaluation/initial/main_comparison/trials/source_snapshot/placement_score.py",
+      "current": "scripts/placement_score.py",
+      "identical": true,
+      "saved_sha256": "cc426da2d21f15825face304bf9799dbbab0616073fac956643a771b1b3636de",
+      "current_sha256": "cc426da2d21f15825face304bf9799dbbab0616073fac956643a771b1b3636de",
+      "matches_LOCK": true
+    },
+    {
+      "saved": "evaluation/initial/main_comparison/locked_sources/arm_telemetry.py",
+      "current": "scripts/arm_telemetry.py",
+      "identical": true,
+      "saved_sha256": "df9bfb8c2f96bab3efc09b64a9ffebcb21f95a65ef0d917a2a8a3dc7b5da82d3",
+      "current_sha256": "df9bfb8c2f96bab3efc09b64a9ffebcb21f95a65ef0d917a2a8a3dc7b5da82d3",
+      "matches_LOCK": true
+    },
+    {
+      "saved": "evaluation/initial/main_comparison/trials/source_snapshot/arm_telemetry.py",
+      "current": "scripts/arm_telemetry.py",
+      "identical": true,
+      "saved_sha256": "df9bfb8c2f96bab3efc09b64a9ffebcb21f95a65ef0d917a2a8a3dc7b5da82d3",
+      "current_sha256": "df9bfb8c2f96bab3efc09b64a9ffebcb21f95a65ef0d917a2a8a3dc7b5da82d3",
+      "matches_LOCK": true
+    },
+    {
+      "saved": "evaluation/initial/main_comparison/locked_sources/fruit_objects.py",
+      "current": "scripts/fruit_objects.py",
+      "identical": true,
+      "saved_sha256": "7253b6d170b776c636cc18f86277bbe59a3954235102e23d5a8693380322e76d",
+      "current_sha256": "7253b6d170b776c636cc18f86277bbe59a3954235102e23d5a8693380322e76d",
+      "matches_LOCK": true
+    },
+    {
+      "saved": "evaluation/initial/main_comparison/trials/source_snapshot/fruit_objects.py",
+      "current": "scripts/fruit_objects.py",
+      "identical": true,
+      "saved_sha256": "7253b6d170b776c636cc18f86277bbe59a3954235102e23d5a8693380322e76d",
+      "current_sha256": "7253b6d170b776c636cc18f86277bbe59a3954235102e23d5a8693380322e76d",
+      "matches_LOCK": true
+    },
+    {
+      "saved": "evaluation/relocated_apple/holdout_comparison/locked_sources/run_rollout.py",
+      "current": "scripts/run_rollout.py",
+      "identical": true,
+      "saved_sha256": "14dbddaf8577b8ff467650d25aef811affd04caaf959020af771a2186b503ccf",
+      "current_sha256": "14dbddaf8577b8ff467650d25aef811affd04caaf959020af771a2186b503ccf",
+      "matches_LOCK": true
+    },
+    {
+      "saved": "evaluation/relocated_apple/holdout_comparison/trials/source_snapshot/run_rollout.py",
+      "current": "scripts/run_rollout.py",
+      "identical": true,
+      "saved_sha256": "14dbddaf8577b8ff467650d25aef811affd04caaf959020af771a2186b503ccf",
+      "current_sha256": "14dbddaf8577b8ff467650d25aef811affd04caaf959020af771a2186b503ccf",
+      "matches_LOCK": true
+    },
+    {
+      "saved": "evaluation/relocated_apple/holdout_comparison/locked_sources/active_observation.py",
+      "current": "scripts/active_observation.py",
+      "identical": true,
+      "saved_sha256": "f78cf95a91616ccf8fa183e43fc63cdc6828f30ba31c6555d8baafecc11f6efb",
+      "current_sha256": "f78cf95a91616ccf8fa183e43fc63cdc6828f30ba31c6555d8baafecc11f6efb",
+      "matches_LOCK": true
+    },
+    {
+      "saved": "evaluation/relocated_apple/holdout_comparison/trials/source_snapshot/active_observation.py",
+      "current": "scripts/active_observation.py",
+      "identical": true,
+      "saved_sha256": "f78cf95a91616ccf8fa183e43fc63cdc6828f30ba31c6555d8baafecc11f6efb",
+      "current_sha256": "f78cf95a91616ccf8fa183e43fc63cdc6828f30ba31c6555d8baafecc11f6efb",
+      "matches_LOCK": true
+    },
+    {
+      "saved": "evaluation/relocated_apple/holdout_comparison/locked_sources/occlusion_scene.py",
+      "current": "scripts/occlusion_scene.py",
+      "identical": true,
+      "saved_sha256": "fed307b9c98183fa451e6e199cd506dbdcda3ffd9bf3a71184c4610e78a91995",
+      "current_sha256": "fed307b9c98183fa451e6e199cd506dbdcda3ffd9bf3a71184c4610e78a91995",
+      "matches_LOCK": true
+    },
+    {
+      "saved": "evaluation/relocated_apple/holdout_comparison/trials/source_snapshot/occlusion_scene.py",
+      "current": "scripts/occlusion_scene.py",
+      "identical": true,
+      "saved_sha256": "fed307b9c98183fa451e6e199cd506dbdcda3ffd9bf3a71184c4610e78a91995",
+      "current_sha256": "fed307b9c98183fa451e6e199cd506dbdcda3ffd9bf3a71184c4610e78a91995",
+      "matches_LOCK": true
+    },
+    {
+      "saved": "evaluation/relocated_apple/holdout_comparison/locked_sources/placement_score.py",
+      "current": "scripts/placement_score.py",
+      "identical": true,
+      "saved_sha256": "cc426da2d21f15825face304bf9799dbbab0616073fac956643a771b1b3636de",
+      "current_sha256": "cc426da2d21f15825face304bf9799dbbab0616073fac956643a771b1b3636de",
+      "matches_LOCK": true
+    },
+    {
+      "saved": "evaluation/relocated_apple/holdout_comparison/trials/source_snapshot/placement_score.py",
+      "current": "scripts/placement_score.py",
+      "identical": true,
+      "saved_sha256": "cc426da2d21f15825face304bf9799dbbab0616073fac956643a771b1b3636de",
+      "current_sha256": "cc426da2d21f15825face304bf9799dbbab0616073fac956643a771b1b3636de",
+      "matches_LOCK": true
+    },
+    {
+      "saved": "evaluation/relocated_apple/holdout_comparison/locked_sources/arm_telemetry.py",
+      "current": "scripts/arm_telemetry.py",
+      "identical": true,
+      "saved_sha256": "df9bfb8c2f96bab3efc09b64a9ffebcb21f95a65ef0d917a2a8a3dc7b5da82d3",
+      "current_sha256": "df9bfb8c2f96bab3efc09b64a9ffebcb21f95a65ef0d917a2a8a3dc7b5da82d3",
+      "matches_LOCK": true
+    },
+    {
+      "saved": "evaluation/relocated_apple/holdout_comparison/trials/source_snapshot/arm_telemetry.py",
+      "current": "scripts/arm_telemetry.py",
+      "identical": true,
+      "saved_sha256": "df9bfb8c2f96bab3efc09b64a9ffebcb21f95a65ef0d917a2a8a3dc7b5da82d3",
+      "current_sha256": "df9bfb8c2f96bab3efc09b64a9ffebcb21f95a65ef0d917a2a8a3dc7b5da82d3",
+      "matches_LOCK": true
+    },
+    {
+      "saved": "evaluation/relocated_apple/holdout_comparison/locked_sources/fruit_objects.py",
+      "current": "scripts/fruit_objects.py",
+      "identical": true,
+      "saved_sha256": "7253b6d170b776c636cc18f86277bbe59a3954235102e23d5a8693380322e76d",
+      "current_sha256": "7253b6d170b776c636cc18f86277bbe59a3954235102e23d5a8693380322e76d",
+      "matches_LOCK": true
+    },
+    {
+      "saved": "evaluation/relocated_apple/holdout_comparison/trials/source_snapshot/fruit_objects.py",
+      "current": "scripts/fruit_objects.py",
+      "identical": true,
+      "saved_sha256": "7253b6d170b776c636cc18f86277bbe59a3954235102e23d5a8693380322e76d",
+      "current_sha256": "7253b6d170b776c636cc18f86277bbe59a3954235102e23d5a8693380322e76d",
+      "matches_LOCK": true
+    }
+  ],
+  "all_formal_runtime_sources_match_current": true,
+  "training_and_preparation": [
+    {
+      "saved": "training/continuation/executed_training_source.py",
+      "current": "scripts/train_tiny_teacher.py",
+      "identical": false,
+      "saved_sha256": "be493c3ce1f8341c6c8565a5952ecfc06b710e47945f238e651f26d6e41f8f46",
+      "current_sha256": "3c0574200085d3016b7606867aa9e052c5d417cf62652b0bc52695475dbb7375",
+      "unified_diff": "review_metadata/diffs/training_continuation.diff"
+    },
+    {
+      "saved": "evidence/diagnose_compact12_executed.py",
+      "current": "scripts/diagnose_physical_grasp.py",
+      "identical": false,
+      "saved_sha256": "87c9135518ce6a39f21ed811f55f52e3c2bc1b60d79570b217b379e1ead2c476",
+      "current_sha256": "46fda316bcdc681d0430d09416bbad9097d98a89c6bbf14ba2a6e1fa2f252156",
+      "unified_diff": "review_metadata/diffs/teacher_generation.diff"
+    },
+    {
+      "saved": "evaluation/initial/main_comparison/prepare_protocol.py",
+      "current": "evaluation/initial/tools/prepare_protocol.py",
+      "identical": true,
+      "saved_sha256": "1f62ad9d56008c31c445430bd10adf317ff9baa52ac4e67c91f4ad963403b4cf",
+      "current_sha256": "1f62ad9d56008c31c445430bd10adf317ff9baa52ac4e67c91f4ad963403b4cf"
+    },
+    {
+      "saved": "evaluation/relocated_apple/holdout_comparison/prepare_holdout.py",
+      "current": "evaluation/relocated_apple/tools/prepare_holdout.py",
+      "identical": true,
+      "saved_sha256": "daada464db2f686a4fd7f09218fb861b588ff3e33b9b86301c2812820f2976f7",
+      "current_sha256": "daada464db2f686a4fd7f09218fb861b588ff3e33b9b86301c2812820f2976f7"
+    }
+  ],
+  "included_history_snapshots": [
+    {
+      "saved": "evaluation/initial/baseline_sources/active_observation.py",
+      "current": "scripts/active_observation.py",
+      "identical": false,
+      "role": "historical development/preparation snapshot",
+      "unified_diff": "review_metadata/diffs/history_experiments__20261031_0925_reobservation__baseline_sources__active_observation.py.diff"
+    },
+    {
+      "saved": "evaluation/initial/baseline_sources/arm_telemetry.py",
+      "current": "scripts/arm_telemetry.py",
+      "identical": true,
+      "role": "historical development/preparation snapshot"
+    },
+    {
+      "saved": "evaluation/initial/baseline_sources/fruit_objects.py",
+      "current": "scripts/fruit_objects.py",
+      "identical": true,
+      "role": "historical development/preparation snapshot"
+    },
+    {
+      "saved": "evaluation/initial/baseline_sources/occlusion_scene.py",
+      "current": "scripts/occlusion_scene.py",
+      "identical": false,
+      "role": "historical development/preparation snapshot",
+      "unified_diff": "review_metadata/diffs/history_experiments__20261031_0925_reobservation__baseline_sources__occlusion_scene.py.diff"
+    },
+    {
+      "saved": "evaluation/initial/baseline_sources/placement_score.py",
+      "current": "scripts/placement_score.py",
+      "identical": true,
+      "role": "historical development/preparation snapshot"
+    },
+    {
+      "saved": "evaluation/initial/baseline_sources/run_rollout.py",
+      "current": "scripts/run_rollout.py",
+      "identical": false,
+      "role": "historical development/preparation snapshot",
+      "unified_diff": "review_metadata/diffs/history_experiments__20261031_0925_reobservation__baseline_sources__run_rollout.py.diff"
+    },
+    {
+      "saved": "evaluation/initial/clear_skip_sanity/source_snapshot/active_observation.py",
+      "current": "scripts/active_observation.py",
+      "identical": true,
+      "role": "historical development/preparation snapshot"
+    },
+    {
+      "saved": "evaluation/initial/clear_skip_sanity/source_snapshot/arm_telemetry.py",
+      "current": "scripts/arm_telemetry.py",
+      "identical": true,
+      "role": "historical development/preparation snapshot"
+    },
+    {
+      "saved": "evaluation/initial/clear_skip_sanity/source_snapshot/fruit_objects.py",
+      "current": "scripts/fruit_objects.py",
+      "identical": true,
+      "role": "historical development/preparation snapshot"
+    },
+    {
+      "saved": "evaluation/initial/clear_skip_sanity/source_snapshot/occlusion_scene.py",
+      "current": "scripts/occlusion_scene.py",
+      "identical": true,
+      "role": "historical development/preparation snapshot"
+    },
+    {
+      "saved": "evaluation/initial/clear_skip_sanity/source_snapshot/placement_score.py",
+      "current": "scripts/placement_score.py",
+      "identical": true,
+      "role": "historical development/preparation snapshot"
+    },
+    {
+      "saved": "evaluation/initial/clear_skip_sanity/source_snapshot/run_rollout.py",
+      "current": "scripts/run_rollout.py",
+      "identical": true,
+      "role": "historical development/preparation snapshot"
+    },
+    {
+      "saved": "evaluation/initial/development_v10/source_snapshot/active_observation.py",
+      "current": "scripts/active_observation.py",
+      "identical": true,
+      "role": "historical development/preparation snapshot"
+    },
+    {
+      "saved": "evaluation/initial/development_v10/source_snapshot/arm_telemetry.py",
+      "current": "scripts/arm_telemetry.py",
+      "identical": true,
+      "role": "historical development/preparation snapshot"
+    },
+    {
+      "saved": "evaluation/initial/development_v10/source_snapshot/fruit_objects.py",
+      "current": "scripts/fruit_objects.py",
+      "identical": true,
+      "role": "historical development/preparation snapshot"
+    },
+    {
+      "saved": "evaluation/initial/development_v10/source_snapshot/occlusion_scene.py",
+      "current": "scripts/occlusion_scene.py",
+      "identical": true,
+      "role": "historical development/preparation snapshot"
+    },
+    {
+      "saved": "evaluation/initial/development_v10/source_snapshot/placement_score.py",
+      "current": "scripts/placement_score.py",
+      "identical": true,
+      "role": "historical development/preparation snapshot"
+    },
+    {
+      "saved": "evaluation/initial/development_v10/source_snapshot/run_rollout.py",
+      "current": "scripts/run_rollout.py",
+      "identical": false,
+      "role": "historical development/preparation snapshot",
+      "unified_diff": "review_metadata/diffs/history_experiments__20261031_0925_reobservation__development_v10__source_snapshot__run_rollout.py.diff"
+    },
+    {
+      "saved": "evaluation/initial/adoption_check/adopted_candidate/prepare_protocol.py",
+      "current": "evaluation/initial/tools/prepare_protocol.py",
+      "identical": true,
+      "role": "formal/adopted snapshot"
+    },
+    {
+      "saved": "evaluation/initial/adoption_check/adopted_candidate/scripts/active_observation.py",
+      "current": "scripts/active_observation.py",
+      "identical": true,
+      "role": "formal/adopted snapshot"
+    },
+    {
+      "saved": "evaluation/initial/adoption_check/adopted_candidate/scripts/arm_telemetry.py",
+      "current": "scripts/arm_telemetry.py",
+      "identical": true,
+      "role": "formal/adopted snapshot"
+    },
+    {
+      "saved": "evaluation/initial/adoption_check/adopted_candidate/scripts/fruit_objects.py",
+      "current": "scripts/fruit_objects.py",
+      "identical": true,
+      "role": "formal/adopted snapshot"
+    },
+    {
+      "saved": "evaluation/initial/adoption_check/adopted_candidate/scripts/occlusion_scene.py",
+      "current": "scripts/occlusion_scene.py",
+      "identical": true,
+      "role": "formal/adopted snapshot"
+    },
+    {
+      "saved": "evaluation/initial/adoption_check/adopted_candidate/scripts/placement_score.py",
+      "current": "scripts/placement_score.py",
+      "identical": true,
+      "role": "formal/adopted snapshot"
+    },
+    {
+      "saved": "evaluation/initial/adoption_check/adopted_candidate/scripts/run_rollout.py",
+      "current": "scripts/run_rollout.py",
+      "identical": true,
+      "role": "formal/adopted snapshot"
+    },
+    {
+      "saved": "evaluation/initial/main_comparison/locked_sources/active_observation.py",
+      "current": "scripts/active_observation.py",
+      "identical": true,
+      "role": "formal/adopted snapshot"
+    },
+    {
+      "saved": "evaluation/initial/main_comparison/locked_sources/arm_telemetry.py",
+      "current": "scripts/arm_telemetry.py",
+      "identical": true,
+      "role": "formal/adopted snapshot"
+    },
+    {
+      "saved": "evaluation/initial/main_comparison/locked_sources/fruit_objects.py",
+      "current": "scripts/fruit_objects.py",
+      "identical": true,
+      "role": "formal/adopted snapshot"
+    },
+    {
+      "saved": "evaluation/initial/main_comparison/locked_sources/occlusion_scene.py",
+      "current": "scripts/occlusion_scene.py",
+      "identical": true,
+      "role": "formal/adopted snapshot"
+    },
+    {
+      "saved": "evaluation/initial/main_comparison/locked_sources/placement_score.py",
+      "current": "scripts/placement_score.py",
+      "identical": true,
+      "role": "formal/adopted snapshot"
+    },
+    {
+      "saved": "evaluation/initial/main_comparison/locked_sources/run_rollout.py",
+      "current": "scripts/run_rollout.py",
+      "identical": true,
+      "role": "formal/adopted snapshot"
+    },
+    {
+      "saved": "evaluation/initial/main_comparison/prepare_protocol.py",
+      "current": "evaluation/initial/tools/prepare_protocol.py",
+      "identical": true,
+      "role": "formal/adopted snapshot"
+    },
+    {
+      "saved": "evaluation/initial/main_comparison/trials/source_snapshot/active_observation.py",
+      "current": "scripts/active_observation.py",
+      "identical": true,
+      "role": "formal/adopted snapshot"
+    },
+    {
+      "saved": "evaluation/initial/main_comparison/trials/source_snapshot/arm_telemetry.py",
+      "current": "scripts/arm_telemetry.py",
+      "identical": true,
+      "role": "formal/adopted snapshot"
+    },
+    {
+      "saved": "evaluation/initial/main_comparison/trials/source_snapshot/fruit_objects.py",
+      "current": "scripts/fruit_objects.py",
+      "identical": true,
+      "role": "formal/adopted snapshot"
+    },
+    {
+      "saved": "evaluation/initial/main_comparison/trials/source_snapshot/occlusion_scene.py",
+      "current": "scripts/occlusion_scene.py",
+      "identical": true,
+      "role": "formal/adopted snapshot"
+    },
+    {
+      "saved": "evaluation/initial/main_comparison/trials/source_snapshot/placement_score.py",
+      "current": "scripts/placement_score.py",
+      "identical": true,
+      "role": "formal/adopted snapshot"
+    },
+    {
+      "saved": "evaluation/initial/main_comparison/trials/source_snapshot/run_rollout.py",
+      "current": "scripts/run_rollout.py",
+      "identical": true,
+      "role": "formal/adopted snapshot"
+    },
+    {
+      "saved": "evaluation/initial/postprocessing_error_02/postprocess_before_continue.py",
+      "current": "evaluation/initial/tools/postprocess.py",
+      "identical": false,
+      "role": "historical development/preparation snapshot",
+      "unified_diff": "review_metadata/diffs/history_experiments__20261031_0925_reobservation__postprocessing_error_02__postprocess_before_continue.py.diff"
+    },
+    {
+      "saved": "evaluation/initial/preparation_error_01/locked_sources/active_observation.py",
+      "current": "scripts/active_observation.py",
+      "identical": true,
+      "role": "historical development/preparation snapshot"
+    },
+    {
+      "saved": "evaluation/initial/preparation_error_01/locked_sources/arm_telemetry.py",
+      "current": "scripts/arm_telemetry.py",
+      "identical": true,
+      "role": "historical development/preparation snapshot"
+    },
+    {
+      "saved": "evaluation/initial/preparation_error_01/locked_sources/fruit_objects.py",
+      "current": "scripts/fruit_objects.py",
+      "identical": true,
+      "role": "historical development/preparation snapshot"
+    },
+    {
+      "saved": "evaluation/initial/preparation_error_01/locked_sources/occlusion_scene.py",
+      "current": "scripts/occlusion_scene.py",
+      "identical": true,
+      "role": "historical development/preparation snapshot"
+    },
+    {
+      "saved": "evaluation/initial/preparation_error_01/locked_sources/placement_score.py",
+      "current": "scripts/placement_score.py",
+      "identical": true,
+      "role": "historical development/preparation snapshot"
+    },
+    {
+      "saved": "evaluation/initial/preparation_error_01/locked_sources/run_rollout.py",
+      "current": "scripts/run_rollout.py",
+      "identical": true,
+      "role": "historical development/preparation snapshot"
+    },
+    {
+      "saved": "evaluation/initial/preparation_error_01/prepare_protocol.py",
+      "current": "evaluation/initial/tools/prepare_protocol.py",
+      "identical": false,
+      "role": "historical development/preparation snapshot",
+      "unified_diff": "review_metadata/diffs/history_experiments__20261031_0925_reobservation__preparation_error_01__prepare_protocol.py.diff"
+    },
+    {
+      "saved": "evaluation/initial/preparation_error_02/locked_sources/active_observation.py",
+      "current": "scripts/active_observation.py",
+      "identical": true,
+      "role": "historical development/preparation snapshot"
+    },
+    {
+      "saved": "evaluation/initial/preparation_error_02/locked_sources/arm_telemetry.py",
+      "current": "scripts/arm_telemetry.py",
+      "identical": true,
+      "role": "historical development/preparation snapshot"
+    },
+    {
+      "saved": "evaluation/initial/preparation_error_02/locked_sources/fruit_objects.py",
+      "current": "scripts/fruit_objects.py",
+      "identical": true,
+      "role": "historical development/preparation snapshot"
+    },
+    {
+      "saved": "evaluation/initial/preparation_error_02/locked_sources/occlusion_scene.py",
+      "current": "scripts/occlusion_scene.py",
+      "identical": true,
+      "role": "historical development/preparation snapshot"
+    },
+    {
+      "saved": "evaluation/initial/preparation_error_02/locked_sources/placement_score.py",
+      "current": "scripts/placement_score.py",
+      "identical": true,
+      "role": "historical development/preparation snapshot"
+    },
+    {
+      "saved": "evaluation/initial/preparation_error_02/locked_sources/run_rollout.py",
+      "current": "scripts/run_rollout.py",
+      "identical": true,
+      "role": "historical development/preparation snapshot"
+    },
+    {
+      "saved": "evaluation/initial/preparation_error_02/prepare_protocol.py",
+      "current": "evaluation/initial/tools/prepare_protocol.py",
+      "identical": false,
+      "role": "historical development/preparation snapshot",
+      "unified_diff": "review_metadata/diffs/history_experiments__20261031_0925_reobservation__preparation_error_02__prepare_protocol.py.diff"
+    },
+    {
+      "saved": "evaluation/relocated_apple/holdout_comparison/locked_sources/active_observation.py",
+      "current": "scripts/active_observation.py",
+      "identical": true,
+      "role": "formal/adopted snapshot"
+    },
+    {
+      "saved": "evaluation/relocated_apple/holdout_comparison/locked_sources/arm_telemetry.py",
+      "current": "scripts/arm_telemetry.py",
+      "identical": true,
+      "role": "formal/adopted snapshot"
+    },
+    {
+      "saved": "evaluation/relocated_apple/holdout_comparison/locked_sources/fruit_objects.py",
+      "current": "scripts/fruit_objects.py",
+      "identical": true,
+      "role": "formal/adopted snapshot"
+    },
+    {
+      "saved": "evaluation/relocated_apple/holdout_comparison/locked_sources/occlusion_scene.py",
+      "current": "scripts/occlusion_scene.py",
+      "identical": true,
+      "role": "formal/adopted snapshot"
+    },
+    {
+      "saved": "evaluation/relocated_apple/holdout_comparison/locked_sources/placement_score.py",
+      "current": "scripts/placement_score.py",
+      "identical": true,
+      "role": "formal/adopted snapshot"
+    },
+    {
+      "saved": "evaluation/relocated_apple/holdout_comparison/locked_sources/run_rollout.py",
+      "current": "scripts/run_rollout.py",
+      "identical": true,
+      "role": "formal/adopted snapshot"
+    },
+    {
+      "saved": "evaluation/relocated_apple/holdout_comparison/trials/source_snapshot/active_observation.py",
+      "current": "scripts/active_observation.py",
+      "identical": true,
+      "role": "formal/adopted snapshot"
+    },
+    {
+      "saved": "evaluation/relocated_apple/holdout_comparison/trials/source_snapshot/arm_telemetry.py",
+      "current": "scripts/arm_telemetry.py",
+      "identical": true,
+      "role": "formal/adopted snapshot"
+    },
+    {
+      "saved": "evaluation/relocated_apple/holdout_comparison/trials/source_snapshot/fruit_objects.py",
+      "current": "scripts/fruit_objects.py",
+      "identical": true,
+      "role": "formal/adopted snapshot"
+    },
+    {
+      "saved": "evaluation/relocated_apple/holdout_comparison/trials/source_snapshot/occlusion_scene.py",
+      "current": "scripts/occlusion_scene.py",
+      "identical": true,
+      "role": "formal/adopted snapshot"
+    },
+    {
+      "saved": "evaluation/relocated_apple/holdout_comparison/trials/source_snapshot/placement_score.py",
+      "current": "scripts/placement_score.py",
+      "identical": true,
+      "role": "formal/adopted snapshot"
+    },
+    {
+      "saved": "evaluation/relocated_apple/holdout_comparison/trials/source_snapshot/run_rollout.py",
+      "current": "scripts/run_rollout.py",
+      "identical": true,
+      "role": "formal/adopted snapshot"
+    },
+    {
+      "saved": "training/initial/executed_training_source.py",
+      "current": "scripts/train_tiny_teacher.py",
+      "identical": false,
+      "role": "historical development/preparation snapshot",
+      "unified_diff": "review_metadata/diffs/history_overnight__20261030_0220__config_c_compact__executed_training_source.py.diff"
+    },
+    {
+      "saved": "training/continuation/executed_training_source.py",
+      "current": "scripts/train_tiny_teacher.py",
+      "identical": false,
+      "role": "historical development/preparation snapshot",
+      "unified_diff": "review_metadata/diffs/history_overnight__20261030_0220__config_c_multi12_b4__executed_training_source.py.diff"
+    }
+  ]
+}

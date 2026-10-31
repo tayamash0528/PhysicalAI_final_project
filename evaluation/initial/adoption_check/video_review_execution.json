@@ -1,0 +1,21 @@
+{
+  "state": {
+    "Status": "exited",
+    "Running": false,
+    "Paused": false,
+    "Restarting": false,
+    "OOMKilled": false,
+    "Dead": false,
+    "Pid": 0,
+    "ExitCode": 0,
+    "Error": "",
+    "StartedAt": "2026-10-31T02:12:31.306696674Z",
+    "FinishedAt": "2026-10-31T02:12:37.980450061Z"
+  },
+  "image_id": "sha256:bf7c598eb3ab761de983d36d071442a4a9e896c2afa2405180b808d665ac1549",
+  "gpu_requested": false,
+  "policy_executed": false,
+  "decoded_existing_videos": 2,
+  "decoded_frames": 648,
+  "new_manipulation_trials": 0
+}

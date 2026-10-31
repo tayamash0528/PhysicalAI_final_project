@@ -1,0 +1,282 @@
+[
+  {
+    "case_id": "new_leaf_01",
+    "initial_state": "evaluation/relocated_apple/holdout_comparison/initial_states/new_leaf_01/state.npy",
+    "scene_prepared": true,
+    "occlusion": "leaf_visual",
+    "leaf_half_size_m": [
+      0.016,
+      0.014,
+      0.001
+    ],
+    "seed": 10401,
+    "active_reobservation": false,
+    "split": "new_local_positions_unused_for_training_selection_or_previous_evaluation"
+  },
+  {
+    "case_id": "new_leaf_01",
+    "initial_state": "evaluation/relocated_apple/holdout_comparison/initial_states/new_leaf_01/state.npy",
+    "scene_prepared": true,
+    "occlusion": "leaf_visual",
+    "leaf_half_size_m": [
+      0.016,
+      0.014,
+      0.001
+    ],
+    "seed": 10401,
+    "active_reobservation": true,
+    "split": "new_local_positions_unused_for_training_selection_or_previous_evaluation"
+  },
+  {
+    "case_id": "new_leaf_04",
+    "initial_state": "evaluation/relocated_apple/holdout_comparison/initial_states/new_leaf_04/state.npy",
+    "scene_prepared": true,
+    "occlusion": "leaf_visual",
+    "leaf_half_size_m": [
+      0.016,
+      0.014,
+      0.001
+    ],
+    "seed": 10404,
+    "active_reobservation": false,
+    "split": "new_local_positions_unused_for_training_selection_or_previous_evaluation"
+  },
+  {
+    "case_id": "new_leaf_04",
+    "initial_state": "evaluation/relocated_apple/holdout_comparison/initial_states/new_leaf_04/state.npy",
+    "scene_prepared": true,
+    "occlusion": "leaf_visual",
+    "leaf_half_size_m": [
+      0.016,
+      0.014,
+      0.001
+    ],
+    "seed": 10404,
+    "active_reobservation": true,
+    "split": "new_local_positions_unused_for_training_selection_or_previous_evaluation"
+  },
+  {
+    "case_id": "new_leaf_02",
+    "initial_state": "evaluation/relocated_apple/holdout_comparison/initial_states/new_leaf_02/state.npy",
+    "scene_prepared": true,
+    "occlusion": "leaf_visual",
+    "leaf_half_size_m": [
+      0.016,
+      0.014,
+      0.001
+    ],
+    "seed": 10402,
+    "active_reobservation": true,
+    "split": "new_local_positions_unused_for_training_selection_or_previous_evaluation"
+  },
+  {
+    "case_id": "new_leaf_02",
+    "initial_state": "evaluation/relocated_apple/holdout_comparison/initial_states/new_leaf_02/state.npy",
+    "scene_prepared": true,
+    "occlusion": "leaf_visual",
+    "leaf_half_size_m": [
+      0.016,
+      0.014,
+      0.001
+    ],
+    "seed": 10402,
+    "active_reobservation": false,
+    "split": "new_local_positions_unused_for_training_selection_or_previous_evaluation"
+  },
+  {
+    "case_id": "new_leaf_00",
+    "initial_state": "evaluation/relocated_apple/holdout_comparison/initial_states/new_leaf_00/state.npy",
+    "scene_prepared": true,
+    "occlusion": "leaf_visual",
+    "leaf_half_size_m": [
+      0.016,
+      0.014,
+      0.001
+    ],
+    "seed": 10400,
+    "active_reobservation": true,
+    "split": "new_local_positions_unused_for_training_selection_or_previous_evaluation"
+  },
+  {
+    "case_id": "new_leaf_00",
+    "initial_state": "evaluation/relocated_apple/holdout_comparison/initial_states/new_leaf_00/state.npy",
+    "scene_prepared": true,
+    "occlusion": "leaf_visual",
+    "leaf_half_size_m": [
+      0.016,
+      0.014,
+      0.001
+    ],
+    "seed": 10400,
+    "active_reobservation": false,
+    "split": "new_local_positions_unused_for_training_selection_or_previous_evaluation"
+  },
+  {
+    "case_id": "new_leaf_05",
+    "initial_state": "evaluation/relocated_apple/holdout_comparison/initial_states/new_leaf_05/state.npy",
+    "scene_prepared": true,
+    "occlusion": "leaf_visual",
+    "leaf_half_size_m": [
+      0.016,
+      0.014,
+      0.001
+    ],
+    "seed": 10405,
+    "active_reobservation": false,
+    "split": "new_local_positions_unused_for_training_selection_or_previous_evaluation"
+  },
+  {
+    "case_id": "new_leaf_05",
+    "initial_state": "evaluation/relocated_apple/holdout_comparison/initial_states/new_leaf_05/state.npy",
+    "scene_prepared": true,
+    "occlusion": "leaf_visual",
+    "leaf_half_size_m": [
+      0.016,
+      0.014,
+      0.001
+    ],
+    "seed": 10405,
+    "active_reobservation": true,
+    "split": "new_local_positions_unused_for_training_selection_or_previous_evaluation"
+  },
+  {
+    "case_id": "new_leaf_06",
+    "initial_state": "evaluation/relocated_apple/holdout_comparison/initial_states/new_leaf_06/state.npy",
+    "scene_prepared": true,
+    "occlusion": "leaf_visual",
+    "leaf_half_size_m": [
+      0.016,
+      0.014,
+      0.001
+    ],
+    "seed": 10406,
+    "active_reobservation": false,
+    "split": "new_local_positions_unused_for_training_selection_or_previous_evaluation"
+  },
+  {
+    "case_id": "new_leaf_06",
+    "initial_state": "evaluation/relocated_apple/holdout_comparison/initial_states/new_leaf_06/state.npy",
+    "scene_prepared": true,
+    "occlusion": "leaf_visual",
+    "leaf_half_size_m": [
+      0.016,
+      0.014,
+      0.001
+    ],
+    "seed": 10406,
+    "active_reobservation": true,
+    "split": "new_local_positions_unused_for_training_selection_or_previous_evaluation"
+  },
+  {
+    "case_id": "new_leaf_03",
+    "initial_state": "evaluation/relocated_apple/holdout_comparison/initial_states/new_leaf_03/state.npy",
+    "scene_prepared": true,
+    "occlusion": "leaf_visual",
+    "leaf_half_size_m": [
+      0.016,
+      0.014,
+      0.001
+    ],
+    "seed": 10403,
+    "active_reobservation": true,
+    "split": "new_local_positions_unused_for_training_selection_or_previous_evaluation"
+  },
+  {
+    "case_id": "new_leaf_03",
+    "initial_state": "evaluation/relocated_apple/holdout_comparison/initial_states/new_leaf_03/state.npy",
+    "scene_prepared": true,
+    "occlusion": "leaf_visual",
+    "leaf_half_size_m": [
+      0.016,
+      0.014,
+      0.001
+    ],
+    "seed": 10403,
+    "active_reobservation": false,
+    "split": "new_local_positions_unused_for_training_selection_or_previous_evaluation"
+  },
+  {
+    "case_id": "new_leaf_07",
+    "initial_state": "evaluation/relocated_apple/holdout_comparison/initial_states/new_leaf_07/state.npy",
+    "scene_prepared": true,
+    "occlusion": "leaf_visual",
+    "leaf_half_size_m": [
+      0.016,
+      0.014,
+      0.001
+    ],
+    "seed": 10407,
+    "active_reobservation": true,
+    "split": "new_local_positions_unused_for_training_selection_or_previous_evaluation"
+  },
+  {
+    "case_id": "new_leaf_07",
+    "initial_state": "evaluation/relocated_apple/holdout_comparison/initial_states/new_leaf_07/state.npy",
+    "scene_prepared": true,
+    "occlusion": "leaf_visual",
+    "leaf_half_size_m": [
+      0.016,
+      0.014,
+      0.001
+    ],
+    "seed": 10407,
+    "active_reobservation": false,
+    "split": "new_local_positions_unused_for_training_selection_or_previous_evaluation"
+  },
+  {
+    "case_id": "new_leaf_08",
+    "initial_state": "evaluation/relocated_apple/holdout_comparison/initial_states/new_leaf_08/state.npy",
+    "scene_prepared": true,
+    "occlusion": "leaf_visual",
+    "leaf_half_size_m": [
+      0.016,
+      0.014,
+      0.001
+    ],
+    "seed": 10408,
+    "active_reobservation": false,
+    "split": "new_local_positions_unused_for_training_selection_or_previous_evaluation"
+  },
+  {
+    "case_id": "new_leaf_08",
+    "initial_state": "evaluation/relocated_apple/holdout_comparison/initial_states/new_leaf_08/state.npy",
+    "scene_prepared": true,
+    "occlusion": "leaf_visual",
+    "leaf_half_size_m": [
+      0.016,
+      0.014,
+      0.001
+    ],
+    "seed": 10408,
+    "active_reobservation": true,
+    "split": "new_local_positions_unused_for_training_selection_or_previous_evaluation"
+  },
+  {
+    "case_id": "new_leaf_09",
+    "initial_state": "evaluation/relocated_apple/holdout_comparison/initial_states/new_leaf_09/state.npy",
+    "scene_prepared": true,
+    "occlusion": "leaf_visual",
+    "leaf_half_size_m": [
+      0.016,
+      0.014,
+      0.001
+    ],
+    "seed": 10409,
+    "active_reobservation": true,
+    "split": "new_local_positions_unused_for_training_selection_or_previous_evaluation"
+  },
+  {
+    "case_id": "new_leaf_09",
+    "initial_state": "evaluation/relocated_apple/holdout_comparison/initial_states/new_leaf_09/state.npy",
+    "scene_prepared": true,
+    "occlusion": "leaf_visual",
+    "leaf_half_size_m": [
+      0.016,
+      0.014,
+      0.001
+    ],
+    "seed": 10409,
+    "active_reobservation": false,
+    "split": "new_local_positions_unused_for_training_selection_or_previous_evaluation"
+  }
+]

@@ -1,0 +1,300 @@
+{
+  "schema_version": "posthoc_same_state_leaf_hidden_rgb_v1",
+  "evaluated_utc": "2026-10-31T01:26:33.076631+00:00",
+  "episode": "/workspace/evaluation/initial/main_comparison/trials/episode_16",
+  "case_id": "leaf_01",
+  "method": "reobserve",
+  "occlusion": "leaf_visual",
+  "status": "completed",
+  "uses_truth_only_for_evaluation": true,
+  "never_used_by_policy_or_observer": true,
+  "policy_or_controller_executed": false,
+  "scene_provenance_checks": [
+    {
+      "path": "/workspace/scripts/fruit_objects.py",
+      "expected_sha256": "7253b6d170b776c636cc18f86277bbe59a3954235102e23d5a8693380322e76d",
+      "actual_sha256": "7253b6d170b776c636cc18f86277bbe59a3954235102e23d5a8693380322e76d",
+      "matches": true
+    },
+    {
+      "path": "/workspace/scripts/occlusion_scene.py",
+      "expected_sha256": "fed307b9c98183fa451e6e199cd506dbdcda3ffd9bf3a71184c4610e78a91995",
+      "actual_sha256": "fed307b9c98183fa451e6e199cd506dbdcda3ffd9bf3a71184c4610e78a91995",
+      "matches": true
+    },
+    {
+      "path": "/workspace/tasks/apple_single.bddl",
+      "expected_sha256": "07b274d2466d7be9b2ee7c01efda28cca5e434625372a4551057aa40a038859b",
+      "actual_sha256": "07b274d2466d7be9b2ee7c01efda28cca5e434625372a4551057aa40a038859b",
+      "matches": true
+    },
+    {
+      "path": "/workspace/assets/apple/apple.xml",
+      "expected_sha256": "6c8e3e1d6411b2fa6a58ade259e8c57dd670388308bc6a1e878cbc21e3b37a13",
+      "actual_sha256": "6c8e3e1d6411b2fa6a58ade259e8c57dd670388308bc6a1e878cbc21e3b37a13",
+      "matches": true
+    },
+    {
+      "path": "/workspace/assets/apple/apple.obj",
+      "expected_sha256": "d8abbbd3dcf0475a07cf9abb794ceaf51fb5e7ad291ce53b8ae5c3c99a1793a7",
+      "actual_sha256": "d8abbbd3dcf0475a07cf9abb794ceaf51fb5e7ad291ce53b8ae5c3c99a1793a7",
+      "matches": true
+    },
+    {
+      "path": "/workspace/assets/tray/tray.xml",
+      "expected_sha256": "2c04115730f6053f2c693caf19091ad0c8d8190092afaa322a27c568b2f999b9",
+      "actual_sha256": "2c04115730f6053f2c693caf19091ad0c8d8190092afaa322a27c568b2f999b9",
+      "matches": true
+    }
+  ],
+  "source_sha256": "1f352ed55e1581a3bbb54cd7d891fca2612dffd18b1eacd6b7ad3ecbd090e68a",
+  "errors": [],
+  "initial": {
+    "status": "measured",
+    "views": {
+      "image": {
+        "visible_red_ratio": 1.0,
+        "actual_red_pixels": 298,
+        "reference_red_pixels": 298,
+        "reference_min_red_pixels": 100,
+        "reference_red_pixels_sufficient": true,
+        "ratio_valid": true,
+        "ratio_not_clamped": true,
+        "reference_zero_reason": null,
+        "saved_actual_image": "/workspace/evaluation/initial/main_comparison/trials/episode_16/reobservation/before_image.png",
+        "evaluation_only_reference_image": "/workspace/evaluation/initial/main_comparison/trials/episode_16/evaluation_only_visibility/initial/EVAL_ONLY_leaf_hidden_reference_image.png"
+      },
+      "image2": {
+        "visible_red_ratio": 0.05408163265306123,
+        "actual_red_pixels": 53,
+        "reference_red_pixels": 980,
+        "reference_min_red_pixels": 100,
+        "reference_red_pixels_sufficient": true,
+        "ratio_valid": true,
+        "ratio_not_clamped": true,
+        "reference_zero_reason": null,
+        "saved_actual_image": "/workspace/evaluation/initial/main_comparison/trials/episode_16/reobservation/before_image2.png",
+        "evaluation_only_reference_image": "/workspace/evaluation/initial/main_comparison/trials/episode_16/evaluation_only_visibility/initial/EVAL_ONLY_leaf_hidden_reference_image2.png"
+      }
+    },
+    "frame_id": 0,
+    "uses_truth_only_for_evaluation": true,
+    "saved_sim_state": "/workspace/evaluation/initial/main_comparison/trials/episode_16/initial_sim_state.npy",
+    "saved_sim_state_sha256": "26fe303bae6db5195d6c744de7fcc070a9644a8c8a635fd5d2e902906a9f4124",
+    "actual_replay_image_error": {
+      "image": {
+        "saved_shape": [
+          256,
+          256,
+          3
+        ],
+        "replay_shape": [
+          256,
+          256,
+          3
+        ],
+        "exact_match": true,
+        "mean_absolute_error_0_255": 0.0,
+        "max_absolute_error_0_255": 0,
+        "differing_pixel_count": 0
+      },
+      "image2": {
+        "saved_shape": [
+          256,
+          256,
+          3
+        ],
+        "replay_shape": [
+          256,
+          256,
+          3
+        ],
+        "exact_match": true,
+        "mean_absolute_error_0_255": 0.0,
+        "max_absolute_error_0_255": 0,
+        "differing_pixel_count": 0
+      }
+    },
+    "actual_replay_images_exact_match": true,
+    "reference_method": "same_state_same_actual_cameras_only_leaf_visual_alpha_zero",
+    "policy_or_controller_executed": false,
+    "metric_limitation": "Red-pixel evidence relative to leaf-hidden same-camera reference, not exact visible surface area. Other robot/environment occlusion remains. Ratios may exceed 1 due to render/color effects; zero reference gives null."
+  },
+  "matched_time": {
+    "status": "measured",
+    "views": {
+      "image": {
+        "visible_red_ratio": 1.0,
+        "actual_red_pixels": 298,
+        "reference_red_pixels": 298,
+        "reference_min_red_pixels": 100,
+        "reference_red_pixels_sufficient": true,
+        "ratio_valid": false,
+        "ratio_not_clamped": true,
+        "reference_zero_reason": null,
+        "saved_actual_image": "/workspace/evaluation/initial/main_comparison/trials/episode_16/matched_time/frame_0045_image.png",
+        "evaluation_only_reference_image": "/workspace/evaluation/initial/main_comparison/trials/episode_16/evaluation_only_visibility/matched_time/EVAL_ONLY_leaf_hidden_reference_image.png"
+      },
+      "image2": {
+        "visible_red_ratio": 1.0,
+        "actual_red_pixels": 1041,
+        "reference_red_pixels": 1041,
+        "reference_min_red_pixels": 100,
+        "reference_red_pixels_sufficient": true,
+        "ratio_valid": false,
+        "ratio_not_clamped": true,
+        "reference_zero_reason": null,
+        "saved_actual_image": "/workspace/evaluation/initial/main_comparison/trials/episode_16/matched_time/frame_0045_image2.png",
+        "evaluation_only_reference_image": "/workspace/evaluation/initial/main_comparison/trials/episode_16/evaluation_only_visibility/matched_time/EVAL_ONLY_leaf_hidden_reference_image2.png"
+      }
+    },
+    "frame_id": 45,
+    "uses_truth_only_for_evaluation": true,
+    "saved_sim_state": "/workspace/evaluation/initial/main_comparison/trials/episode_16/matched_time/evaluation_only_state_0045.npy",
+    "saved_sim_state_sha256": "2bba911daea38e3aaacff6f234546187222b209636ced968dc3fb4e4b53ccfb6",
+    "actual_replay_image_error": {
+      "image": {
+        "saved_shape": [
+          256,
+          256,
+          3
+        ],
+        "replay_shape": [
+          256,
+          256,
+          3
+        ],
+        "exact_match": false,
+        "mean_absolute_error_0_255": 0.001007080078125,
+        "max_absolute_error_0_255": 19,
+        "differing_pixel_count": 32
+      },
+      "image2": {
+        "saved_shape": [
+          256,
+          256,
+          3
+        ],
+        "replay_shape": [
+          256,
+          256,
+          3
+        ],
+        "exact_match": false,
+        "mean_absolute_error_0_255": 0.005045572916666667,
+        "max_absolute_error_0_255": 46,
+        "differing_pixel_count": 277
+      }
+    },
+    "actual_replay_images_exact_match": false,
+    "reference_method": "same_state_same_actual_cameras_only_leaf_visual_alpha_zero",
+    "policy_or_controller_executed": false,
+    "metric_limitation": "Red-pixel evidence relative to leaf-hidden same-camera reference, not exact visible surface area. Other robot/environment occlusion remains. Ratios may exceed 1 due to render/color effects; zero reference gives null."
+  },
+  "after_observation": {
+    "status": "measured",
+    "views": {
+      "image": {
+        "visible_red_ratio": 1.0,
+        "actual_red_pixels": 298,
+        "reference_red_pixels": 298,
+        "reference_min_red_pixels": 100,
+        "reference_red_pixels_sufficient": true,
+        "ratio_valid": false,
+        "ratio_not_clamped": true,
+        "reference_zero_reason": null,
+        "saved_actual_image": "/workspace/evaluation/initial/main_comparison/trials/episode_16/matched_time/frame_0045_image.png",
+        "evaluation_only_reference_image": "/workspace/evaluation/initial/main_comparison/trials/episode_16/evaluation_only_visibility/matched_time/EVAL_ONLY_leaf_hidden_reference_image.png"
+      },
+      "image2": {
+        "visible_red_ratio": 1.0,
+        "actual_red_pixels": 1041,
+        "reference_red_pixels": 1041,
+        "reference_min_red_pixels": 100,
+        "reference_red_pixels_sufficient": true,
+        "ratio_valid": false,
+        "ratio_not_clamped": true,
+        "reference_zero_reason": null,
+        "saved_actual_image": "/workspace/evaluation/initial/main_comparison/trials/episode_16/matched_time/frame_0045_image2.png",
+        "evaluation_only_reference_image": "/workspace/evaluation/initial/main_comparison/trials/episode_16/evaluation_only_visibility/matched_time/EVAL_ONLY_leaf_hidden_reference_image2.png"
+      }
+    },
+    "frame_id": 45,
+    "uses_truth_only_for_evaluation": true,
+    "saved_sim_state": "/workspace/evaluation/initial/main_comparison/trials/episode_16/matched_time/evaluation_only_state_0045.npy",
+    "saved_sim_state_sha256": "2bba911daea38e3aaacff6f234546187222b209636ced968dc3fb4e4b53ccfb6",
+    "actual_replay_image_error": {
+      "image": {
+        "saved_shape": [
+          256,
+          256,
+          3
+        ],
+        "replay_shape": [
+          256,
+          256,
+          3
+        ],
+        "exact_match": false,
+        "mean_absolute_error_0_255": 0.001007080078125,
+        "max_absolute_error_0_255": 19,
+        "differing_pixel_count": 32
+      },
+      "image2": {
+        "saved_shape": [
+          256,
+          256,
+          3
+        ],
+        "replay_shape": [
+          256,
+          256,
+          3
+        ],
+        "exact_match": false,
+        "mean_absolute_error_0_255": 0.005045572916666667,
+        "max_absolute_error_0_255": 46,
+        "differing_pixel_count": 277
+      }
+    },
+    "actual_replay_images_exact_match": false,
+    "reference_method": "same_state_same_actual_cameras_only_leaf_visual_alpha_zero",
+    "policy_or_controller_executed": false,
+    "metric_limitation": "Red-pixel evidence relative to leaf-hidden same-camera reference, not exact visible surface area. Other robot/environment occlusion remains. Ratios may exceed 1 due to render/color effects; zero reference gives null.",
+    "same_data_as": "matched_time",
+    "after_observation_saved_image_error": {
+      "image": {
+        "saved_shape": [
+          256,
+          256,
+          3
+        ],
+        "replay_shape": [
+          256,
+          256,
+          3
+        ],
+        "exact_match": true,
+        "mean_absolute_error_0_255": 0.0,
+        "max_absolute_error_0_255": 0,
+        "differing_pixel_count": 0
+      },
+      "image2": {
+        "saved_shape": [
+          256,
+          256,
+          3
+        ],
+        "replay_shape": [
+          256,
+          256,
+          3
+        ],
+        "exact_match": true,
+        "mean_absolute_error_0_255": 0.0,
+        "max_absolute_error_0_255": 0,
+        "differing_pixel_count": 0
+      }
+    }
+  }
+}

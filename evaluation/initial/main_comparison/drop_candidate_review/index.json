@@ -1,0 +1,75 @@
+{
+  "source_details": "evaluation/initial/main_comparison/three_stage_analysis/trial_details.json",
+  "trial_count": 20,
+  "candidate_sample_count": 6,
+  "candidate_event_clusters": 3,
+  "events": [
+    {
+      "episode": "episode_04",
+      "event": 0,
+      "candidate_steps": [
+        225,
+        226
+      ],
+      "extracted_video_frames": [
+        206,
+        207,
+        216,
+        217,
+        226,
+        227,
+        236,
+        237,
+        246,
+        247
+      ],
+      "contact_sheet": "evaluation/initial/main_comparison/drop_candidate_review/episode_04_event_00_contact_sheet.png"
+    },
+    {
+      "episode": "episode_05",
+      "event": 0,
+      "candidate_steps": [
+        225,
+        226
+      ],
+      "extracted_video_frames": [
+        206,
+        207,
+        216,
+        217,
+        226,
+        227,
+        236,
+        237,
+        246,
+        247
+      ],
+      "contact_sheet": "evaluation/initial/main_comparison/drop_candidate_review/episode_05_event_00_contact_sheet.png"
+    },
+    {
+      "episode": "episode_18",
+      "event": 0,
+      "candidate_steps": [
+        484,
+        485
+      ],
+      "extracted_video_frames": [
+        465,
+        466,
+        475,
+        476,
+        485,
+        486,
+        495,
+        496,
+        505,
+        506
+      ],
+      "contact_sheet": "evaluation/initial/main_comparison/drop_candidate_review/episode_18_event_00_contact_sheet.png"
+    }
+  ],
+  "auto_confirmed_drops": false,
+  "core_or_scores_modified": false,
+  "simulation_or_policy_executed": false,
+  "frame_mapping": "Video frame0 is initial image. Post-action telemetry log stepN maps to MP4 frameN+1; elapsed=(N+1)/20sec."
+}

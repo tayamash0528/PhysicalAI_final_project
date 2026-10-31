@@ -1,0 +1,62 @@
+[
+  {
+    "case_id": "new_leaf_00",
+    "motion": false,
+    "initial_state_matches": true,
+    "policy_start_state8_max_difference": 0.0,
+    "observation_action_max_difference": 0.0,
+    "policy_start_rgb_hashes_equal": false,
+    "first_vla_normalized_action_max_difference": 0.037109375,
+    "first_vla_applied_action_max_difference": 0.021945595741271973
+  },
+  {
+    "case_id": "new_leaf_00",
+    "motion": true,
+    "initial_state_matches": true,
+    "policy_start_state8_max_difference": 0.0,
+    "observation_action_max_difference": 0.0,
+    "policy_start_rgb_hashes_equal": false,
+    "first_vla_normalized_action_max_difference": 0.05523681640625,
+    "first_vla_applied_action_max_difference": 0.028651177883148193
+  },
+  {
+    "case_id": "new_leaf_04",
+    "motion": false,
+    "initial_state_matches": true,
+    "policy_start_state8_max_difference": 0.0,
+    "observation_action_max_difference": 0.0,
+    "policy_start_rgb_hashes_equal": false,
+    "first_vla_normalized_action_max_difference": 0.0250244140625,
+    "first_vla_applied_action_max_difference": 0.007454276084899902
+  },
+  {
+    "case_id": "new_leaf_04",
+    "motion": true,
+    "initial_state_matches": true,
+    "policy_start_state8_max_difference": 0.0,
+    "observation_action_max_difference": 0.0,
+    "policy_start_rgb_hashes_equal": false,
+    "first_vla_normalized_action_max_difference": 0.039306640625,
+    "first_vla_applied_action_max_difference": 0.017480790615081787
+  },
+  {
+    "case_id": "new_leaf_07",
+    "motion": false,
+    "initial_state_matches": true,
+    "policy_start_state8_max_difference": 0.0,
+    "observation_action_max_difference": 0.0,
+    "policy_start_rgb_hashes_equal": false,
+    "first_vla_normalized_action_max_difference": 0.04345703125,
+    "first_vla_applied_action_max_difference": 0.043403446674346924
+  },
+  {
+    "case_id": "new_leaf_07",
+    "motion": true,
+    "initial_state_matches": true,
+    "policy_start_state8_max_difference": 0.0,
+    "observation_action_max_difference": 0.0,
+    "policy_start_rgb_hashes_equal": false,
+    "first_vla_normalized_action_max_difference": 0.06195068359375,
+    "first_vla_applied_action_max_difference": 0.027551233768463135
+  }
+]

@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "duration_seconds": 148,
+  "width": 1920,
+  "height": 1080,
+  "fps": 40,
+  "frames": 5920,
+  "audio": false,
+  "all_frames_decoded": true,
+  "source_images_match_action_hashes": true,
+  "synchronization_and_final_frames_passed": true,
+  "result_numbers_match_saved_csvs": true,
+  "original_files_unchanged": true,
+  "output_sha256": "ef4f2acd3f8de3e80ba4b94f8342d02b78775daf6603dd21798dd8c709009331",
+  "bytes": 18033016,
+  "visual_review": "qa/visual_review.md（抽出画面を目視確認した記録）",
+  "visual_review_completed": true,
+  "remaining_problems": []
+}

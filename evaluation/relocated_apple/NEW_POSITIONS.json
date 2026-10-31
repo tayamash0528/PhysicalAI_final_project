@@ -1,0 +1,128 @@
+{
+  "created_utc": "2026-10-31T02:53:56.545586+00:00",
+  "positions": [
+    {
+      "case_id": "new_leaf_00",
+      "xy_m": [
+        -0.1164,
+        0.18860000000000002
+      ],
+      "nearest_previously_recorded_position_m": 0.011954614213767013,
+      "nearest_used_or_already_selected_m": 0.011954614213767013,
+      "seed": 10400
+    },
+    {
+      "case_id": "new_leaf_01",
+      "xy_m": [
+        -0.11860000000000001,
+        0.16720000000000002
+      ],
+      "nearest_previously_recorded_position_m": 0.011627450365406841,
+      "nearest_used_or_already_selected_m": 0.011627450365406841,
+      "seed": 10401
+    },
+    {
+      "case_id": "new_leaf_02",
+      "xy_m": [
+        -0.1246,
+        0.2104
+      ],
+      "nearest_previously_recorded_position_m": 0.011371490711423895,
+      "nearest_used_or_already_selected_m": 0.011371490711423895,
+      "seed": 10402
+    },
+    {
+      "case_id": "new_leaf_03",
+      "xy_m": [
+        -0.12140000000000001,
+        0.1771
+      ],
+      "nearest_previously_recorded_position_m": 0.0102926383400953,
+      "nearest_used_or_already_selected_m": 0.010288342918079656,
+      "seed": 10403
+    },
+    {
+      "case_id": "new_leaf_04",
+      "xy_m": [
+        -0.1111,
+        0.2049
+      ],
+      "nearest_previously_recorded_position_m": 0.010159724405711,
+      "nearest_used_or_already_selected_m": 0.010159724405711,
+      "seed": 10404
+    },
+    {
+      "case_id": "new_leaf_05",
+      "xy_m": [
+        -0.1359,
+        0.1913
+      ],
+      "nearest_previously_recorded_position_m": 0.010104454463255296,
+      "nearest_used_or_already_selected_m": 0.010104454463255296,
+      "seed": 10405
+    },
+    {
+      "case_id": "new_leaf_06",
+      "xy_m": [
+        -0.1335,
+        0.225
+      ],
+      "nearest_previously_recorded_position_m": 0.009961827342410636,
+      "nearest_used_or_already_selected_m": 0.009961827342410636,
+      "seed": 10406
+    },
+    {
+      "case_id": "new_leaf_07",
+      "xy_m": [
+        -0.12710000000000002,
+        0.1942
+      ],
+      "nearest_previously_recorded_position_m": 0.009002022050628394,
+      "nearest_used_or_already_selected_m": 0.009002022050628394,
+      "seed": 10407
+    },
+    {
+      "case_id": "new_leaf_08",
+      "xy_m": [
+        -0.1115,
+        0.19590000000000002
+      ],
+      "nearest_previously_recorded_position_m": 0.009437160589923213,
+      "nearest_used_or_already_selected_m": 0.008792041856133309,
+      "seed": 10408
+    },
+    {
+      "case_id": "new_leaf_09",
+      "xy_m": [
+        -0.111,
+        0.16820000000000002
+      ],
+      "nearest_previously_recorded_position_m": 0.007799000064110756,
+      "nearest_used_or_already_selected_m": 0.0076655071586947295,
+      "seed": 10409
+    }
+  ],
+  "algorithm": {
+    "algorithm": "Outcome-blind seeded candidate grid, greedy farthest point from all audited local previously used apple positions and already selected new points",
+    "pool_seed": 202610311145,
+    "rounding_m": 0.0001,
+    "minimum_distance_from_used_and_new_m": 0.002,
+    "candidate_pool_size": 20000,
+    "outcomes_used": false
+  },
+  "bounds_m": {
+    "x": [
+      -0.136,
+      -0.111
+    ],
+    "y": [
+      0.167,
+      0.225
+    ]
+  },
+  "position_audit_file": "experiments\\20261031_1145_leaf_holdout\\position_audit\\used_positions.json",
+  "position_audit_sha256": "0fd1020fe02c394c9f9e17f62babfa1b2c86204a6f1fd5662fc6a8f58df71cfa",
+  "new_trial_outcomes_seen": false,
+  "old_or_new_outcomes_used_for_selection": false,
+  "pretraining_data_overlap_unknown": true
+}

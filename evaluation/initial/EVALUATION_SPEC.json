@@ -1,0 +1,25 @@
+{
+  "status": "declared_before_main_VLA_trials",
+  "contact": "Report left, right, bilateral contact independently; not called grasp success.",
+  "lift": "Object center at least0.05m above immediately pre-action initial center, during VLA phase.",
+  "grasp_success": "At least40 consecutive20Hz VLA-phase steps with lift>=0.05m and bilateral finger contact.",
+  "placement": "Unchanged v2_open_command_and_75mm_gap_40_steps; report placement and joint grasp+placement separately.",
+  "visibility": {
+    "reference": "Posthoc same simulation state and camera, hide only leaf visual alpha. Evaluation-only; never returned to policy.",
+    "measure": "Actual apple-like red pixels divided by reference red pixels for each actual camera. This is a red-pixel proxy, not exact visible surface fraction; reference0 means unmeasured.",
+    "raw_ratio": "Retain raw; clamp to[0,1] only for bounded summary gains.",
+    "within_active": "Initial frame0 versus actual post-observation frame45; auxiliary information gain threshold0.20.",
+    "between_methods": "Both actual images and evaluation-only states at shared elapsed frame45=2.25simseconds; avoid comparing only active-after to baseline-initial.",
+    "sufficiency": "Existing observer red>=200 pixels criterion; separate from ratio gain and manipulation success."
+  },
+  "drop_candidates": {
+    "condition_a": "After50mm lift, neither finger touching, worldZ velocity<-0.15m/s, outside tray footprint.",
+    "condition_b": "After50mm lift, object center worldZ<0.85m.",
+    "reporting": "Save candidate steps and review images/videos; distinguish conservative algorithmic drop candidates from verified physical drops."
+  },
+  "timing": "Shared45simsecond/900step total budget includes observation. Report observation/manipulation simulation time and measured wall time separately; no wall-time performance claim.",
+  "skip_rate": "Among enabled-reobservation trials, observation_steps==0 divided byN, separately clear/leaf. Disabled mode is not an automatic skip.",
+  "pairing": "Same initial-state file/hash, seed, instruction, weights, physical settings. Both methods use live camera updates throughout manipulation.",
+  "main_outcomes_used_for_adjustment": false,
+  "no_post_main_tuning": true
+}

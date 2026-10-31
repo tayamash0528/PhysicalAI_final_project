@@ -1,0 +1,57 @@
+{
+  "saved_reference_episode": 14,
+  "new_episode": 0,
+  "metadata_equal": {
+    "seed": true,
+    "initial_state_sha256": true,
+    "steps": true,
+    "project_success": true,
+    "placement_evaluator_version": true,
+    "observation_steps": true,
+    "vla_steps": true,
+    "telemetry_stage_counts": true
+  },
+  "configuration_equal": {
+    "expert_delta_sha256": true,
+    "model_revision": true,
+    "instruction": true,
+    "n_action_steps": true,
+    "max_steps": true,
+    "control_freq_hz": true,
+    "observer_profile": true,
+    "asset_sha256": true
+  },
+  "logged_action_counts": [
+    607,
+    607
+  ],
+  "action_and_state_differences": {
+    "state_input": {
+      "different_steps": 0,
+      "maximum_absolute_difference": 0.0
+    },
+    "normalized_action": {
+      "different_steps": 0,
+      "maximum_absolute_difference": 0.0
+    },
+    "unnormalized_action": {
+      "different_steps": 0,
+      "maximum_absolute_difference": 0.0
+    },
+    "applied_action": {
+      "different_steps": 0,
+      "maximum_absolute_difference": 0.0
+    }
+  },
+  "differing_processed_image_hash_steps": 0,
+  "differing_phases": 0,
+  "differing_queue_lengths": 0,
+  "initial_images_equal": {
+    "image": true,
+    "image2": true
+  },
+  "initial_state_file_equal": true,
+  "all_applied_actions_bit_exact": true,
+  "scope": "new_leaf_07の1対照再現に基づく保存済み6試行の流用。全配置を再実行した証明ではない。",
+  "saved_controls_reusable": true
+}

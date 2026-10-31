@@ -1,0 +1,44 @@
+{
+  "reviewed_utc": "2026-10-31T01:28:43.405018+00:00",
+  "policy_or_conditions_changed": false,
+  "confirmed_candidate_clusters": 3,
+  "confirmed_trial_counts": {
+    "clear_no_reobserve": 1,
+    "clear_reobserve": 1,
+    "leaf_no_reobserve": 1,
+    "leaf_reobserve": 0
+  },
+  "scope": "Only predeclared candidate events; no claim that the20Hz heuristic catches every substep loss. Clear00 loss enters tray and recovers to placement success; leaf03 failure lands on table.",
+  "clear_pairs_identity": [
+    {
+      "case": "clear_00",
+      "steps": 323,
+      "applied_actions_max_difference": 0.0,
+      "all_actual_input_hashes_equal": true
+    },
+    {
+      "case": "clear_01",
+      "steps": 667,
+      "applied_actions_max_difference": 0.0,
+      "all_actual_input_hashes_equal": true
+    },
+    {
+      "case": "clear_02",
+      "steps": 462,
+      "applied_actions_max_difference": 0.0,
+      "all_actual_input_hashes_equal": true
+    },
+    {
+      "case": "clear_03",
+      "steps": 820,
+      "applied_actions_max_difference": 0.0,
+      "all_actual_input_hashes_equal": true
+    },
+    {
+      "case": "clear_04",
+      "steps": 381,
+      "applied_actions_max_difference": 0.0,
+      "all_actual_input_hashes_equal": true
+    }
+  ]
+}

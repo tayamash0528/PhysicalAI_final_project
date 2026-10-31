@@ -1,0 +1,30 @@
+{
+  "started_utc": "2026-10-31T00:58:18.971148+00:00",
+  "command": [
+    "/usr/local/bin/python",
+    "scripts/run_rollout.py",
+    "--fruit-task",
+    "apple_single",
+    "--episode-setups",
+    "evaluation/initial/main_comparison/episode_setups.json",
+    "--observer-profile",
+    "rgb_early_approach_v10",
+    "--max-steps",
+    "900",
+    "--n-action-steps",
+    "10",
+    "--visibility-eval-step",
+    "45",
+    "--telemetry",
+    "--trainable-fp32",
+    "--inference-amp",
+    "--expert-delta",
+    "models/fruit_vla/expert_delta.safetensors",
+    "--out",
+    "evaluation/initial/main_comparison/trials"
+  ],
+  "protocol_sha256": "7c0c5401e5390dc5452f39e42e7c69304a0f3a286265e6bce5f7c36c30604a3d",
+  "weights_changed_after_lock": false,
+  "return_code": 0,
+  "finished_utc": "2026-10-31T01:21:32.528276+00:00"
+}

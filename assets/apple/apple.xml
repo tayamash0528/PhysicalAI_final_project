@@ -1,0 +1,15 @@
+<mujoco model="ycb_apple">
+  <asset>
+    <texture name="apple_tex" type="2d" file="texture.png"/>
+    <material name="apple_mat" texture="apple_tex" specular="0.15" shininess="0.1"/>
+    <mesh name="apple_mesh" file="apple.obj"/>
+  </asset>
+  <worldbody><body><body name="object">
+    <geom name="collision" type="ellipsoid" size="0.036 0.036 0.034" mass="0.15" friction="1.0 0.01 0.001" group="0" rgba="0.8 0.1 0.1 0"/>
+    <geom name="visual" type="mesh" mesh="apple_mesh" material="apple_mat" contype="0" conaffinity="0" group="1" mass="0"/>
+  </body>
+  <site name="bottom_site" pos="0 0 -0.036" size="0.005" rgba="0 0 0 0"/>
+  <site name="top_site" pos="0 0 0.036" size="0.005" rgba="0 0 0 0"/>
+  <site name="horizontal_radius_site" pos="0.039 0.039 0" size="0.005" rgba="0 0 0 0"/>
+  </body></worldbody>
+</mujoco>

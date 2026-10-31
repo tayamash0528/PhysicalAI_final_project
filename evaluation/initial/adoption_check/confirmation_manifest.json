@@ -1,0 +1,33 @@
+{
+  "completed_utc": "2026-10-31T02:21:09.249514+00:00",
+  "new_learning": false,
+  "config_or_metric_changes": false,
+  "new_manipulation_trials": 0,
+  "all20_saved_predicates_match_original": true,
+  "affected_trials": [
+    "episode_04",
+    "episode_05"
+  ],
+  "placement_pair_categories_leaf": {
+    "both_success": 2,
+    "only_reobserve_success": 2,
+    "only_no_reobserve_success": 0,
+    "both_failure": 1
+  },
+  "results_modified": false,
+  "files": {
+    "README.md": "b1590ecfb1ed321384d4adfa766fbeca85a11d2ae0d73300cf464a8b7f38d25e",
+    "REPORT.md": "cf5e6e3e8760352d85ab756ea36c1a7f7bf34e07b5531a851b5061b911aed2f3",
+    "VIDEO_GUIDE.md": "5bc88dc24243c7fbc0d17472f0ee755845eb8a15c0c84bab24448baca6d38ddc",
+    "adoption_check/README.md": "fa2c92bb261701e85ac68e3fec62571bcdf7b3fd8198847d183819a70540aae6",
+    "adoption_check/adopted_candidate/candidate_manifest.json": "28309c121dcdbbe1f53eb62e20f5c0f23cfb91569537a3bec94b62be563aba23",
+    "adoption_check/unchanged_originals.json": "84a3e2c67c2075ab8bb01effacf2000244a9904ead0b10f56db0f213d5ea38a0",
+    "adoption_check/predicate_review/predicate_audit.json": "30bcd80dc7ed42efbb3ec39fcca87197dacf1daa0e8c7bb15d67ab61f89f019f",
+    "adoption_check/leaf_review/leaf_pair_audit.json": "c61193c4cc2b91ed1d9eb77dc8d231ef76b9fff0c63eb2bbddcefbedd09161b8",
+    "adoption_check/leaf_review/leaf_pairs.csv": "f146848ce54fea39d7faf399b7d78b455d350461ce7f1a14d196ba9189e5eee5",
+    "main_comparison/results.csv": "3bc39b1e5a4179ea17323aa6d31e21f74e5d94d84151642318319daf0b106858",
+    "main_comparison/results_summary.json": "05d4d8d80f611a1a3ff5958ca630f9d3f3811ff96edc121d14a2dddd981db256",
+    "main_comparison/LOCK.json": "7c0c5401e5390dc5452f39e42e7c69304a0f3a286265e6bce5f7c36c30604a3d",
+    "CURRENT_STATUS.json": "b845e74ab50a6950f413fa365bc0b48aca84825a5a7d76d7d520dd1d7fd60d5a"
+  }
+}

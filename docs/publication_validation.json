@@ -1,0 +1,147 @@
+{
+  "date_jst": "2026-10-31",
+  "scope": "公開候補の構築・既知1試行。性能評価ではない",
+  "original_project_is_git_repository": false,
+  "adopted_protected_files": 119,
+  "adopted_protected_files_changed": [],
+  "build": {
+    "command": [
+      "docker",
+      "build",
+      "--progress",
+      "plain",
+      "--pull=false",
+      "-t",
+      "fruit-vla:publication-20261031",
+      "."
+    ],
+    "exit_code": 0,
+    "cached_layers": true,
+    "base_digest": "sha256:e697c81897302a4c4333bade000d98038fbb21eb064f8ee1fd42d02ebcd9d337",
+    "result_image_id": "sha256:45b6936f774f8611fe6e41afcadf7eff79946bfbc57da5e028b7640ebc09b1e7"
+  },
+  "demo": {
+    "case_id": "leaf_02",
+    "method": "reobserve",
+    "seed": 8407,
+    "steps": 531,
+    "project_success": true,
+    "stop_reason": "project_placement_success",
+    "sim_seconds": 26.55,
+    "wall_seconds_including_reset": 69.64078399800002,
+    "placement_evaluator_version": "v2_open_command_and_75mm_gap_40_steps",
+    "reobservation_count": 1,
+    "observation_steps": 45,
+    "vla_steps": 486,
+    "telemetry_stage_counts": {
+      "approach_within_50mm_padmid": 370,
+      "close_command": 279,
+      "strong_close_command": 278,
+      "left_contact": 307,
+      "right_contact": 311,
+      "bilateral_contact": 304,
+      "lift_50mm": 219,
+      "lift_50mm_hold_2s_bilateral": 180
+    },
+    "performance_evaluation": false,
+    "cache_reused": true
+  },
+  "runtime": {
+    "python": "3.12.16",
+    "dependencies": {
+      "torch": "2.7.1",
+      "torchvision": "0.22.1",
+      "lerobot": "0.6.2",
+      "hf-libero": "0.1.4",
+      "transformers": "5.5.4",
+      "mujoco": "3.8.1",
+      "robosuite": "1.4.0"
+    },
+    "mismatches": {},
+    "cuda_available": true,
+    "torch_cuda": "12.6",
+    "gpu": "NVIDIA GeForce RTX 4070 SUPER"
+  },
+  "container": {
+    "status": "exited",
+    "exit_code": 0,
+    "started_utc": "2026-10-31T07:26:48.743256469Z",
+    "finished_utc": "2026-10-31T07:29:24.713815824Z",
+    "image": "sha256:45b6936f774f8611fe6e41afcadf7eff79946bfbc57da5e028b7640ebc09b1e7"
+  },
+  "upstream": {
+    "revision": "89cc0a809477e8425c9aa31a561a8f293e76a25c",
+    "files_compared": 663,
+    "content_changes_ignoring_CRLF_only": [],
+    "method": "git ls-tree + local Git blob hashing, no git-lfs/filter process or checkout changes"
+  },
+  "remote_source_metadata": [
+    {
+      "name": "base",
+      "url": "https://huggingface.co/api/models/HuggingFaceVLA/smolvla_libero/revision/6721902bc4d61e50a3bfdb11dfb4cb626f05d102",
+      "http_status": 200,
+      "revision": "6721902bc4d61e50a3bfdb11dfb4cb626f05d102",
+      "public": true,
+      "gated": false,
+      "license": "apache-2.0"
+    },
+    {
+      "name": "processor",
+      "url": "https://huggingface.co/api/models/HuggingFaceTB/SmolVLM2-500M-Instruct/revision/7b375e1b73b11138ff12fe22c8f2822d8fe03467",
+      "http_status": 200,
+      "revision": "7b375e1b73b11138ff12fe22c8f2822d8fe03467",
+      "public": true,
+      "gated": false,
+      "license": "apache-2.0"
+    },
+    {
+      "name": "libero_assets",
+      "url": "https://huggingface.co/api/datasets/lerobot/libero-assets/revision/0b3ea86be5fe169d0fd036ae63d1070ec09e90f6",
+      "http_status": 200,
+      "revision": "0b3ea86be5fe169d0fd036ae63d1070ec09e90f6",
+      "public": true,
+      "gated": false,
+      "license": null
+    }
+  ],
+  "video": {
+    "width": 1024,
+    "height": 560,
+    "frames": 532,
+    "seconds": 26.6
+  },
+  "downloads_from_empty_cache_tested": false,
+  "github_push_performed": false,
+  "external_upload_performed": false,
+  "release_urls_configured": false,
+  "static_candidate": {
+    "passed": true,
+    "experiments": [
+      {
+        "experiment": "20261031_0925_reobservation",
+        "formal_trials": 20,
+        "fixed_hashes_match": true
+      },
+      {
+        "experiment": "20261031_1145_leaf_holdout",
+        "formal_trials": 20,
+        "fixed_hashes_match": true
+      }
+    ],
+    "python_sources_parsed": 39,
+    "main_document_links_resolved": true,
+    "performance_runs_started": 0
+  },
+  "installer_tests": {
+    "checks": [
+      "fresh_install_passed",
+      "identical_install_idempotent",
+      "different_existing_file_rejected",
+      "wrong_archive_sha_rejected"
+    ],
+    "passed": true
+  },
+  "privacy_scan_findings": 0,
+  "powershell_blocks_parsed": 10,
+  "git_checkout_eol_conversion_disabled": true
+}

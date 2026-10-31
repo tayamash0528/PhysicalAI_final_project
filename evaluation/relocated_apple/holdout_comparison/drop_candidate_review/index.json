@@ -1,0 +1,54 @@
+{
+  "source_details": "evaluation/relocated_apple/holdout_comparison/three_stage_analysis/trial_details.json",
+  "trial_count": 20,
+  "candidate_sample_count": 4,
+  "candidate_event_clusters": 2,
+  "events": [
+    {
+      "episode": "episode_02",
+      "event": 0,
+      "candidate_steps": [
+        696,
+        697
+      ],
+      "extracted_video_frames": [
+        677,
+        678,
+        687,
+        688,
+        697,
+        698,
+        707,
+        708,
+        717,
+        718
+      ],
+      "contact_sheet": "evaluation/relocated_apple/holdout_comparison/drop_candidate_review/episode_02_event_00_contact_sheet.png"
+    },
+    {
+      "episode": "episode_16",
+      "event": 0,
+      "candidate_steps": [
+        206,
+        207
+      ],
+      "extracted_video_frames": [
+        187,
+        188,
+        197,
+        198,
+        207,
+        208,
+        217,
+        218,
+        227,
+        228
+      ],
+      "contact_sheet": "evaluation/relocated_apple/holdout_comparison/drop_candidate_review/episode_16_event_00_contact_sheet.png"
+    }
+  ],
+  "auto_confirmed_drops": false,
+  "core_or_scores_modified": false,
+  "simulation_or_policy_executed": false,
+  "frame_mapping": "Video frame0 is initial image. Post-action telemetry log stepN maps to MP4 frameN+1; elapsed=(N+1)/20sec."
+}

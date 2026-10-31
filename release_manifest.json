@@ -1,0 +1,90 @@
+{
+  "format_version": 1,
+  "description": "v1.0.0配布。Private中はGitHub認証が必要。",
+  "bundles": [
+    {
+      "filename": "fruit_vla_model_v1.0.zip",
+      "bytes": 360492727,
+      "sha256": "93d8776074181e0e219a0f2f65477105162681189dda3c1ab486df27a1d734bb",
+      "files": [
+        {
+          "path": "models/fruit_vla/expert_delta.safetensors",
+          "bytes": 389848208,
+          "sha256": "67a1dd9044c21f4b13de96afca496099e02f9531b624879f151fc3996e991ac2",
+          "license": "Apache-2.0",
+          "source": "https://huggingface.co/HuggingFaceVLA/smolvla_libero"
+        },
+        {
+          "path": "licenses/Apache-2.0.txt",
+          "bytes": 30530,
+          "sha256": "84347ca1665cbaba524ae24f1169e7eae1bc0cfdf3c0692df3de2f92f0dc11c0",
+          "license": "Apache-2.0",
+          "source": "本プロジェクトまたは記載した上流"
+        },
+        {
+          "path": "THIRD_PARTY_NOTICES.md",
+          "bytes": 3883,
+          "sha256": "c5113470accf59f3e3e25220c635183d46766a3924b7ed22d8190e2f651a35a2",
+          "license": "出典・ライセンス通知",
+          "source": "本プロジェクトまたは記載した上流"
+        }
+      ]
+    },
+    {
+      "filename": "fruit_vla_assets_v1.0.zip",
+      "bytes": 736906,
+      "sha256": "99eba7c9e78b186ee781bf1dba88d2aa526f20819aea08936ecf76c9a58419c7",
+      "files": [
+        {
+          "path": "assets/apple/apple.obj",
+          "bytes": 1010500,
+          "sha256": "d8abbbd3dcf0475a07cf9abb794ceaf51fb5e7ad291ce53b8ae5c3c99a1793a7",
+          "license": "CC-BY-4.0",
+          "source": "https://ycb-benchmarks.s3.amazonaws.com/data/google/013_apple_google_16k.tgz"
+        },
+        {
+          "path": "assets/apple/apple.xml",
+          "bytes": 832,
+          "sha256": "6c8e3e1d6411b2fa6a58ade259e8c57dd670388308bc6a1e878cbc21e3b37a13",
+          "license": "MIT",
+          "source": "本プロジェクトまたは記載した上流"
+        },
+        {
+          "path": "assets/apple/texture.png",
+          "bytes": 459143,
+          "sha256": "eb00cac918d9cdcbe350e37410787e60016ebbd61457e46354cce3a018343d6b",
+          "license": "CC-BY-4.0",
+          "source": "https://ycb-benchmarks.s3.amazonaws.com/data/google/013_apple_google_16k.tgz"
+        },
+        {
+          "path": "assets/tray/tray.xml",
+          "bytes": 1026,
+          "sha256": "2c04115730f6053f2c693caf19091ad0c8d8190092afaa322a27c568b2f999b9",
+          "license": "MIT",
+          "source": "本プロジェクトまたは記載した上流"
+        },
+        {
+          "path": "assets/manifest.json",
+          "bytes": 1015,
+          "sha256": "32c05178e686491234517212e439310372da1827aef93ccabcd155530890b53c",
+          "license": "MIT",
+          "source": "本プロジェクトまたは記載した上流"
+        },
+        {
+          "path": "LICENSE",
+          "bytes": 1176,
+          "sha256": "8e709e9a29d759132cbc033ebed59a971a33db25f451a1d78da9d60cb32b66ca",
+          "license": "MIT",
+          "source": "本プロジェクトまたは記載した上流"
+        },
+        {
+          "path": "THIRD_PARTY_NOTICES.md",
+          "bytes": 3883,
+          "sha256": "c5113470accf59f3e3e25220c635183d46766a3924b7ed22d8190e2f651a35a2",
+          "license": "出典・ライセンス通知",
+          "source": "本プロジェクトまたは記載した上流"
+        }
+      ]
+    }
+  ]
+}

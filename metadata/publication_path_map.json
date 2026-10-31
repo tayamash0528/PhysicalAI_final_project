@@ -1,0 +1,1672 @@
+{
+  "path_replacements": {
+    "experiments/20261031_0925_reobservation": "evaluation/initial",
+    "experiments/20261031_1145_leaf_holdout": "evaluation/relocated_apple",
+    "overnight/20261030_0220/config_c_multi12_b4/checkpoints/step_001250": "models/fruit_vla",
+    "overnight/20261030_0220/config_c_multi12_b4": "training/continuation",
+    "overnight/20261030_0220/config_c_compact": "training/initial",
+    "overnight/20261030_0220/compact_teacher": "training/initial_demonstration",
+    "overnight/20261030_0220/teachers_12": "training/demonstrations",
+    "diagnostics/20261029_2356/teacher_02": "training/seed_state",
+    "diagnostics/20261031_1814_leaf_motion": "evaluation/occlusion_motion",
+    "docs/archive/README_before_github_20261031_145603.md": "docs/archive/readme_history.md",
+    "final_confirmation": "adoption_check",
+    "training_selected_C.diff": "training_continuation.diff",
+    "fruit_vla_C1250.zip": "fruit_vla_model_v1.0.zip",
+    "fruit_vla_adopted_assets.zip": "fruit_vla_assets_v1.0.zip"
+  },
+  "files": [
+    {
+      "original": ".dockerignore",
+      "published": ".dockerignore",
+      "original_sha256": "018e2d2ed5ac26100e0b689e07f92c0c43ea8dccfd696b89aa019060aed028c3",
+      "published_sha256": "018e2d2ed5ac26100e0b689e07f92c0c43ea8dccfd696b89aa019060aed028c3"
+    },
+    {
+      "original": ".gitattributes",
+      "published": ".gitattributes",
+      "original_sha256": "d8484279d23f2946ff73c4cfb865377a9fb2d283ea8f184deda9b72c48c35f93",
+      "published_sha256": "d8484279d23f2946ff73c4cfb865377a9fb2d283ea8f184deda9b72c48c35f93"
+    },
+    {
+      "original": ".gitignore",
+      "published": ".gitignore",
+      "original_sha256": "879874b3506564c4a0a02f21bafb4d283c1c2f268d5d7a98cfaab7088c22855b",
+      "published_sha256": "393b82154116fd0206a38886b21a886ed63882a987db69ccbe326332480b4604"
+    },
+    {
+      "original": "Dockerfile",
+      "published": "Dockerfile",
+      "original_sha256": "718b76649950c664d43f638bb7b931fcf8cc44dfffc92f2199a1b2ae01e28375",
+      "published_sha256": "e22e45cd9f7db35f47021b6c89377856f813d99c15a83e29316eef40e9fbeee4"
+    },
+    {
+      "original": "LICENSE",
+      "published": "LICENSE",
+      "original_sha256": "8e709e9a29d759132cbc033ebed59a971a33db25f451a1d78da9d60cb32b66ca",
+      "published_sha256": "8e709e9a29d759132cbc033ebed59a971a33db25f451a1d78da9d60cb32b66ca"
+    },
+    {
+      "original": "README.md",
+      "published": "README.md",
+      "original_sha256": "9b58d7a81adcfd267d237b32c0f08986f330b7d7f82ca7205982363cae88b483",
+      "published_sha256": "1dbd3a7432dc5608491635792f534c502374fc3bd9499f2485349735b49b321b"
+    },
+    {
+      "original": "THIRD_PARTY_NOTICES.md",
+      "published": "THIRD_PARTY_NOTICES.md",
+      "original_sha256": "c2a7e0324c0ee94fdedfd60618b615856ef0b03f363bfeca44116396bf6934f3",
+      "published_sha256": "c5113470accf59f3e3e25220c635183d46766a3924b7ed22d8190e2f651a35a2"
+    },
+    {
+      "original": "assets/apple/apple.xml",
+      "published": "assets/apple/apple.xml",
+      "original_sha256": "6c8e3e1d6411b2fa6a58ade259e8c57dd670388308bc6a1e878cbc21e3b37a13",
+      "published_sha256": "6c8e3e1d6411b2fa6a58ade259e8c57dd670388308bc6a1e878cbc21e3b37a13"
+    },
+    {
+      "original": "assets/manifest.json",
+      "published": "assets/manifest.json",
+      "original_sha256": "32c05178e686491234517212e439310372da1827aef93ccabcd155530890b53c",
+      "published_sha256": "32c05178e686491234517212e439310372da1827aef93ccabcd155530890b53c"
+    },
+    {
+      "original": "assets/tray/tray.xml",
+      "published": "assets/tray/tray.xml",
+      "original_sha256": "2c04115730f6053f2c693caf19091ad0c8d8190092afaa322a27c568b2f999b9",
+      "published_sha256": "2c04115730f6053f2c693caf19091ad0c8d8190092afaa322a27c568b2f999b9"
+    },
+    {
+      "original": "diagnostics/20261029_2356/teacher_02/initial_sim_state.npy",
+      "published": "training/seed_state/initial_sim_state.npy",
+      "original_sha256": "15bbc1a1f8399c26e142d301ca9e4b782b2b2f480a775db08f0ba9f3ff28990b",
+      "published_sha256": "15bbc1a1f8399c26e142d301ca9e4b782b2b2f480a775db08f0ba9f3ff28990b"
+    },
+    {
+      "original": "docs/archive/README_before_github_20261031_145603.md",
+      "published": "docs/archive/readme_history.md",
+      "original_sha256": "b41e5488824c8040dd8328f81d6c3cae210a485aad87c944736725095e7342e7",
+      "published_sha256": "05530442f147f3fdcfec92a45a456c6d6c4bd820a6aedc341272649d2728b911"
+    },
+    {
+      "original": "docs/development_history.md",
+      "published": "docs/development_history.md",
+      "original_sha256": "d7a0aee31010cddda4f71c8d76334fc7e16c6074c8c5e92b513af20de79c6e85",
+      "published_sha256": "a1325d857d9302aa8988d97cb6f82ac6158196989f14884a55e138884d0788f3"
+    },
+    {
+      "original": "docs/distribution.md",
+      "published": "docs/distribution.md",
+      "original_sha256": "1aa013b15efcd516063ef38f8efbd35d0d26705cf53b92ced2c901f7cf9ac99b",
+      "published_sha256": "9ffdd0ca4c767b7aa3141bc8be91af2c16a34c92f68e44943bb69502b565a3b2"
+    },
+    {
+      "original": "docs/publication_changes.md",
+      "published": "docs/publication_changes.md",
+      "original_sha256": "cbc2bb8acaa4e3c2bc0a3c7039fcaccfd075dc8eed2ac9cf87675e304e404cd1",
+      "published_sha256": "6b6f8fba3d857eaef6f0a8644500b3082a29b7bd70d6bf6127e2d331b71444b5"
+    },
+    {
+      "original": "docs/publication_files.json",
+      "published": "docs/publication_files.json",
+      "original_sha256": "480713f2e5a6412cbdd72aacade1f9751c67b1806c2d9428d6c5de02d0091693",
+      "published_sha256": "fd3918f3d5439a23dd907c2dac5b4ebd08328af08038e5ee754d33b9b08a7747"
+    },
+    {
+      "original": "docs/publication_validation.json",
+      "published": "docs/publication_validation.json",
+      "original_sha256": "299824ad7db27720a995e660b3f54d22d72e2c135f729d029e514a28b7077e31",
+      "published_sha256": "299824ad7db27720a995e660b3f54d22d72e2c135f729d029e514a28b7077e31"
+    },
+    {
+      "original": "docs/readme_validation.json",
+      "published": "docs/readme_validation.json",
+      "original_sha256": "d809d33e9de6c89703a018478867c645e65dc1b9130fd86a3bd8e38afe89e4a7",
+      "published_sha256": "d809d33e9de6c89703a018478867c645e65dc1b9130fd86a3bd8e38afe89e4a7"
+    },
+    {
+      "original": "docs/readme_validation.md",
+      "published": "docs/readme_validation.md",
+      "original_sha256": "e62833be7fc09e60b5e8f93b4f12e01781c5c17d24eddd3caf7b97c98e69bfb2",
+      "published_sha256": "39e97b7b2f0206150c2fea239cfb7624fdc0e5b7af2d9b1cee2c85f3086fc26c"
+    },
+    {
+      "original": "docs/reproduction.md",
+      "published": "docs/reproduction.md",
+      "original_sha256": "9d08e9c51f8c7729c1685397ba3251902bdd5f96a2ab79dd0870339246594d8a",
+      "published_sha256": "097b56e09764aebb9ab469dfc86bec7f85bf1726e83c52d7acc82ae1d0862c8e"
+    },
+    {
+      "original": "evidence/diagnose_compact12_executed.py",
+      "published": "evidence/diagnose_compact12_executed.py",
+      "original_sha256": "87c9135518ce6a39f21ed811f55f52e3c2bc1b60d79570b217b379e1ead2c476",
+      "published_sha256": "21f2dd802c5a52b5947208bcd9d114351fa958f08954f2160159845f1903e6ea"
+    },
+    {
+      "original": "evidence/model.json",
+      "published": "evidence/model.json",
+      "original_sha256": "7dc9326007863d6e4c8ade509fb951c4b982df40d531281ed7637735eb3eb42d",
+      "published_sha256": "875e175ef36cc8970575c55370a0d5e8e863b8fc83c40009fdfef5d40c68ecba"
+    },
+    {
+      "original": "evidence/vlm_processor_revision.txt",
+      "published": "evidence/vlm_processor_revision.txt",
+      "original_sha256": "a0fbe2d048c3f45f77c1d8aa54558ddf630d6d698abd526b4c2a6b8e8a7fdfa5",
+      "published_sha256": "a0fbe2d048c3f45f77c1d8aa54558ddf630d6d698abd526b4c2a6b8e8a7fdfa5"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/ANALYSIS_IMPLEMENTATION.json",
+      "published": "evaluation/initial/ANALYSIS_IMPLEMENTATION.json",
+      "original_sha256": "0ad208975d6fb0bc3b5cf6e18640ae7070b004cb78589901dcfcb9e375c5080d",
+      "published_sha256": "fc5aee1254e887de6a71f961f8c75453faedc2a7a2e686ce231fb8bb24c32ee8"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/EVALUATION_SPEC.json",
+      "published": "evaluation/initial/EVALUATION_SPEC.json",
+      "original_sha256": "8c211820edc4604bcc5a4f783d6eb48a4dd87fc470a003ff3d1b98602af77196",
+      "published_sha256": "49a809cad27f09e8470c3fd3be4087ffb8cf814493e6e380c1b2d77ff47393eb"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/MAIN_SELECTION.json",
+      "published": "evaluation/initial/MAIN_SELECTION.json",
+      "original_sha256": "a9f2baa7f20c4d1b60881403259cf73f0e941ea9c8dd3df5a6d2d86e2e30bf79",
+      "published_sha256": "a9f2baa7f20c4d1b60881403259cf73f0e941ea9c8dd3df5a6d2d86e2e30bf79"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/REPORT.md",
+      "published": "evaluation/initial/REPORT.md",
+      "original_sha256": "cf5e6e3e8760352d85ab756ea36c1a7f7bf34e07b5531a851b5061b911aed2f3",
+      "published_sha256": "cf5e6e3e8760352d85ab756ea36c1a7f7bf34e07b5531a851b5061b911aed2f3"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/VIDEO_GUIDE.md",
+      "published": "evaluation/initial/VIDEO_GUIDE.md",
+      "original_sha256": "5bc88dc24243c7fbc0d17472f0ee755845eb8a15c0c84bab24448baca6d38ddc",
+      "published_sha256": "5bc88dc24243c7fbc0d17472f0ee755845eb8a15c0c84bab24448baca6d38ddc"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/final_confirmation/README.md",
+      "published": "evaluation/initial/adoption_check/README.md",
+      "original_sha256": "fa2c92bb261701e85ac68e3fec62571bcdf7b3fd8198847d183819a70540aae6",
+      "published_sha256": "fa2c92bb261701e85ac68e3fec62571bcdf7b3fd8198847d183819a70540aae6"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/final_confirmation/confirmation_manifest.json",
+      "published": "evaluation/initial/adoption_check/confirmation_manifest.json",
+      "original_sha256": "254eff5626deed97f00149a52be44a709637a25ea981622b9f40c3577653081d",
+      "published_sha256": "0d2010a5f5293b2f8765cda4fb175f8e2c60357b0a1df77464a7d1ac14ba97ca"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/final_confirmation/unchanged_originals.json",
+      "published": "evaluation/initial/adoption_check/unchanged_originals.json",
+      "original_sha256": "84a3e2c67c2075ab8bb01effacf2000244a9904ead0b10f56db0f213d5ea38a0",
+      "published_sha256": "84a3e2c67c2075ab8bb01effacf2000244a9904ead0b10f56db0f213d5ea38a0"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/final_confirmation/video_review_execution.json",
+      "published": "evaluation/initial/adoption_check/video_review_execution.json",
+      "original_sha256": "553b7a095a8ef528539d8ee80349e478586756ac45a5b5858f352338e4ff57bd",
+      "published_sha256": "553b7a095a8ef528539d8ee80349e478586756ac45a5b5858f352338e4ff57bd"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/main_comparison/LOCK.json",
+      "published": "evaluation/initial/main_comparison/LOCK.json",
+      "original_sha256": "7c0c5401e5390dc5452f39e42e7c69304a0f3a286265e6bce5f7c36c30604a3d",
+      "published_sha256": "ec83ea218fc1ae179b0e8a7c57bf9c6f062f8deefe6ffa84c35c820b25f97082"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/main_comparison/drop_candidate_review/README.md",
+      "published": "evaluation/initial/main_comparison/drop_candidate_review/README.md",
+      "original_sha256": "7e9fd0a0b7c97ee966e63d0f372a77453ad18176d4e3a1d93051df69ccca9a36",
+      "published_sha256": "401066af6e076f490ffa65a4ae07e964f28ece7563fa1ee0cc558e49222c97de"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/main_comparison/drop_candidate_review/adjudication.json",
+      "published": "evaluation/initial/main_comparison/drop_candidate_review/adjudication.json",
+      "original_sha256": "4a99b3cf2fed851081df0a0be6fa96d9a4765df3892f1b09167aa1589bb8d6c6",
+      "published_sha256": "4a99b3cf2fed851081df0a0be6fa96d9a4765df3892f1b09167aa1589bb8d6c6"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/main_comparison/drop_candidate_review/candidate_times.csv",
+      "published": "evaluation/initial/main_comparison/drop_candidate_review/candidate_times.csv",
+      "original_sha256": "3d1b3ffe2dfaa61c94c7287d93c6b655c0665de3ca1dffe53b26b6ae821aba22",
+      "published_sha256": "3d1b3ffe2dfaa61c94c7287d93c6b655c0665de3ca1dffe53b26b6ae821aba22"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/main_comparison/drop_candidate_review/index.json",
+      "published": "evaluation/initial/main_comparison/drop_candidate_review/index.json",
+      "original_sha256": "37816ee5a293a1aae4f296bcd1198bbe8922bc320483782507b9c255fb0a9406",
+      "published_sha256": "b02124b00e44b5c2a5ceaa0f7d665d1713b22d3438e93c071ac433a53d511256"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/main_comparison/drop_candidate_review/manual_review.csv",
+      "published": "evaluation/initial/main_comparison/drop_candidate_review/manual_review.csv",
+      "original_sha256": "717f2348f0d96a3822b5c5d830211f7f37de5b4bea95222f86a1bdc5fbb3b8eb",
+      "published_sha256": "717f2348f0d96a3822b5c5d830211f7f37de5b4bea95222f86a1bdc5fbb3b8eb"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/main_comparison/episode_setups.json",
+      "published": "evaluation/initial/main_comparison/episode_setups.json",
+      "original_sha256": "9469eb79e38317de9c9bc2f03077a4884e23456e497507234a6a8af3e237bc9b",
+      "published_sha256": "1349c93c0a4ffa9f893873dcc157848918496e99ccb0fdaf243ac4578cdd5e4b"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/main_comparison/evaluation_only_conditions.json",
+      "published": "evaluation/initial/main_comparison/evaluation_only_conditions.json",
+      "original_sha256": "7cb2f4a5113a65d73b5be275de1d98e6a4b69e9689717fd222b484f40a85d54b",
+      "published_sha256": "db7978e11e7eeeffdd589429184885df3c83adc99e382f146ebeaeba9dcbe198"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/main_comparison/execution_status.json",
+      "published": "evaluation/initial/main_comparison/execution_status.json",
+      "original_sha256": "b11141043b9b9b25776bff3e2d2392950a3ce90df7e182707791dccb72ca88e5",
+      "published_sha256": "e3bd0f69295b661da6c894c4de8f25bbdf796dd50df330744e986eb7b33e35eb"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/main_comparison/initial_states/clear_00/state.npy",
+      "published": "evaluation/initial/main_comparison/initial_states/clear_00/state.npy",
+      "original_sha256": "cbf77905392c556c35a37ac2fb0d145f572d2fef683b6a25df9fa3574b227b8d",
+      "published_sha256": "cbf77905392c556c35a37ac2fb0d145f572d2fef683b6a25df9fa3574b227b8d"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/main_comparison/initial_states/clear_01/state.npy",
+      "published": "evaluation/initial/main_comparison/initial_states/clear_01/state.npy",
+      "original_sha256": "27cd16eae5c61f1c3f9c90139f0846b6dc6e54fd4c2a8c4e98366f7cc2e76758",
+      "published_sha256": "27cd16eae5c61f1c3f9c90139f0846b6dc6e54fd4c2a8c4e98366f7cc2e76758"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/main_comparison/initial_states/clear_02/state.npy",
+      "published": "evaluation/initial/main_comparison/initial_states/clear_02/state.npy",
+      "original_sha256": "a577b68ad052a2ec07d5e645b4f82c9affcbdf5c70faf175b9a1cdab306521e4",
+      "published_sha256": "a577b68ad052a2ec07d5e645b4f82c9affcbdf5c70faf175b9a1cdab306521e4"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/main_comparison/initial_states/clear_03/state.npy",
+      "published": "evaluation/initial/main_comparison/initial_states/clear_03/state.npy",
+      "original_sha256": "fddb9f2f7a1d87c3766653a827abae5d7209e981ba8e0147cea1d739e5fdb1cc",
+      "published_sha256": "fddb9f2f7a1d87c3766653a827abae5d7209e981ba8e0147cea1d739e5fdb1cc"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/main_comparison/initial_states/clear_04/state.npy",
+      "published": "evaluation/initial/main_comparison/initial_states/clear_04/state.npy",
+      "original_sha256": "31c36bf7869f9ba42ed3667911c37f093bab8b0dbb9bc66b2f0b6691a901d410",
+      "published_sha256": "31c36bf7869f9ba42ed3667911c37f093bab8b0dbb9bc66b2f0b6691a901d410"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/main_comparison/initial_states/leaf_00/state.npy",
+      "published": "evaluation/initial/main_comparison/initial_states/leaf_00/state.npy",
+      "original_sha256": "d1090073edea003a39c4321c5c2abd978e1d57ec9a1992074fffd2768a320260",
+      "published_sha256": "d1090073edea003a39c4321c5c2abd978e1d57ec9a1992074fffd2768a320260"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/main_comparison/initial_states/leaf_01/state.npy",
+      "published": "evaluation/initial/main_comparison/initial_states/leaf_01/state.npy",
+      "original_sha256": "26fe303bae6db5195d6c744de7fcc070a9644a8c8a635fd5d2e902906a9f4124",
+      "published_sha256": "26fe303bae6db5195d6c744de7fcc070a9644a8c8a635fd5d2e902906a9f4124"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/main_comparison/initial_states/leaf_02/state.npy",
+      "published": "evaluation/initial/main_comparison/initial_states/leaf_02/state.npy",
+      "original_sha256": "11f1e113b61167f9182eb902a978f697717b6830dae2fe38d9c192440ea8e871",
+      "published_sha256": "11f1e113b61167f9182eb902a978f697717b6830dae2fe38d9c192440ea8e871"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/main_comparison/initial_states/leaf_03/state.npy",
+      "published": "evaluation/initial/main_comparison/initial_states/leaf_03/state.npy",
+      "original_sha256": "4612a67a9a74e4bfa37d3d083f68c2f1e56b010e369ac3f32bfda4af23e7ea33",
+      "published_sha256": "4612a67a9a74e4bfa37d3d083f68c2f1e56b010e369ac3f32bfda4af23e7ea33"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/main_comparison/initial_states/leaf_04/state.npy",
+      "published": "evaluation/initial/main_comparison/initial_states/leaf_04/state.npy",
+      "original_sha256": "a0d44e7eaedd1285fa24bc8df6f370e0860b9f568e9a0ef416956c1a7edb1db5",
+      "published_sha256": "a0d44e7eaedd1285fa24bc8df6f370e0860b9f568e9a0ef416956c1a7edb1db5"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/main_comparison/locked_assets/assets/apple/apple.xml",
+      "published": "evaluation/initial/main_comparison/locked_assets/assets/apple/apple.xml",
+      "original_sha256": "6c8e3e1d6411b2fa6a58ade259e8c57dd670388308bc6a1e878cbc21e3b37a13",
+      "published_sha256": "6c8e3e1d6411b2fa6a58ade259e8c57dd670388308bc6a1e878cbc21e3b37a13"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/main_comparison/locked_assets/assets/tray/tray.xml",
+      "published": "evaluation/initial/main_comparison/locked_assets/assets/tray/tray.xml",
+      "original_sha256": "2c04115730f6053f2c693caf19091ad0c8d8190092afaa322a27c568b2f999b9",
+      "published_sha256": "2c04115730f6053f2c693caf19091ad0c8d8190092afaa322a27c568b2f999b9"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/main_comparison/locked_assets/tasks/apple_single.bddl",
+      "published": "evaluation/initial/main_comparison/locked_assets/tasks/apple_single.bddl",
+      "original_sha256": "07b274d2466d7be9b2ee7c01efda28cca5e434625372a4551057aa40a038859b",
+      "published_sha256": "a3d4e56d94b5361f22b1268824142a987f34d684b5a6c6f0d288fc6ba2b93409"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/main_comparison/locked_sources/active_observation.py",
+      "published": "evaluation/initial/main_comparison/locked_sources/active_observation.py",
+      "original_sha256": "f78cf95a91616ccf8fa183e43fc63cdc6828f30ba31c6555d8baafecc11f6efb",
+      "published_sha256": "0c18b4aceee727c7dcc626047fd41a114fee807e7ca5993bc689e7a4fd11c7a6"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/main_comparison/locked_sources/arm_telemetry.py",
+      "published": "evaluation/initial/main_comparison/locked_sources/arm_telemetry.py",
+      "original_sha256": "df9bfb8c2f96bab3efc09b64a9ffebcb21f95a65ef0d917a2a8a3dc7b5da82d3",
+      "published_sha256": "b32ba82edcc0f8d9203f311c0869cd4a5875e024388b874cc0d5ae7a547b3299"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/main_comparison/locked_sources/fruit_objects.py",
+      "published": "evaluation/initial/main_comparison/locked_sources/fruit_objects.py",
+      "original_sha256": "7253b6d170b776c636cc18f86277bbe59a3954235102e23d5a8693380322e76d",
+      "published_sha256": "3ee0bbf92d6ce12fc806711bdd320899d1e6b17c6d5739b96c36e92495d95c31"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/main_comparison/locked_sources/occlusion_scene.py",
+      "published": "evaluation/initial/main_comparison/locked_sources/occlusion_scene.py",
+      "original_sha256": "fed307b9c98183fa451e6e199cd506dbdcda3ffd9bf3a71184c4610e78a91995",
+      "published_sha256": "0fb09d92548083d433598622a15077b86958a909db3fe4f8f6f6fad261925835"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/main_comparison/locked_sources/placement_score.py",
+      "published": "evaluation/initial/main_comparison/locked_sources/placement_score.py",
+      "original_sha256": "cc426da2d21f15825face304bf9799dbbab0616073fac956643a771b1b3636de",
+      "published_sha256": "797c060d2be3818ef2c9e743bad65e77ddb76cde9fd8ef7b2a4fdd6b1f77ab12"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/main_comparison/locked_sources/run_rollout.py",
+      "published": "evaluation/initial/main_comparison/locked_sources/run_rollout.py",
+      "original_sha256": "14dbddaf8577b8ff467650d25aef811affd04caaf959020af771a2186b503ccf",
+      "published_sha256": "a8559a14a4b4d291751124284405aac53357ba31a291a7a07901c23d94df2160"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/main_comparison/results.csv",
+      "published": "evaluation/initial/main_comparison/results.csv",
+      "original_sha256": "3bc39b1e5a4179ea17323aa6d31e21f74e5d94d84151642318319daf0b106858",
+      "published_sha256": "3bc39b1e5a4179ea17323aa6d31e21f74e5d94d84151642318319daf0b106858"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/main_comparison/results_summary.json",
+      "published": "evaluation/initial/main_comparison/results_summary.json",
+      "original_sha256": "05d4d8d80f611a1a3ff5958ca630f9d3f3811ff96edc121d14a2dddd981db256",
+      "published_sha256": "0e971eac56f10063ee2f089b7ddde840fff6fa77b39b931d4a515586d48b558f"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/main_comparison/trials/episode_00/result.json",
+      "published": "evaluation/initial/main_comparison/trials/episode_00/result.json",
+      "original_sha256": "7bdcfbeb9ea1e9762f4412c020be7f81db3c56eb6926e7ff81eb989f894703df",
+      "published_sha256": "17527deed4f0d6ddc1fa427a1601bbdebf81aa7881113cdeee84f842e93334fd"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/main_comparison/trials/episode_00/telemetry_metadata.json",
+      "published": "evaluation/initial/main_comparison/trials/episode_00/telemetry_metadata.json",
+      "original_sha256": "e6f936754d616d10bdbf3e720c38c15c717f59325deb3626b497051175fadab9",
+      "published_sha256": "2a6742adfbd77b698536b78432494a63853b983556edee9b7d46516ff172b966"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/main_comparison/trials/episode_00/visibility_evaluation.json",
+      "published": "evaluation/initial/main_comparison/trials/episode_00/visibility_evaluation.json",
+      "original_sha256": "e8e2132f85f06b71272a1830cb4416339a9dea0e1ba053983c26c51928f5eee3",
+      "published_sha256": "6523aa1d6ade72d2246b1556dbe31140a165a63f37999ead4951e51a4c5ed344"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/main_comparison/trials/episode_01/result.json",
+      "published": "evaluation/initial/main_comparison/trials/episode_01/result.json",
+      "original_sha256": "8460a055cd8d94a5cb4d50454145ef8b60b0a027b198b31d7ec47a953e575e37",
+      "published_sha256": "f030976515d6a4c9eb76f13963e1b434581d624e6b2803afce5b574f17e81675"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/main_comparison/trials/episode_01/telemetry_metadata.json",
+      "published": "evaluation/initial/main_comparison/trials/episode_01/telemetry_metadata.json",
+      "original_sha256": "e6f936754d616d10bdbf3e720c38c15c717f59325deb3626b497051175fadab9",
+      "published_sha256": "2a6742adfbd77b698536b78432494a63853b983556edee9b7d46516ff172b966"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/main_comparison/trials/episode_01/visibility_evaluation.json",
+      "published": "evaluation/initial/main_comparison/trials/episode_01/visibility_evaluation.json",
+      "original_sha256": "6cee40fe6ff6b5d0e87a4e4811937b38d042db1cc94bb7f1d6873dc5b9f4ccce",
+      "published_sha256": "31dfa7b72b26bdb87f61fe50cd811a17a46587abed1f210b4a684c596062702b"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/main_comparison/trials/episode_02/result.json",
+      "published": "evaluation/initial/main_comparison/trials/episode_02/result.json",
+      "original_sha256": "ea5bd6f338490044d2293ac29092461bc41b1a3e8efd66f9f319af40120405cc",
+      "published_sha256": "739dc3f8bc203c0092fdccbeb0fef30f7052a4d8259bcf930e9228f3e016f67c"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/main_comparison/trials/episode_02/telemetry_metadata.json",
+      "published": "evaluation/initial/main_comparison/trials/episode_02/telemetry_metadata.json",
+      "original_sha256": "e0db76c413f5e266f6ea6da75879b0a9afec864b7cb54223e7ff4e5fac8b025e",
+      "published_sha256": "7b74008dfc259f980ee4a936c40b38d412f483e9de340e2e34e273de4517254d"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/main_comparison/trials/episode_02/visibility_evaluation.json",
+      "published": "evaluation/initial/main_comparison/trials/episode_02/visibility_evaluation.json",
+      "original_sha256": "4680750efd034a9a4dad3d19058c9290b387e2432d30fded44abd7b0ae57668f",
+      "published_sha256": "e19b77221f4202fc722026b489e6bde00d2a0051d83f6209d235e76222c475f1"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/main_comparison/trials/episode_03/result.json",
+      "published": "evaluation/initial/main_comparison/trials/episode_03/result.json",
+      "original_sha256": "34303d97aadbb5cb93d6693ac94873e5c1777cf58dfcaee29f5c2fb4959c6259",
+      "published_sha256": "9c9abded797505a0913f6525eb789d4e783d3cd665be7d511d1f38750927f049"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/main_comparison/trials/episode_03/telemetry_metadata.json",
+      "published": "evaluation/initial/main_comparison/trials/episode_03/telemetry_metadata.json",
+      "original_sha256": "e0db76c413f5e266f6ea6da75879b0a9afec864b7cb54223e7ff4e5fac8b025e",
+      "published_sha256": "7b74008dfc259f980ee4a936c40b38d412f483e9de340e2e34e273de4517254d"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/main_comparison/trials/episode_03/visibility_evaluation.json",
+      "published": "evaluation/initial/main_comparison/trials/episode_03/visibility_evaluation.json",
+      "original_sha256": "b347230b9ecec97bd570a318bbc984d88dab8a45e2b02018f0b063b981c74bab",
+      "published_sha256": "8bea5c992ce472ad92ed20e4d493ecf3ccdc2c538e890625e7380346b735ed24"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/main_comparison/trials/episode_04/result.json",
+      "published": "evaluation/initial/main_comparison/trials/episode_04/result.json",
+      "original_sha256": "a458127e9719dfeae8cf2be9b9beb4d9361a6bc89dee7bbc2475fc3595a03ae1",
+      "published_sha256": "07f417b140af1f239b0cdf9326f37745a6f4f32d46120fd7f6b077cca25e01df"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/main_comparison/trials/episode_04/telemetry_metadata.json",
+      "published": "evaluation/initial/main_comparison/trials/episode_04/telemetry_metadata.json",
+      "original_sha256": "a655b2bcda19a61580341296a0e726d4faabdbe9388c112093afa6df5a196358",
+      "published_sha256": "3bce5739be61960fb5b73b0f96310c82947b9905ee26a5c716284d0a489bc456"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/main_comparison/trials/episode_04/visibility_evaluation.json",
+      "published": "evaluation/initial/main_comparison/trials/episode_04/visibility_evaluation.json",
+      "original_sha256": "38daa35cc1cfd2a1ad4d46807785155151ad2e289f034b8bb53a2613e6aa6fd1",
+      "published_sha256": "585c7677aa0a436cd577f007088b5ddf6f84b46214265645f894735f1a9d2132"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/main_comparison/trials/episode_05/result.json",
+      "published": "evaluation/initial/main_comparison/trials/episode_05/result.json",
+      "original_sha256": "beeca257a25f2df6c802d010a8dba3ffc51f9006801fcfa85410004c154122d0",
+      "published_sha256": "75f66d0720ae1abd5597d917a0da78a803cb4b8c74721a7956db50bce4819382"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/main_comparison/trials/episode_05/telemetry_metadata.json",
+      "published": "evaluation/initial/main_comparison/trials/episode_05/telemetry_metadata.json",
+      "original_sha256": "a655b2bcda19a61580341296a0e726d4faabdbe9388c112093afa6df5a196358",
+      "published_sha256": "3bce5739be61960fb5b73b0f96310c82947b9905ee26a5c716284d0a489bc456"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/main_comparison/trials/episode_05/visibility_evaluation.json",
+      "published": "evaluation/initial/main_comparison/trials/episode_05/visibility_evaluation.json",
+      "original_sha256": "ffc666e800fed47c1d997590104a2f8dbfe0e01be7b2b6cbc8754ff49439ddad",
+      "published_sha256": "7dc29149a752b4f2f0f4b75abbd450e8749c53df944e2c5cda4057ce435ece63"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/main_comparison/trials/episode_06/result.json",
+      "published": "evaluation/initial/main_comparison/trials/episode_06/result.json",
+      "original_sha256": "30aea428f4a4ed26816cca415803644996bc1de1e0bd40107fb865287de9c836",
+      "published_sha256": "2436b3c80e5b90de42ad9e074c45f663bf4240a63709fca55afa8772cf56bc0a"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/main_comparison/trials/episode_06/telemetry_metadata.json",
+      "published": "evaluation/initial/main_comparison/trials/episode_06/telemetry_metadata.json",
+      "original_sha256": "2035fd59de664b1e93c4d2a1685ea2bfaeab116c78c1da4c2139d9d5fa2a5efe",
+      "published_sha256": "a2fe85c26fe6572702a18c5777e45d6a8212a57f86c63d5defdd0bdd50ddff38"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/main_comparison/trials/episode_06/visibility_evaluation.json",
+      "published": "evaluation/initial/main_comparison/trials/episode_06/visibility_evaluation.json",
+      "original_sha256": "0aa689c35e50390447defc6e47df53651a149e18d378ac52fe6a658cb4123399",
+      "published_sha256": "82163aa983ab77e3920b7cf9eccc55905c175d613e626c0518f5c1af80c696bf"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/main_comparison/trials/episode_07/result.json",
+      "published": "evaluation/initial/main_comparison/trials/episode_07/result.json",
+      "original_sha256": "0a910481f7fa324ebd5257cd89a600fe0d65f29477697df7b491a4958b069128",
+      "published_sha256": "893002cf2dfc7a9ddf8c9fc2b5ff02a6186f98efa92410ac13e36f873fee6a50"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/main_comparison/trials/episode_07/telemetry_metadata.json",
+      "published": "evaluation/initial/main_comparison/trials/episode_07/telemetry_metadata.json",
+      "original_sha256": "2035fd59de664b1e93c4d2a1685ea2bfaeab116c78c1da4c2139d9d5fa2a5efe",
+      "published_sha256": "a2fe85c26fe6572702a18c5777e45d6a8212a57f86c63d5defdd0bdd50ddff38"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/main_comparison/trials/episode_07/visibility_evaluation.json",
+      "published": "evaluation/initial/main_comparison/trials/episode_07/visibility_evaluation.json",
+      "original_sha256": "44a48df86d2984ac6b72c59e920bb6b89212f6bde51fad52eed0ec78b07f3432",
+      "published_sha256": "7ab1d67ed107d361a45b8764c1bd5250bf11124718a37051cad10fafa791c02c"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/main_comparison/trials/episode_08/result.json",
+      "published": "evaluation/initial/main_comparison/trials/episode_08/result.json",
+      "original_sha256": "91bf5d789a17f5ec702bc533f1aa113de4e3a198e52b42746f8f96f1934918b2",
+      "published_sha256": "b7bdab977ed77e8505bc898c01b897acc65b2c0d7cf4deb32376ac7a317a5225"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/main_comparison/trials/episode_08/telemetry_metadata.json",
+      "published": "evaluation/initial/main_comparison/trials/episode_08/telemetry_metadata.json",
+      "original_sha256": "cf7b6d5956f3be1dac6fcde8f498ce29efb8d5ad20e49d151aee732c5b2b0993",
+      "published_sha256": "2540d865a48f597b39bdf7ccd04632d9f90e041e8546eb2c524ea847b44aa9b6"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/main_comparison/trials/episode_08/visibility_evaluation.json",
+      "published": "evaluation/initial/main_comparison/trials/episode_08/visibility_evaluation.json",
+      "original_sha256": "64c1a518984ae99a2a1eab66ee751f672c821b6e40b282e615e37eccf8fd13ae",
+      "published_sha256": "bbf079e35aef923783423106cd0098833827a63a4e5a0606e6dacd3f40e955cc"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/main_comparison/trials/episode_09/result.json",
+      "published": "evaluation/initial/main_comparison/trials/episode_09/result.json",
+      "original_sha256": "e614c867351b6d6e9f38ca7d4c71fda549c1a0da43c18e7691c6ac0b879a567e",
+      "published_sha256": "3632e3d4c637a7fc558f1bad4284a03ccae1d7e0e57b46eba7e6f39469b26b6f"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/main_comparison/trials/episode_09/telemetry_metadata.json",
+      "published": "evaluation/initial/main_comparison/trials/episode_09/telemetry_metadata.json",
+      "original_sha256": "cf7b6d5956f3be1dac6fcde8f498ce29efb8d5ad20e49d151aee732c5b2b0993",
+      "published_sha256": "2540d865a48f597b39bdf7ccd04632d9f90e041e8546eb2c524ea847b44aa9b6"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/main_comparison/trials/episode_09/visibility_evaluation.json",
+      "published": "evaluation/initial/main_comparison/trials/episode_09/visibility_evaluation.json",
+      "original_sha256": "37e09bdd4ee2645d10d62ab942e76d9103bfb70bce7ad4ebae16d05b4cbe4f0e",
+      "published_sha256": "bb211e64fc93a54dd67f06e8a7fd9296b80597b9317ca5aa2ac1876bcbddea50"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/main_comparison/trials/episode_10/result.json",
+      "published": "evaluation/initial/main_comparison/trials/episode_10/result.json",
+      "original_sha256": "75db1caf02ea80768b750f3cda53eca4dd1497fdb1a09063598a149ac32773ea",
+      "published_sha256": "17cbdffea204d6f1d034105f8d56cb76da35376df07d7dedb078074f465db817"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/main_comparison/trials/episode_10/telemetry_metadata.json",
+      "published": "evaluation/initial/main_comparison/trials/episode_10/telemetry_metadata.json",
+      "original_sha256": "02da4da16b52bdef5cb8b2bebbe88349799618caa54296160b1016135e5d9f84",
+      "published_sha256": "43c19467e001012202465daf21d0b3472dd057ff489c78ddd0cd0dcb61da084e"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/main_comparison/trials/episode_10/visibility_evaluation.json",
+      "published": "evaluation/initial/main_comparison/trials/episode_10/visibility_evaluation.json",
+      "original_sha256": "36563c98a12c8584d29352b3040f708b5b2ddecefdf0abb6ac55763a04f20267",
+      "published_sha256": "0cf1012223e67aa722545eda182cda9a02bba740b795d6c0fd06eda14c5c1bb3"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/main_comparison/trials/episode_11/result.json",
+      "published": "evaluation/initial/main_comparison/trials/episode_11/result.json",
+      "original_sha256": "73a4428a6e047f145aaf5814bcae2446e88d783137f0144320d29f5f5488c443",
+      "published_sha256": "dc086343832ea2e9e95f7858459a2df4dfdae16afbb50bb53487cc2c2f265520"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/main_comparison/trials/episode_11/telemetry_metadata.json",
+      "published": "evaluation/initial/main_comparison/trials/episode_11/telemetry_metadata.json",
+      "original_sha256": "02da4da16b52bdef5cb8b2bebbe88349799618caa54296160b1016135e5d9f84",
+      "published_sha256": "43c19467e001012202465daf21d0b3472dd057ff489c78ddd0cd0dcb61da084e"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/main_comparison/trials/episode_11/visibility_evaluation.json",
+      "published": "evaluation/initial/main_comparison/trials/episode_11/visibility_evaluation.json",
+      "original_sha256": "fc66fdc8e15cc264ab2500683f895e695fab4d06ad221f60c283c35deda29958",
+      "published_sha256": "a9761e8e6a30ef681c6f886ecb05393b43beb6dccc1de0ea31e91dce332490cb"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/main_comparison/trials/episode_12/result.json",
+      "published": "evaluation/initial/main_comparison/trials/episode_12/result.json",
+      "original_sha256": "b30775cd0f7e0b3561280756dbabeff5b1af1e580e124d72f4083f85f5c7073c",
+      "published_sha256": "7b8b3ce7b6beb6dfe13fe98a0dd441f0d7537ebcad74b12d8830a41fea64b827"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/main_comparison/trials/episode_12/telemetry_metadata.json",
+      "published": "evaluation/initial/main_comparison/trials/episode_12/telemetry_metadata.json",
+      "original_sha256": "2cdc925eba0af20e5dcb6a3a264c49b6d5040a36d43c44573da835623303541d",
+      "published_sha256": "f3ccdb990f476ba6065393a824058d510bf654c0914f5cbb790c9e7f7d142a1a"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/main_comparison/trials/episode_12/visibility_evaluation.json",
+      "published": "evaluation/initial/main_comparison/trials/episode_12/visibility_evaluation.json",
+      "original_sha256": "a236f0f05e068ac64fce039e95456349e92e3e8bb3ed4e433a8569055965465e",
+      "published_sha256": "1165b93a691868e5c90c02d684cf7d86c5b8020ee7e379081c2b5acdf281ee5c"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/main_comparison/trials/episode_13/result.json",
+      "published": "evaluation/initial/main_comparison/trials/episode_13/result.json",
+      "original_sha256": "4fcf108cbb66d94672a16f035411bd617356ecfe682e8ede9d1dede854b6937c",
+      "published_sha256": "938ac0198ef611b68616dfcf2eb7d85ecc2c3b794aa779b47b248187874523ee"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/main_comparison/trials/episode_13/telemetry_metadata.json",
+      "published": "evaluation/initial/main_comparison/trials/episode_13/telemetry_metadata.json",
+      "original_sha256": "2cdc925eba0af20e5dcb6a3a264c49b6d5040a36d43c44573da835623303541d",
+      "published_sha256": "f3ccdb990f476ba6065393a824058d510bf654c0914f5cbb790c9e7f7d142a1a"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/main_comparison/trials/episode_13/visibility_evaluation.json",
+      "published": "evaluation/initial/main_comparison/trials/episode_13/visibility_evaluation.json",
+      "original_sha256": "ded9120fd958ee1432bfebb13c3b065338eca158ce09032ae6e2c70c28ac299c",
+      "published_sha256": "ec54f81cf75b4ca1a2b726508181257c503ce5649dc6a7bad6fb5f228e0e30de"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/main_comparison/trials/episode_14/result.json",
+      "published": "evaluation/initial/main_comparison/trials/episode_14/result.json",
+      "original_sha256": "8178e804d5143db1a004c5d133b50c7db89e3befd1b87d0d8205aa5a9beb5f59",
+      "published_sha256": "284d3f8ff0f450a54194e469fe24bf8b6c1514fbc977924a92bfb0c7b5587392"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/main_comparison/trials/episode_14/telemetry_metadata.json",
+      "published": "evaluation/initial/main_comparison/trials/episode_14/telemetry_metadata.json",
+      "original_sha256": "c7c50be17603ffd9dc62c22dce2c380d5ff0e5bbd0794cbe64a1c9f136a3e606",
+      "published_sha256": "a920e02f5fef2c0dc09ab06e4270bcbd72a3b4dcf3ef43ecd3349c63854f733a"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/main_comparison/trials/episode_14/visibility_evaluation.json",
+      "published": "evaluation/initial/main_comparison/trials/episode_14/visibility_evaluation.json",
+      "original_sha256": "335c2323d2c51187da62bfe54e0f4608010256f425fd953c5a6e371a8287eb9c",
+      "published_sha256": "5f464767478aeb3100d6f3ff4ff42b120f453522adce20c8e4b5667fe7db9b90"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/main_comparison/trials/episode_15/result.json",
+      "published": "evaluation/initial/main_comparison/trials/episode_15/result.json",
+      "original_sha256": "0eb4e7204f577e00cb1d3fbd43f3d3b6b9a56dca381d5394c98f58c7b08aafb9",
+      "published_sha256": "07af01e85bdfca4f59d0909006d6f8af8fd002bde32cfce1090594a43dc895fc"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/main_comparison/trials/episode_15/telemetry_metadata.json",
+      "published": "evaluation/initial/main_comparison/trials/episode_15/telemetry_metadata.json",
+      "original_sha256": "c7c50be17603ffd9dc62c22dce2c380d5ff0e5bbd0794cbe64a1c9f136a3e606",
+      "published_sha256": "a920e02f5fef2c0dc09ab06e4270bcbd72a3b4dcf3ef43ecd3349c63854f733a"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/main_comparison/trials/episode_15/visibility_evaluation.json",
+      "published": "evaluation/initial/main_comparison/trials/episode_15/visibility_evaluation.json",
+      "original_sha256": "b7131579f9875f68bbf251a3b0280503b6d1702e02605c9fec90ad3e3eee976c",
+      "published_sha256": "3f4af0919375b46d877021d03e807e8e89ca7f1003620a67d601e5d28a7c16c7"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/main_comparison/trials/episode_16/result.json",
+      "published": "evaluation/initial/main_comparison/trials/episode_16/result.json",
+      "original_sha256": "b774922133e4a2e78dcb7836024b0f7b60b38907247140cbbf6c4bc2869ab0e7",
+      "published_sha256": "1614a7a6588550978a51e8bca2b8e4ca1159250771cab601fa2466b509b0b8b3"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/main_comparison/trials/episode_16/telemetry_metadata.json",
+      "published": "evaluation/initial/main_comparison/trials/episode_16/telemetry_metadata.json",
+      "original_sha256": "1cf1152da96ffaefdd29f25a87814240e82f720312470e54e05ff6f9eac90f96",
+      "published_sha256": "24c5d9c36ba4190c869ef36c4e0f040dfb3a39aaa4d0a7551ac652b2c269b2ff"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/main_comparison/trials/episode_16/visibility_evaluation.json",
+      "published": "evaluation/initial/main_comparison/trials/episode_16/visibility_evaluation.json",
+      "original_sha256": "d0004f246cfd4079628b068c2fba192f2e7bb06e460b8ae65a787599a8100cf4",
+      "published_sha256": "7aed61c3db483b73d98f4a388c5366148e82826a2ee0fa35e6aaa1d92678542a"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/main_comparison/trials/episode_17/result.json",
+      "published": "evaluation/initial/main_comparison/trials/episode_17/result.json",
+      "original_sha256": "090e45bf277918d9a39e56eb228085d90dd075a75ce394ce140893882d914024",
+      "published_sha256": "6567d66e6bfbe63694112373477780ec453c0eff1cba16aa8ef76a7a0bf1b992"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/main_comparison/trials/episode_17/telemetry_metadata.json",
+      "published": "evaluation/initial/main_comparison/trials/episode_17/telemetry_metadata.json",
+      "original_sha256": "1cf1152da96ffaefdd29f25a87814240e82f720312470e54e05ff6f9eac90f96",
+      "published_sha256": "24c5d9c36ba4190c869ef36c4e0f040dfb3a39aaa4d0a7551ac652b2c269b2ff"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/main_comparison/trials/episode_17/visibility_evaluation.json",
+      "published": "evaluation/initial/main_comparison/trials/episode_17/visibility_evaluation.json",
+      "original_sha256": "b80c835ce2feaa5997667f7a48363ee86a5f3f2908fdcefe1d75570e29446b61",
+      "published_sha256": "9d42c875edd4de9b3fe6569f995ef77217375d9596b8d576ffd030a76c4a7fd2"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/main_comparison/trials/episode_18/result.json",
+      "published": "evaluation/initial/main_comparison/trials/episode_18/result.json",
+      "original_sha256": "fea71690dbe62271140c0ed425599d55ed5d76da2883b981b3b2f9de7aa01d84",
+      "published_sha256": "e4b13f1e0f447c21f37fdf78e7535dab8e63111d722e765dc28536be6b920bc4"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/main_comparison/trials/episode_18/telemetry_metadata.json",
+      "published": "evaluation/initial/main_comparison/trials/episode_18/telemetry_metadata.json",
+      "original_sha256": "efc8f77d2e1430f7c4a4dfe60a092f77c0bb027292f8c2a27c8c4c37e1b57192",
+      "published_sha256": "2ff1cda856dd4903a26f6c4130575b218641b8f781f82ba321c0d13bb8b56e87"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/main_comparison/trials/episode_18/visibility_evaluation.json",
+      "published": "evaluation/initial/main_comparison/trials/episode_18/visibility_evaluation.json",
+      "original_sha256": "8b7e5e63018e868407325594589702ff48a5ff92ce42ecbc5931b6c23fbb6b45",
+      "published_sha256": "80d5db760fbf7a948175c38d09bb5eae3afae1d8044b60f48d4a0d04cac47f95"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/main_comparison/trials/episode_19/result.json",
+      "published": "evaluation/initial/main_comparison/trials/episode_19/result.json",
+      "original_sha256": "9575acabd2c291861b3576a3aab8e8e6b6d5f0a519a35bf3aa6ad697c8b697a5",
+      "published_sha256": "e52420513678c29b9f4c5387d7c3d46ae2d6d1e0aa62432759bcb93e68d6abd4"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/main_comparison/trials/episode_19/telemetry_metadata.json",
+      "published": "evaluation/initial/main_comparison/trials/episode_19/telemetry_metadata.json",
+      "original_sha256": "efc8f77d2e1430f7c4a4dfe60a092f77c0bb027292f8c2a27c8c4c37e1b57192",
+      "published_sha256": "2ff1cda856dd4903a26f6c4130575b218641b8f781f82ba321c0d13bb8b56e87"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/main_comparison/trials/episode_19/visibility_evaluation.json",
+      "published": "evaluation/initial/main_comparison/trials/episode_19/visibility_evaluation.json",
+      "original_sha256": "5d717eaca57a0cba5573857af3c1233aca7d53494cdb3b4dbcb79cb687cc072c",
+      "published_sha256": "ee5b835a3f3041243f2cb70354af160f78eab1cf3665fa35db1e6249188d637b"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/reproducibility/requirements.actual.freeze.txt",
+      "published": "evaluation/initial/reproducibility/requirements.actual.freeze.txt",
+      "original_sha256": "5b37058435b0ce00c115601d671ed8b8a0acdf4f9d2c6035fa6205d8f5b5e84c",
+      "published_sha256": "51ba48f7674583bc10562ac05663598235a7afdb5401ba528429d31a9999c4c5"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/tools/analyze_three_stages.py",
+      "published": "evaluation/initial/tools/analyze_three_stages.py",
+      "original_sha256": "f93eb27491353317aedc20d6bd78d1e873a1fe0e306be6b9ae8aee822eab95bc",
+      "published_sha256": "cb51f7995088be326ff840a127fe2c83920b3a11f41bfbe8c808b2b89a6f8cef"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/tools/evaluate_visibility.py",
+      "published": "evaluation/initial/tools/evaluate_visibility.py",
+      "original_sha256": "1f352ed55e1581a3bbb54cd7d891fca2612dffd18b1eacd6b7ad3ecbd090e68a",
+      "published_sha256": "1cd75a2e4416b3d4ea8da11f9d7ee6b003c33c5b697a4192c3c2c08474f004c3"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/tools/finalize_results.py",
+      "published": "evaluation/initial/tools/finalize_results.py",
+      "original_sha256": "7b8de2c768515fced02aecb0b1e7870dae13e406616b4b6f67b27c9d9818c09f",
+      "published_sha256": "6976970fbcc69d7247e93bd3ac1baef1932ed43122cf10c07eac1ab8c5d653a4"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/tools/plot_three_stages.py",
+      "published": "evaluation/initial/tools/plot_three_stages.py",
+      "original_sha256": "b2593a0afd0fb6fd846591b71013dc6eda5846e8bfac2fae4f56227e65091342",
+      "published_sha256": "ee416a44fd52b984ecee01983479b63de2bd2a0633345714e37044efb9d02925"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/tools/postprocess.py",
+      "published": "evaluation/initial/tools/postprocess.py",
+      "original_sha256": "46dc29c65cfdf89136195ee8af653dbb927c22db17321171d5619e052497ad95",
+      "published_sha256": "d4f06c67ad1c487a9cce2d1a1265866088e9833dd870fecdf6215e4d565f9664"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/tools/prepare_protocol.py",
+      "published": "evaluation/initial/tools/prepare_protocol.py",
+      "original_sha256": "1f62ad9d56008c31c445430bd10adf317ff9baa52ac4e67c91f4ad963403b4cf",
+      "published_sha256": "214af5de3214b37669faaecd843535b50e85eaa975db2268a9a8a41f50023b88"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/tools/review_drop_candidates.py",
+      "published": "evaluation/initial/tools/review_drop_candidates.py",
+      "original_sha256": "7808d15c44626e976df3c915af1f6ed7918128a5b8cbd511cc63119eee25935c",
+      "published_sha256": "f6fb956238f323f330e6afcf5e49226dfd36e9c542e48a2acdd5877a022fa4de"
+    },
+    {
+      "original": "experiments/20261031_0925_reobservation/tools/run_protocol.py",
+      "published": "evaluation/initial/tools/run_protocol.py",
+      "original_sha256": "172995d2ce85644a4dc9215b17cdd1c68b9333b17b0ec0c9b5601fb34fb41632",
+      "published_sha256": "905c697bcbe6fae1ad223e4cd98d17818c1ee66e60801652edca561681f98841"
+    },
+    {
+      "original": "experiments/20261031_1145_leaf_holdout/ANALYSIS_IMPLEMENTATION.json",
+      "published": "evaluation/relocated_apple/ANALYSIS_IMPLEMENTATION.json",
+      "original_sha256": "75ab8f086421ce9aa7aca1f392c7314973c242a9b5d9fe0351f189e85eaaad80",
+      "published_sha256": "75ab8f086421ce9aa7aca1f392c7314973c242a9b5d9fe0351f189e85eaaad80"
+    },
+    {
+      "original": "experiments/20261031_1145_leaf_holdout/FINAL_PREDICATE_AUDIT.json",
+      "published": "evaluation/relocated_apple/FINAL_PREDICATE_AUDIT.json",
+      "original_sha256": "e7140f350d45a820cf6075d9d031903ba4c29c8351171d1043578b8dfec91f98",
+      "published_sha256": "e7140f350d45a820cf6075d9d031903ba4c29c8351171d1043578b8dfec91f98"
+    },
+    {
+      "original": "experiments/20261031_1145_leaf_holdout/MOTION_REVIEW.md",
+      "published": "evaluation/relocated_apple/MOTION_REVIEW.md",
+      "original_sha256": "dfea13910c3b874850a3feae75432286b36c25536005b420601a3267a16d8222",
+      "published_sha256": "e15602032c4eb693bd702e486cd8181ff805b402a25f28d1c58b802a7022dcfc"
+    },
+    {
+      "original": "experiments/20261031_1145_leaf_holdout/NEW_POSITIONS.json",
+      "published": "evaluation/relocated_apple/NEW_POSITIONS.json",
+      "original_sha256": "7f91561fa4e6b3a0765319a8eef81ca5afdced553969bc5c0db927e8a1e47f10",
+      "published_sha256": "7f91561fa4e6b3a0765319a8eef81ca5afdced553969bc5c0db927e8a1e47f10"
+    },
+    {
+      "original": "experiments/20261031_1145_leaf_holdout/RESULTS_REPORT.md",
+      "published": "evaluation/relocated_apple/RESULTS_REPORT.md",
+      "original_sha256": "ff06c452aa70a8b715db280a36f027f71b5637467d3494d0947dc8a0ba9317e1",
+      "published_sha256": "ff06c452aa70a8b715db280a36f027f71b5637467d3494d0947dc8a0ba9317e1"
+    },
+    {
+      "original": "experiments/20261031_1145_leaf_holdout/VIDEO_GUIDE.md",
+      "published": "evaluation/relocated_apple/VIDEO_GUIDE.md",
+      "original_sha256": "85bdcfc777351c0fad9d51b08cb0c6a39d23dd74cd16473a5f7fd00cac7e59e9",
+      "published_sha256": "344b05465c667d4433cf2158ee515f3b1b4615dc99a6dea193e5383fbfd85c3a"
+    },
+    {
+      "original": "experiments/20261031_1145_leaf_holdout/comparability_audit/README.md",
+      "published": "evaluation/relocated_apple/comparability_audit/README.md",
+      "original_sha256": "9fa024c6e54d14faa0fd88417f434fa00d4e08c87f9cf151c0fe9ad40a6f5491",
+      "published_sha256": "1b3a4c2bcfc562b214d075942c45e6d9455899e815db41c180590850f9fa0272"
+    },
+    {
+      "original": "experiments/20261031_1145_leaf_holdout/comparability_audit/existing20_actual_pairs.json",
+      "published": "evaluation/relocated_apple/comparability_audit/existing20_actual_pairs.json",
+      "original_sha256": "9da4782343939f059fe812dbebc0fc2b29a659334d5aa8545446a4f2741a94c8",
+      "published_sha256": "9da4782343939f059fe812dbebc0fc2b29a659334d5aa8545446a4f2741a94c8"
+    },
+    {
+      "original": "experiments/20261031_1145_leaf_holdout/comparability_audit/procedure_comparison.json",
+      "published": "evaluation/relocated_apple/comparability_audit/procedure_comparison.json",
+      "original_sha256": "cc9db6e46174c86e6d49f723757f6232cb7971a9609c7e512b5b83594462aeaa",
+      "published_sha256": "c03456346050956472b3961911ad1962c0af67ec4d2bc2ab4d3a806eadd16d47"
+    },
+    {
+      "original": "experiments/20261031_1145_leaf_holdout/holdout_comparison/LOCK.json",
+      "published": "evaluation/relocated_apple/holdout_comparison/LOCK.json",
+      "original_sha256": "562c145cf71aa38cbf9cb900a35c021890df9b86a56d31cb7d8c1b16d4095f22",
+      "published_sha256": "9f86135038c23fb2d0031fe191a69dfc129fddb0e4acfa22bcdccd6b0f87e24f"
+    },
+    {
+      "original": "experiments/20261031_1145_leaf_holdout/holdout_comparison/drop_candidate_review/README.md",
+      "published": "evaluation/relocated_apple/holdout_comparison/drop_candidate_review/README.md",
+      "original_sha256": "7e9fd0a0b7c97ee966e63d0f372a77453ad18176d4e3a1d93051df69ccca9a36",
+      "published_sha256": "401066af6e076f490ffa65a4ae07e964f28ece7563fa1ee0cc558e49222c97de"
+    },
+    {
+      "original": "experiments/20261031_1145_leaf_holdout/holdout_comparison/drop_candidate_review/candidate_times.csv",
+      "published": "evaluation/relocated_apple/holdout_comparison/drop_candidate_review/candidate_times.csv",
+      "original_sha256": "1b68467eec168813e7e6642643b83284bf43a6c6eb074e0b13e0db8e94edf79d",
+      "published_sha256": "1b68467eec168813e7e6642643b83284bf43a6c6eb074e0b13e0db8e94edf79d"
+    },
+    {
+      "original": "experiments/20261031_1145_leaf_holdout/holdout_comparison/drop_candidate_review/index.json",
+      "published": "evaluation/relocated_apple/holdout_comparison/drop_candidate_review/index.json",
+      "original_sha256": "7a89ec1f9540bff0b1aa09b58e81410eea6b567573d937f2f59c8bae0aa688f4",
+      "published_sha256": "68be8e480a0d52c8b12c9d715e7cd8220917563f2a93f6d3b3c0492038c6efe3"
+    },
+    {
+      "original": "experiments/20261031_1145_leaf_holdout/holdout_comparison/drop_candidate_review/manual_review.csv",
+      "published": "evaluation/relocated_apple/holdout_comparison/drop_candidate_review/manual_review.csv",
+      "original_sha256": "295d5c0c787bd09b04def682f70f70c4f4bd5f6d777fcf8a85e533cc44bf4fdd",
+      "published_sha256": "295d5c0c787bd09b04def682f70f70c4f4bd5f6d777fcf8a85e533cc44bf4fdd"
+    },
+    {
+      "original": "experiments/20261031_1145_leaf_holdout/holdout_comparison/episode_setups.json",
+      "published": "evaluation/relocated_apple/holdout_comparison/episode_setups.json",
+      "original_sha256": "9bde53dcac3717d1be608b411a7a96e0fae364558ec77b5840a8a8e61ac8d1b7",
+      "published_sha256": "a67bffea0852da875b6c7240ded3ceb6015cd0623af3395d505a414672b1ad96"
+    },
+    {
+      "original": "experiments/20261031_1145_leaf_holdout/holdout_comparison/evaluation_only_conditions.json",
+      "published": "evaluation/relocated_apple/holdout_comparison/evaluation_only_conditions.json",
+      "original_sha256": "c0d4cd3082e4f0d17d71a39fc2dbd5cb52d280e6f4864d8350d16442c339e91b",
+      "published_sha256": "e2ff96c667bf0f4bfee76e60da5edb8c6acdbf3e2ace97ea000c7d8144d5c3cf"
+    },
+    {
+      "original": "experiments/20261031_1145_leaf_holdout/holdout_comparison/execution_status.json",
+      "published": "evaluation/relocated_apple/holdout_comparison/execution_status.json",
+      "original_sha256": "10fd936f75b7cee9688e243c2e6c316257daf3b68c87fb2b4c43a4ddae64dd0a",
+      "published_sha256": "6e3b2ef7aaf30992c2887fc152d0682a5c39aeef7cac0506ffa176a721467dd3"
+    },
+    {
+      "original": "experiments/20261031_1145_leaf_holdout/holdout_comparison/initial_states/new_leaf_00/state.npy",
+      "published": "evaluation/relocated_apple/holdout_comparison/initial_states/new_leaf_00/state.npy",
+      "original_sha256": "9b2aecb1e96c0c720ac48d0db081029f6ae8937babc0b40c38d8f5b6243e2ce4",
+      "published_sha256": "9b2aecb1e96c0c720ac48d0db081029f6ae8937babc0b40c38d8f5b6243e2ce4"
+    },
+    {
+      "original": "experiments/20261031_1145_leaf_holdout/holdout_comparison/initial_states/new_leaf_01/state.npy",
+      "published": "evaluation/relocated_apple/holdout_comparison/initial_states/new_leaf_01/state.npy",
+      "original_sha256": "a495aec87aba72133bd2ea1317073c6ab38aa9fb7625296103377aab59a7cd90",
+      "published_sha256": "a495aec87aba72133bd2ea1317073c6ab38aa9fb7625296103377aab59a7cd90"
+    },
+    {
+      "original": "experiments/20261031_1145_leaf_holdout/holdout_comparison/initial_states/new_leaf_02/state.npy",
+      "published": "evaluation/relocated_apple/holdout_comparison/initial_states/new_leaf_02/state.npy",
+      "original_sha256": "40dc16ae7bbf99e30e92d127c574ea9e1a8b67c68d3bb0249b54d2544b9d04e3",
+      "published_sha256": "40dc16ae7bbf99e30e92d127c574ea9e1a8b67c68d3bb0249b54d2544b9d04e3"
+    },
+    {
+      "original": "experiments/20261031_1145_leaf_holdout/holdout_comparison/initial_states/new_leaf_03/state.npy",
+      "published": "evaluation/relocated_apple/holdout_comparison/initial_states/new_leaf_03/state.npy",
+      "original_sha256": "fe6e43ec05e4ca9014c8b28325ae80dafd9f5006e61f13c78dc446d163593eba",
+      "published_sha256": "fe6e43ec05e4ca9014c8b28325ae80dafd9f5006e61f13c78dc446d163593eba"
+    },
+    {
+      "original": "experiments/20261031_1145_leaf_holdout/holdout_comparison/initial_states/new_leaf_04/state.npy",
+      "published": "evaluation/relocated_apple/holdout_comparison/initial_states/new_leaf_04/state.npy",
+      "original_sha256": "897ebf27e7fc1d5536edeca5c282aa45186650d828e756a93177408581ddb0e6",
+      "published_sha256": "897ebf27e7fc1d5536edeca5c282aa45186650d828e756a93177408581ddb0e6"
+    },
+    {
+      "original": "experiments/20261031_1145_leaf_holdout/holdout_comparison/initial_states/new_leaf_05/state.npy",
+      "published": "evaluation/relocated_apple/holdout_comparison/initial_states/new_leaf_05/state.npy",
+      "original_sha256": "c598c637582c720246e44ce8c9cef00b5faa6e2e0597dca15034e9b363d32e4d",
+      "published_sha256": "c598c637582c720246e44ce8c9cef00b5faa6e2e0597dca15034e9b363d32e4d"
+    },
+    {
+      "original": "experiments/20261031_1145_leaf_holdout/holdout_comparison/initial_states/new_leaf_06/state.npy",
+      "published": "evaluation/relocated_apple/holdout_comparison/initial_states/new_leaf_06/state.npy",
+      "original_sha256": "8a347fb08651ad9b27e5a16031372b2d9d2f6c7532f10f643abf784d3a77797f",
+      "published_sha256": "8a347fb08651ad9b27e5a16031372b2d9d2f6c7532f10f643abf784d3a77797f"
+    },
+    {
+      "original": "experiments/20261031_1145_leaf_holdout/holdout_comparison/initial_states/new_leaf_07/state.npy",
+      "published": "evaluation/relocated_apple/holdout_comparison/initial_states/new_leaf_07/state.npy",
+      "original_sha256": "0336cc389329cad7b129a101992597b9c1c8050bfc42dc7f194b18ad404216d0",
+      "published_sha256": "0336cc389329cad7b129a101992597b9c1c8050bfc42dc7f194b18ad404216d0"
+    },
+    {
+      "original": "experiments/20261031_1145_leaf_holdout/holdout_comparison/initial_states/new_leaf_08/state.npy",
+      "published": "evaluation/relocated_apple/holdout_comparison/initial_states/new_leaf_08/state.npy",
+      "original_sha256": "191624a8ba3fa19d0b650555fdf11425672c7a839a88bffb5c1c12c90b39987c",
+      "published_sha256": "191624a8ba3fa19d0b650555fdf11425672c7a839a88bffb5c1c12c90b39987c"
+    },
+    {
+      "original": "experiments/20261031_1145_leaf_holdout/holdout_comparison/initial_states/new_leaf_09/state.npy",
+      "published": "evaluation/relocated_apple/holdout_comparison/initial_states/new_leaf_09/state.npy",
+      "original_sha256": "cee4c8980da91f2a6f20b85392612b22cea2e709e7b0db7fbb1fc789c9027f59",
+      "published_sha256": "cee4c8980da91f2a6f20b85392612b22cea2e709e7b0db7fbb1fc789c9027f59"
+    },
+    {
+      "original": "experiments/20261031_1145_leaf_holdout/holdout_comparison/locked_assets/assets/apple/apple.xml",
+      "published": "evaluation/relocated_apple/holdout_comparison/locked_assets/assets/apple/apple.xml",
+      "original_sha256": "6c8e3e1d6411b2fa6a58ade259e8c57dd670388308bc6a1e878cbc21e3b37a13",
+      "published_sha256": "6c8e3e1d6411b2fa6a58ade259e8c57dd670388308bc6a1e878cbc21e3b37a13"
+    },
+    {
+      "original": "experiments/20261031_1145_leaf_holdout/holdout_comparison/locked_assets/assets/tray/tray.xml",
+      "published": "evaluation/relocated_apple/holdout_comparison/locked_assets/assets/tray/tray.xml",
+      "original_sha256": "2c04115730f6053f2c693caf19091ad0c8d8190092afaa322a27c568b2f999b9",
+      "published_sha256": "2c04115730f6053f2c693caf19091ad0c8d8190092afaa322a27c568b2f999b9"
+    },
+    {
+      "original": "experiments/20261031_1145_leaf_holdout/holdout_comparison/locked_assets/tasks/apple_single.bddl",
+      "published": "evaluation/relocated_apple/holdout_comparison/locked_assets/tasks/apple_single.bddl",
+      "original_sha256": "07b274d2466d7be9b2ee7c01efda28cca5e434625372a4551057aa40a038859b",
+      "published_sha256": "a3d4e56d94b5361f22b1268824142a987f34d684b5a6c6f0d288fc6ba2b93409"
+    },
+    {
+      "original": "experiments/20261031_1145_leaf_holdout/holdout_comparison/locked_sources/active_observation.py",
+      "published": "evaluation/relocated_apple/holdout_comparison/locked_sources/active_observation.py",
+      "original_sha256": "f78cf95a91616ccf8fa183e43fc63cdc6828f30ba31c6555d8baafecc11f6efb",
+      "published_sha256": "0c18b4aceee727c7dcc626047fd41a114fee807e7ca5993bc689e7a4fd11c7a6"
+    },
+    {
+      "original": "experiments/20261031_1145_leaf_holdout/holdout_comparison/locked_sources/arm_telemetry.py",
+      "published": "evaluation/relocated_apple/holdout_comparison/locked_sources/arm_telemetry.py",
+      "original_sha256": "df9bfb8c2f96bab3efc09b64a9ffebcb21f95a65ef0d917a2a8a3dc7b5da82d3",
+      "published_sha256": "b32ba82edcc0f8d9203f311c0869cd4a5875e024388b874cc0d5ae7a547b3299"
+    },
+    {
+      "original": "experiments/20261031_1145_leaf_holdout/holdout_comparison/locked_sources/fruit_objects.py",
+      "published": "evaluation/relocated_apple/holdout_comparison/locked_sources/fruit_objects.py",
+      "original_sha256": "7253b6d170b776c636cc18f86277bbe59a3954235102e23d5a8693380322e76d",
+      "published_sha256": "3ee0bbf92d6ce12fc806711bdd320899d1e6b17c6d5739b96c36e92495d95c31"
+    },
+    {
+      "original": "experiments/20261031_1145_leaf_holdout/holdout_comparison/locked_sources/occlusion_scene.py",
+      "published": "evaluation/relocated_apple/holdout_comparison/locked_sources/occlusion_scene.py",
+      "original_sha256": "fed307b9c98183fa451e6e199cd506dbdcda3ffd9bf3a71184c4610e78a91995",
+      "published_sha256": "0fb09d92548083d433598622a15077b86958a909db3fe4f8f6f6fad261925835"
+    },
+    {
+      "original": "experiments/20261031_1145_leaf_holdout/holdout_comparison/locked_sources/placement_score.py",
+      "published": "evaluation/relocated_apple/holdout_comparison/locked_sources/placement_score.py",
+      "original_sha256": "cc426da2d21f15825face304bf9799dbbab0616073fac956643a771b1b3636de",
+      "published_sha256": "797c060d2be3818ef2c9e743bad65e77ddb76cde9fd8ef7b2a4fdd6b1f77ab12"
+    },
+    {
+      "original": "experiments/20261031_1145_leaf_holdout/holdout_comparison/locked_sources/run_rollout.py",
+      "published": "evaluation/relocated_apple/holdout_comparison/locked_sources/run_rollout.py",
+      "original_sha256": "14dbddaf8577b8ff467650d25aef811affd04caaf959020af771a2186b503ccf",
+      "published_sha256": "a8559a14a4b4d291751124284405aac53357ba31a291a7a07901c23d94df2160"
+    },
+    {
+      "original": "experiments/20261031_1145_leaf_holdout/holdout_comparison/paired_results.csv",
+      "published": "evaluation/relocated_apple/holdout_comparison/paired_results.csv",
+      "original_sha256": "6c0cb46b450a7190dd3604cc829aa5c9527542be261f05d7342965fd2a2f2352",
+      "published_sha256": "6c0cb46b450a7190dd3604cc829aa5c9527542be261f05d7342965fd2a2f2352"
+    },
+    {
+      "original": "experiments/20261031_1145_leaf_holdout/holdout_comparison/results.csv",
+      "published": "evaluation/relocated_apple/holdout_comparison/results.csv",
+      "original_sha256": "a4eb42bb8abdd7732e426575706c48eb457b8a2f6e05d752a6afaaca745ac2e3",
+      "published_sha256": "a4eb42bb8abdd7732e426575706c48eb457b8a2f6e05d752a6afaaca745ac2e3"
+    },
+    {
+      "original": "experiments/20261031_1145_leaf_holdout/holdout_comparison/results_summary.json",
+      "published": "evaluation/relocated_apple/holdout_comparison/results_summary.json",
+      "original_sha256": "4dd42ffbc63b53eec6c58b0b66d8380301b2b1dacc6f06e1700a3150ab150bc1",
+      "published_sha256": "b9f1f3bc3da420157f92a3bc18e38c0052d32c0fb739011a49c45b5c88a34662"
+    },
+    {
+      "original": "experiments/20261031_1145_leaf_holdout/holdout_comparison/trials/episode_00/result.json",
+      "published": "evaluation/relocated_apple/holdout_comparison/trials/episode_00/result.json",
+      "original_sha256": "426b6850866da6209deae80d430fa9967c329b51fb994b38c06ccf65dc99cb73",
+      "published_sha256": "cb55b5d880472847e71043608c13b58e43812a39dd53854fbd5287d3832c3146"
+    },
+    {
+      "original": "experiments/20261031_1145_leaf_holdout/holdout_comparison/trials/episode_00/telemetry_metadata.json",
+      "published": "evaluation/relocated_apple/holdout_comparison/trials/episode_00/telemetry_metadata.json",
+      "original_sha256": "2ee9fa4558d62bf4263620d5751b865fde411be988caf50d91c134a74959dfda",
+      "published_sha256": "762d99487d6f2a98033b50f986597d93aa8c2001861817dc044991165ee6b6d5"
+    },
+    {
+      "original": "experiments/20261031_1145_leaf_holdout/holdout_comparison/trials/episode_01/result.json",
+      "published": "evaluation/relocated_apple/holdout_comparison/trials/episode_01/result.json",
+      "original_sha256": "bfa575f474f929d25de2dbe8e471659ac90264d29e253bc7572df2c1cee34ddc",
+      "published_sha256": "f673424d4553e35a07fbb1c097fc9120367f1b70d8c3534a4cb83697381d0b10"
+    },
+    {
+      "original": "experiments/20261031_1145_leaf_holdout/holdout_comparison/trials/episode_01/telemetry_metadata.json",
+      "published": "evaluation/relocated_apple/holdout_comparison/trials/episode_01/telemetry_metadata.json",
+      "original_sha256": "2ee9fa4558d62bf4263620d5751b865fde411be988caf50d91c134a74959dfda",
+      "published_sha256": "762d99487d6f2a98033b50f986597d93aa8c2001861817dc044991165ee6b6d5"
+    },
+    {
+      "original": "experiments/20261031_1145_leaf_holdout/holdout_comparison/trials/episode_02/result.json",
+      "published": "evaluation/relocated_apple/holdout_comparison/trials/episode_02/result.json",
+      "original_sha256": "d8b64c1818f207675f5297a7b99b9ac3d605887f618a1028975ebb5de9d8f240",
+      "published_sha256": "e5e0e61d324d7a657f72e932d7bdcfbb746788bb4b5daba737b3daa7b3d3c3cb"
+    },
+    {
+      "original": "experiments/20261031_1145_leaf_holdout/holdout_comparison/trials/episode_02/telemetry_metadata.json",
+      "published": "evaluation/relocated_apple/holdout_comparison/trials/episode_02/telemetry_metadata.json",
+      "original_sha256": "2293e7ad0c4377f56e53f658139edf7796f0c0b98a6200c4bc0c4a3e5874f53d",
+      "published_sha256": "81d35f069be878245aec88ebbe6651cbd1260fbf98abdc9ae2c4b77eaf67048c"
+    },
+    {
+      "original": "experiments/20261031_1145_leaf_holdout/holdout_comparison/trials/episode_03/result.json",
+      "published": "evaluation/relocated_apple/holdout_comparison/trials/episode_03/result.json",
+      "original_sha256": "b38c95c1bf4914955ab3be5c7468f214cd4a95cd94df0264c9fc1c0913245bc7",
+      "published_sha256": "4897a7def3669c889a37ba3dff8c4d618afc133a17a1db23e4c3732ec5baaa25"
+    },
+    {
+      "original": "experiments/20261031_1145_leaf_holdout/holdout_comparison/trials/episode_03/telemetry_metadata.json",
+      "published": "evaluation/relocated_apple/holdout_comparison/trials/episode_03/telemetry_metadata.json",
+      "original_sha256": "2293e7ad0c4377f56e53f658139edf7796f0c0b98a6200c4bc0c4a3e5874f53d",
+      "published_sha256": "81d35f069be878245aec88ebbe6651cbd1260fbf98abdc9ae2c4b77eaf67048c"
+    },
+    {
+      "original": "experiments/20261031_1145_leaf_holdout/holdout_comparison/trials/episode_04/result.json",
+      "published": "evaluation/relocated_apple/holdout_comparison/trials/episode_04/result.json",
+      "original_sha256": "e7d1c9bd305c692d50f82c95bbe36e0bcf9c0e40b816c93afb98a7707d7dea10",
+      "published_sha256": "66fddeade5f5fb0c18d8d3a7b7312f0a0a35880e4abfeab02f965734e123a18f"
+    },
+    {
+      "original": "experiments/20261031_1145_leaf_holdout/holdout_comparison/trials/episode_04/telemetry_metadata.json",
+      "published": "evaluation/relocated_apple/holdout_comparison/trials/episode_04/telemetry_metadata.json",
+      "original_sha256": "73377399c5cf5fccaa50e6fe8e7fb56588f883459f655a02940a768f7d5de535",
+      "published_sha256": "27d2ca93910fda977ef7e636cfbb2d1566d7d187d09e2106419bc5b7ceb21310"
+    },
+    {
+      "original": "experiments/20261031_1145_leaf_holdout/holdout_comparison/trials/episode_05/result.json",
+      "published": "evaluation/relocated_apple/holdout_comparison/trials/episode_05/result.json",
+      "original_sha256": "4240ee81871e8f35079740ae3ba4985a59a46906864b92c54b6d0ee710498489",
+      "published_sha256": "7aeafd44a75d3d28cb88d9da7eea7ff69f7a83f755cf7d7ef7f12ae7a40748ef"
+    },
+    {
+      "original": "experiments/20261031_1145_leaf_holdout/holdout_comparison/trials/episode_05/telemetry_metadata.json",
+      "published": "evaluation/relocated_apple/holdout_comparison/trials/episode_05/telemetry_metadata.json",
+      "original_sha256": "73377399c5cf5fccaa50e6fe8e7fb56588f883459f655a02940a768f7d5de535",
+      "published_sha256": "27d2ca93910fda977ef7e636cfbb2d1566d7d187d09e2106419bc5b7ceb21310"
+    },
+    {
+      "original": "experiments/20261031_1145_leaf_holdout/holdout_comparison/trials/episode_06/result.json",
+      "published": "evaluation/relocated_apple/holdout_comparison/trials/episode_06/result.json",
+      "original_sha256": "cc2eec8c1f0caae3b132d7a30c5b46140c4ce5ff9043decdddaa109bc386488a",
+      "published_sha256": "1e026dfd80ccb0505e2d17b47e082286a0a1213cf3edd3c6ac6de59ef8ff22c7"
+    },
+    {
+      "original": "experiments/20261031_1145_leaf_holdout/holdout_comparison/trials/episode_06/telemetry_metadata.json",
+      "published": "evaluation/relocated_apple/holdout_comparison/trials/episode_06/telemetry_metadata.json",
+      "original_sha256": "4a1302df56cf6bd3205b5ab705678e283068a9cabb6ef0ec81dac1b941dd010d",
+      "published_sha256": "a88d93fffba19ada40ab7c7692261dce60a457dfe6841b4833f90eb9e60dcd60"
+    },
+    {
+      "original": "experiments/20261031_1145_leaf_holdout/holdout_comparison/trials/episode_07/result.json",
+      "published": "evaluation/relocated_apple/holdout_comparison/trials/episode_07/result.json",
+      "original_sha256": "7c1b9f27a1681a53fdd09e4d035a9256931875ec14764ea529f6092d0dcade6b",
+      "published_sha256": "83f639db7231c37e4ee259539c78c465d1a7d08940740718432f0514aeb239a7"
+    },
+    {
+      "original": "experiments/20261031_1145_leaf_holdout/holdout_comparison/trials/episode_07/telemetry_metadata.json",
+      "published": "evaluation/relocated_apple/holdout_comparison/trials/episode_07/telemetry_metadata.json",
+      "original_sha256": "4a1302df56cf6bd3205b5ab705678e283068a9cabb6ef0ec81dac1b941dd010d",
+      "published_sha256": "a88d93fffba19ada40ab7c7692261dce60a457dfe6841b4833f90eb9e60dcd60"
+    },
+    {
+      "original": "experiments/20261031_1145_leaf_holdout/holdout_comparison/trials/episode_08/result.json",
+      "published": "evaluation/relocated_apple/holdout_comparison/trials/episode_08/result.json",
+      "original_sha256": "77b13f4f23a7daf9b0e8037e8c83b42a89724f9c05c125e077a404a4a92dbb28",
+      "published_sha256": "9f30ff93581747c4743b7caa08286eb4dff415463a5bdfbd47fff4444adecb58"
+    },
+    {
+      "original": "experiments/20261031_1145_leaf_holdout/holdout_comparison/trials/episode_08/telemetry_metadata.json",
+      "published": "evaluation/relocated_apple/holdout_comparison/trials/episode_08/telemetry_metadata.json",
+      "original_sha256": "e398c1798e5d9bf035caed156c7aa502c6b7adcc2411fbe79b44a84797ac3c92",
+      "published_sha256": "74cbff97e9d9803dac3f50cdd6eb38fe1b479d03911ee46f8f63639428864227"
+    },
+    {
+      "original": "experiments/20261031_1145_leaf_holdout/holdout_comparison/trials/episode_09/result.json",
+      "published": "evaluation/relocated_apple/holdout_comparison/trials/episode_09/result.json",
+      "original_sha256": "f28eb63b713ffb7684b3cf0dc1ee0ebdc7e999be619b817dc11c6a19eb6c8519",
+      "published_sha256": "530aa20ef95f0fa0654d17528f7ba8a7833a8e96c447878ce4bd88f79b144a99"
+    },
+    {
+      "original": "experiments/20261031_1145_leaf_holdout/holdout_comparison/trials/episode_09/telemetry_metadata.json",
+      "published": "evaluation/relocated_apple/holdout_comparison/trials/episode_09/telemetry_metadata.json",
+      "original_sha256": "e398c1798e5d9bf035caed156c7aa502c6b7adcc2411fbe79b44a84797ac3c92",
+      "published_sha256": "74cbff97e9d9803dac3f50cdd6eb38fe1b479d03911ee46f8f63639428864227"
+    },
+    {
+      "original": "experiments/20261031_1145_leaf_holdout/holdout_comparison/trials/episode_10/result.json",
+      "published": "evaluation/relocated_apple/holdout_comparison/trials/episode_10/result.json",
+      "original_sha256": "bb97fd23f0ecfa262d9be54447344070c80fe6ddc041652e93406a1794e43da8",
+      "published_sha256": "c5a38b75c4481682ba593e40d6d1d3dc5993d99b108bcbefd34a16f74987ae3f"
+    },
+    {
+      "original": "experiments/20261031_1145_leaf_holdout/holdout_comparison/trials/episode_10/telemetry_metadata.json",
+      "published": "evaluation/relocated_apple/holdout_comparison/trials/episode_10/telemetry_metadata.json",
+      "original_sha256": "6e74acf16132208ae1d4f07f270cd2e0797bc17724b2767f805a340bd88e8ebd",
+      "published_sha256": "56c24d65857fdd388fd43027878f55a13954082e6eabda605c230fd61f69a8a3"
+    },
+    {
+      "original": "experiments/20261031_1145_leaf_holdout/holdout_comparison/trials/episode_11/result.json",
+      "published": "evaluation/relocated_apple/holdout_comparison/trials/episode_11/result.json",
+      "original_sha256": "26e6fa81e9d29b3f06aecee9944ea36f9fe48c4daef3ada4d1af3e7cfa610531",
+      "published_sha256": "ea8859873b8b09c06dc4e7f4ea74ab8a6db5aa9093623d912d72f06b120eda54"
+    },
+    {
+      "original": "experiments/20261031_1145_leaf_holdout/holdout_comparison/trials/episode_11/telemetry_metadata.json",
+      "published": "evaluation/relocated_apple/holdout_comparison/trials/episode_11/telemetry_metadata.json",
+      "original_sha256": "6e74acf16132208ae1d4f07f270cd2e0797bc17724b2767f805a340bd88e8ebd",
+      "published_sha256": "56c24d65857fdd388fd43027878f55a13954082e6eabda605c230fd61f69a8a3"
+    },
+    {
+      "original": "experiments/20261031_1145_leaf_holdout/holdout_comparison/trials/episode_12/result.json",
+      "published": "evaluation/relocated_apple/holdout_comparison/trials/episode_12/result.json",
+      "original_sha256": "ba1bd50e3bc6c94eb601e8d663514d48ad56b6d5ed3ad25bc76c5ece4fc96218",
+      "published_sha256": "3801852dd95d62bd3495745ec04b0ca4f4a4e403ba04f6af6c85a1223e3e7ea6"
+    },
+    {
+      "original": "experiments/20261031_1145_leaf_holdout/holdout_comparison/trials/episode_12/telemetry_metadata.json",
+      "published": "evaluation/relocated_apple/holdout_comparison/trials/episode_12/telemetry_metadata.json",
+      "original_sha256": "18187c19ecf17067bab3acc461928ae18d9524a31c026ed49a8a8a3a3c0af95e",
+      "published_sha256": "c86bb4cc45d66db176bdabf450dbe4c35de394480dfe4b80d6ffa37391c206d6"
+    },
+    {
+      "original": "experiments/20261031_1145_leaf_holdout/holdout_comparison/trials/episode_13/result.json",
+      "published": "evaluation/relocated_apple/holdout_comparison/trials/episode_13/result.json",
+      "original_sha256": "e70b0c429073f6c12272b1b1fa33461d0fc1ae30b7553858ff3fb1f442455fa4",
+      "published_sha256": "f054c999f6d666399c3f3ee80191f0e0040698f0f7dd78046b152ff5c4e73feb"
+    },
+    {
+      "original": "experiments/20261031_1145_leaf_holdout/holdout_comparison/trials/episode_13/telemetry_metadata.json",
+      "published": "evaluation/relocated_apple/holdout_comparison/trials/episode_13/telemetry_metadata.json",
+      "original_sha256": "18187c19ecf17067bab3acc461928ae18d9524a31c026ed49a8a8a3a3c0af95e",
+      "published_sha256": "c86bb4cc45d66db176bdabf450dbe4c35de394480dfe4b80d6ffa37391c206d6"
+    },
+    {
+      "original": "experiments/20261031_1145_leaf_holdout/holdout_comparison/trials/episode_14/result.json",
+      "published": "evaluation/relocated_apple/holdout_comparison/trials/episode_14/result.json",
+      "original_sha256": "2bc0eb2dd9a340b10757832d7c5c028444b1e78210f283b0a85427e328922276",
+      "published_sha256": "1d981b82848ecc29085a7ffe1f44daa5f55a4a82b4342b193f227eb43a69349d"
+    },
+    {
+      "original": "experiments/20261031_1145_leaf_holdout/holdout_comparison/trials/episode_14/telemetry_metadata.json",
+      "published": "evaluation/relocated_apple/holdout_comparison/trials/episode_14/telemetry_metadata.json",
+      "original_sha256": "323f697c981d375c50db80be0a6c9cefe0818b9e5d637b1a017fa42a5d245eaf",
+      "published_sha256": "22acaa1c50c6e81fa50b415ded9bb77e6b059abd10bd2c1d56989622c6ed956e"
+    },
+    {
+      "original": "experiments/20261031_1145_leaf_holdout/holdout_comparison/trials/episode_15/result.json",
+      "published": "evaluation/relocated_apple/holdout_comparison/trials/episode_15/result.json",
+      "original_sha256": "47555c5f35413f634157faf0400893f677d703dc53471f14b1be7fcf365cd31b",
+      "published_sha256": "a9567cbe187a6db6c6f1cd6cb9e21a2e4de04aefdf2f010e92a87291a9025eef"
+    },
+    {
+      "original": "experiments/20261031_1145_leaf_holdout/holdout_comparison/trials/episode_15/telemetry_metadata.json",
+      "published": "evaluation/relocated_apple/holdout_comparison/trials/episode_15/telemetry_metadata.json",
+      "original_sha256": "323f697c981d375c50db80be0a6c9cefe0818b9e5d637b1a017fa42a5d245eaf",
+      "published_sha256": "22acaa1c50c6e81fa50b415ded9bb77e6b059abd10bd2c1d56989622c6ed956e"
+    },
+    {
+      "original": "experiments/20261031_1145_leaf_holdout/holdout_comparison/trials/episode_16/result.json",
+      "published": "evaluation/relocated_apple/holdout_comparison/trials/episode_16/result.json",
+      "original_sha256": "d55f8abe0ce2a1efc4c7fd0d44dd6f68f2859bd2aa629ef601fc46022aa9d5ec",
+      "published_sha256": "2db4c3893c89a68348772edf4170c11a52d43efc8ce04fd4c89ef4d877aa5352"
+    },
+    {
+      "original": "experiments/20261031_1145_leaf_holdout/holdout_comparison/trials/episode_16/telemetry_metadata.json",
+      "published": "evaluation/relocated_apple/holdout_comparison/trials/episode_16/telemetry_metadata.json",
+      "original_sha256": "0d112c510a65cfab0b0579c7c6e1ea572c2a974f788ab28a9c144ae97c6b2944",
+      "published_sha256": "1121a46a0d030da25f9f5b1b9eaadaac3053836420c224615542b6d737225f7a"
+    },
+    {
+      "original": "experiments/20261031_1145_leaf_holdout/holdout_comparison/trials/episode_17/result.json",
+      "published": "evaluation/relocated_apple/holdout_comparison/trials/episode_17/result.json",
+      "original_sha256": "7436127ffbfb2732c11ab22f0a7cc66207d36855d8cd0cda719af4f2e0e81c25",
+      "published_sha256": "cb4fbd2e30fa616260e8b6a0588f1a5c766a2911f24744314cd1fcbacf097864"
+    },
+    {
+      "original": "experiments/20261031_1145_leaf_holdout/holdout_comparison/trials/episode_17/telemetry_metadata.json",
+      "published": "evaluation/relocated_apple/holdout_comparison/trials/episode_17/telemetry_metadata.json",
+      "original_sha256": "0d112c510a65cfab0b0579c7c6e1ea572c2a974f788ab28a9c144ae97c6b2944",
+      "published_sha256": "1121a46a0d030da25f9f5b1b9eaadaac3053836420c224615542b6d737225f7a"
+    },
+    {
+      "original": "experiments/20261031_1145_leaf_holdout/holdout_comparison/trials/episode_18/result.json",
+      "published": "evaluation/relocated_apple/holdout_comparison/trials/episode_18/result.json",
+      "original_sha256": "290b067a3ad96fd8f33764718040399586521e9980b197d7c56b5f3aa76bd721",
+      "published_sha256": "ab96804d3b57ca5b118bfecb081de627f6261036b36b0ea4654551b9b48d8165"
+    },
+    {
+      "original": "experiments/20261031_1145_leaf_holdout/holdout_comparison/trials/episode_18/telemetry_metadata.json",
+      "published": "evaluation/relocated_apple/holdout_comparison/trials/episode_18/telemetry_metadata.json",
+      "original_sha256": "9ae30660d8cb26053392816fab8609db61226e44661f3320ab43bde35bbd0e27",
+      "published_sha256": "145eb5b93023657d807302b90ff613a7af7ff0919210c98f7eae254fd6eab9b1"
+    },
+    {
+      "original": "experiments/20261031_1145_leaf_holdout/holdout_comparison/trials/episode_19/result.json",
+      "published": "evaluation/relocated_apple/holdout_comparison/trials/episode_19/result.json",
+      "original_sha256": "c6e4fdbbd9c43439fbf60d18f41e0ad9c72543d8d70b941242d7bfe7381ef9ae",
+      "published_sha256": "49886f7d8050778772b495eef92bd7acb95572b30362fde25890f53089e2a001"
+    },
+    {
+      "original": "experiments/20261031_1145_leaf_holdout/holdout_comparison/trials/episode_19/telemetry_metadata.json",
+      "published": "evaluation/relocated_apple/holdout_comparison/trials/episode_19/telemetry_metadata.json",
+      "original_sha256": "9ae30660d8cb26053392816fab8609db61226e44661f3320ab43bde35bbd0e27",
+      "published_sha256": "145eb5b93023657d807302b90ff613a7af7ff0919210c98f7eae254fd6eab9b1"
+    },
+    {
+      "original": "experiments/20261031_1145_leaf_holdout/tools/audit_completed_holdout.py",
+      "published": "evaluation/relocated_apple/tools/audit_completed_holdout.py",
+      "original_sha256": "4d8c3bdfb3394719a3ed6b90962768cda02d46683dd6f98ed6486d68a36401e4",
+      "published_sha256": "94b395d2a5dc2b9f03cb3c4d7a9781db82d6a02d7b769d41cefa2f8b65f1f670"
+    },
+    {
+      "original": "experiments/20261031_1145_leaf_holdout/tools/generate_layouts.py",
+      "published": "evaluation/relocated_apple/tools/generate_layouts.py",
+      "original_sha256": "30a3fe4f91de276219d2cf9fabeb0ea24a860590e66b597a8a4a940e19ce4a63",
+      "published_sha256": "cfba459312f8507fd4a25b0be278782fe2dc96381cb292b794444eed4ffb5918"
+    },
+    {
+      "original": "experiments/20261031_1145_leaf_holdout/tools/postprocess_holdout.py",
+      "published": "evaluation/relocated_apple/tools/postprocess_holdout.py",
+      "original_sha256": "35265b4a47d8f8eaabeb1677d92410706a50815fc61d8eb05fe40bdb65d3727a",
+      "published_sha256": "103243ab6c64cdf653d5c37e77dc780968d5e31fe34c348ddafe35907c2e1ee7"
+    },
+    {
+      "original": "experiments/20261031_1145_leaf_holdout/tools/prepare_holdout.py",
+      "published": "evaluation/relocated_apple/tools/prepare_holdout.py",
+      "original_sha256": "daada464db2f686a4fd7f09218fb861b588ff3e33b9b86301c2812820f2976f7",
+      "published_sha256": "ea5dc3f3207b7d3e380302629d837ccb47f093d21047e7767803f83cd31853b2"
+    },
+    {
+      "original": "licenses/Apache-2.0.txt",
+      "published": "licenses/Apache-2.0.txt",
+      "original_sha256": "84347ca1665cbaba524ae24f1169e7eae1bc0cfdf3c0692df3de2f92f0dc11c0",
+      "published_sha256": "84347ca1665cbaba524ae24f1169e7eae1bc0cfdf3c0692df3de2f92f0dc11c0"
+    },
+    {
+      "original": "metadata/diffs/teacher_generation.diff",
+      "published": "metadata/diffs/teacher_generation.diff",
+      "original_sha256": "a2d0033d1c8e8bb35d7cb2a1f4dd9d46fd7933f460f9690bf7bc227bc2e804b2",
+      "published_sha256": "a2d0033d1c8e8bb35d7cb2a1f4dd9d46fd7933f460f9690bf7bc227bc2e804b2"
+    },
+    {
+      "original": "metadata/diffs/training_selected_C.diff",
+      "published": "metadata/diffs/training_continuation.diff",
+      "original_sha256": "ea00825a08ed2a1f64840c3f4f8834403bb7562507d1ea8bbf6b485fbaea3a75",
+      "published_sha256": "f866aad4e6250ed625e0cfdc80f0f3c5c086c2e44f1d4bcf47d46e5e380e5474"
+    },
+    {
+      "original": "metadata/model/adopted_checkpoint_header.json",
+      "published": "metadata/model/adopted_checkpoint_header.json",
+      "original_sha256": "9796e67fa1c687c39c084fc7f069416bcf25552d2f0729c9eb3a7c9d11466e8b",
+      "published_sha256": "cc23268b9a14eccff0cad1b2e69af1c3c2daa20f2346b446534c8308db609621"
+    },
+    {
+      "original": "metadata/model/base/README.md",
+      "published": "metadata/model/base/README.md",
+      "original_sha256": "8f0505f851e9bec50a1ba37e5776f69bf12f7c8f5307f796deff026fb3761963",
+      "published_sha256": "0c19e4cc6cb75b393a77bc6cc8d29a9b62e44222de9261876360332df023164b"
+    },
+    {
+      "original": "metadata/model/base/config.json",
+      "published": "metadata/model/base/config.json",
+      "original_sha256": "e346a63094732ea28e05b08302a218306cf6541960b663a3cb4b6948e4efe6e0",
+      "published_sha256": "9f9824d901914ee1843d06a750d222e12f59ba1a586a4764e322eaf38c23a46a"
+    },
+    {
+      "original": "metadata/model/base/policy_postprocessor.json",
+      "published": "metadata/model/base/policy_postprocessor.json",
+      "original_sha256": "ad2d22405cb63be4932c4a4d9a69bc9953df02a01235c5f420b679dbe6bfe7c5",
+      "published_sha256": "e698150fa15ba8dbd94961d3c8d02f981ab109ad96e8719d5efb0eddf94ac8a5"
+    },
+    {
+      "original": "metadata/model/base/policy_preprocessor.json",
+      "published": "metadata/model/base/policy_preprocessor.json",
+      "original_sha256": "29267ff4423fcce93bbd76ad0f386905f9de5d267ca13379a5795a514a81b7a9",
+      "published_sha256": "f1772342569913267473846bd9f93c821bc8ef55cd166e5b0eb19bd6d4a31ec7"
+    },
+    {
+      "original": "metadata/model/normalization/policy_postprocessor_step_1_unnormalizer_processor.metadata.json",
+      "published": "metadata/model/normalization/policy_postprocessor_step_1_unnormalizer_processor.metadata.json",
+      "original_sha256": "88a48d6af95e476dc5b65044870e8a9213b70a81a01d065e614d290ca9e3bfea",
+      "published_sha256": "7c342d706abab79f33ad686a163e17690582c760b39969f7216b489274d7a9b1"
+    },
+    {
+      "original": "metadata/model/normalization/policy_preprocessor_step_5_normalizer_processor.metadata.json",
+      "published": "metadata/model/normalization/policy_preprocessor_step_5_normalizer_processor.metadata.json",
+      "original_sha256": "0d70fd148d30300e96c9615eb68a3923ef9308d5d8edc5d2cd2ece991034079b",
+      "published_sha256": "d87c20189f0a62c68574b86197b52482f598c689ebbc03c22b76bf8025d3adb7"
+    },
+    {
+      "original": "metadata/model/runtime_overrides.json",
+      "published": "metadata/model/runtime_overrides.json",
+      "original_sha256": "ff176b2fcfaf49b5259f9f1457f1611b8babf5b0721c80bb5713f18db4032a34",
+      "published_sha256": "f9e02edd97ca11cfd5892e7cab87b9837d85f729525b13411dd5aaa4360d0684"
+    },
+    {
+      "original": "metadata/model/vlm_processor/added_tokens.json",
+      "published": "metadata/model/vlm_processor/added_tokens.json",
+      "original_sha256": "74135b8664b56088c0006f1c8e848d79a8eba003411f72ebf1dc2ee96227be3a",
+      "published_sha256": "57618f6fa217f50b514d2e92c880e6f0318e3896cd01391bf94db5cbd81fa8aa"
+    },
+    {
+      "original": "metadata/model/vlm_processor/chat_template.json",
+      "published": "metadata/model/vlm_processor/chat_template.json",
+      "original_sha256": "b585e3598909a5687f9f9d738d35223724dedef256b9b274e1cbfb32b13c74bf",
+      "published_sha256": "7b728669598e310d44107a6db472e7638da363ce76214aa246f3a84c74d9bf86"
+    },
+    {
+      "original": "metadata/model/vlm_processor/config.json",
+      "published": "metadata/model/vlm_processor/config.json",
+      "original_sha256": "ea6bc1237e96247f6258de3e202e2e62b93d6f386dc47e7b36b5588bf3a15e17",
+      "published_sha256": "0e72e3efa51edb1c6d8c7883216cf3066ae4a436278b136f151a4a8404c17f65"
+    },
+    {
+      "original": "metadata/model/vlm_processor/preprocessor_config.json",
+      "published": "metadata/model/vlm_processor/preprocessor_config.json",
+      "original_sha256": "149e315d9410368e5491455bb06e0f763426e9e56cca731c13b24404a29b6374",
+      "published_sha256": "fdbad064245ad61e8676a167cce470bc4834c62634dc70b7bb6aa43265fbd981"
+    },
+    {
+      "original": "metadata/model/vlm_processor/processor_config.json",
+      "published": "metadata/model/vlm_processor/processor_config.json",
+      "original_sha256": "f3ad45028447b3562b4752be0d5916d6806c1ef589091a469608dcf0faa1737c",
+      "published_sha256": "793a0f30c79623d5aefbc4dd946cea67d8d79e77442c50486c6d1a0d24da74f6"
+    },
+    {
+      "original": "metadata/model/vlm_processor/special_tokens_map.json",
+      "published": "metadata/model/vlm_processor/special_tokens_map.json",
+      "original_sha256": "2dfea2a426162316ff1567c82bc6d36d9690cd9f90455f075c77daca78b45c60",
+      "published_sha256": "15c358d97f8f24b89c6902029ece46815d2010fa546c79d43727b565c46c4b2c"
+    },
+    {
+      "original": "metadata/model/vlm_processor/tokenizer_config.json",
+      "published": "metadata/model/vlm_processor/tokenizer_config.json",
+      "original_sha256": "dd9ce2ab89a3dd881bd9378f1a79b943a064b9275a7e1706d5b7b47b68977913",
+      "published_sha256": "f21169b2fdd30d973f2f4f86c044c85d5c15daececdc601b1abcec200b020840"
+    },
+    {
+      "original": "metadata/runtime_versions.json",
+      "published": "metadata/runtime_versions.json",
+      "original_sha256": "074f5ba7c3792df2e656e4ae123d77fb65406dd31cb623c0b1dc152855d84916",
+      "published_sha256": "e8f78c440961634547b513bbe76d1cf8d84b480e8722fbc67ccc94880157bce7"
+    },
+    {
+      "original": "metadata/source_comparison.json",
+      "published": "metadata/source_comparison.json",
+      "original_sha256": "0fa1c00510588fd1abf8d14a39e270649804e0a1a4a455cbe2674fb24c7d4f6f",
+      "published_sha256": "284d35bb463c7a4673e6b3544899b8eaef2540e730ff5d1f6ec73697d3c6cc7b"
+    },
+    {
+      "original": "metadata/training_data_structure.json",
+      "published": "metadata/training_data_structure.json",
+      "original_sha256": "2a3787e4092f18d7a8aa7eb7fad1a9b65d0f5a80263dadaf89132e5914a3d178",
+      "published_sha256": "990d241531f0c689c3c540b4729a8f7b34400ab64da1bff0a84ac74bd716b82b"
+    },
+    {
+      "original": "metadata/upstream_source_audit.json",
+      "published": "metadata/upstream_source_audit.json",
+      "original_sha256": "94cc64da61c490f4324eb0460bbf38c2e0da1bd4e71de515cc05573188e2dda9",
+      "published_sha256": "94cc64da61c490f4324eb0460bbf38c2e0da1bd4e71de515cc05573188e2dda9"
+    },
+    {
+      "original": "overnight/20261030_0220/compact_teacher/initial_sim_state.npy",
+      "published": "training/initial_demonstration/initial_sim_state.npy",
+      "original_sha256": "15bbc1a1f8399c26e142d301ca9e4b782b2b2f480a775db08f0ba9f3ff28990b",
+      "published_sha256": "15bbc1a1f8399c26e142d301ca9e4b782b2b2f480a775db08f0ba9f3ff28990b"
+    },
+    {
+      "original": "overnight/20261030_0220/compact_teacher/manifest.json",
+      "published": "training/initial_demonstration/manifest.json",
+      "original_sha256": "326143e9cd58cfd195bf6254c3f2077dcdd5daa9636f76bbfac1fbe58d16e77c",
+      "published_sha256": "c5faa9d35dcf8208131b9f4275e54f73ec382ce2246cca15fdabaecc258eeb9b"
+    },
+    {
+      "original": "overnight/20261030_0220/config_c_compact/result.json",
+      "published": "training/initial/result.json",
+      "original_sha256": "570f43ad5fed293f085288e07c2bd08bd9fb09769556aca2a3eced621fe8ac0e",
+      "published_sha256": "7c83254f95f4237fe1a15b6223fe9f8967177db642d100da7828d0d03f268560"
+    },
+    {
+      "original": "overnight/20261030_0220/config_c_multi12_b4/checkpoints/step_001250/checkpoint.json",
+      "published": "models/fruit_vla/checkpoint.json",
+      "original_sha256": "56aad98b9f9af24e02a3abcef9935c49547cc5e0881d4032f279cfbb0dffb941",
+      "published_sha256": "8210924838b8f3819b20727682d3acea5c76217b0ae0cceb0336fa48c34e6a0e"
+    },
+    {
+      "original": "overnight/20261030_0220/config_c_multi12_b4/executed_training_source.py",
+      "published": "training/continuation/executed_training_source.py",
+      "original_sha256": "be493c3ce1f8341c6c8565a5952ecfc06b710e47945f238e651f26d6e41f8f46",
+      "published_sha256": "efa5a0090e378c73f5af93722e1cc671fbe886737aca874aaa8cb9c3497736f4"
+    },
+    {
+      "original": "overnight/20261030_0220/teachers_12/dataset_list.json",
+      "published": "training/demonstrations/dataset_list.json",
+      "original_sha256": "3d65a1a2fb02916b65ad07eee33b710ac819e828642d4dc4bfe4edcd35f0596a",
+      "published_sha256": "53b02e9ce76c32cc63960e439d41c2543b811e5c16854950584e6d459d0c4f6e"
+    },
+    {
+      "original": "overnight/20261030_0220/teachers_12/train_00/initial_sim_state.npy",
+      "published": "training/demonstrations/train_00/initial_sim_state.npy",
+      "original_sha256": "a8170799bf8cb34680e551275c9aff3aa23a8a458569dca32ce5b8356071aba8",
+      "published_sha256": "a8170799bf8cb34680e551275c9aff3aa23a8a458569dca32ce5b8356071aba8"
+    },
+    {
+      "original": "overnight/20261030_0220/teachers_12/train_00/manifest.json",
+      "published": "training/demonstrations/train_00/manifest.json",
+      "original_sha256": "a07e41da1c2d91c68a0b2084526de2fa943cb99a320d3f23dc297337d6a90fe7",
+      "published_sha256": "d541e7e52e2df622af9841db47369f850fa3f44529fccb589d0166aee51b0b73"
+    },
+    {
+      "original": "overnight/20261030_0220/teachers_12/train_01/manifest.json",
+      "published": "training/demonstrations/train_01/manifest.json",
+      "original_sha256": "66ebd4d10be5b4943cde4d7e93b47c3da1f0fe5b4b0dd3afb27eed0a388a08df",
+      "published_sha256": "c5f4adc8ba1c97d00c1e9fe2f5dbe64c06f182f28b78abd1a20501c011714b0d"
+    },
+    {
+      "original": "overnight/20261030_0220/teachers_12/train_02/manifest.json",
+      "published": "training/demonstrations/train_02/manifest.json",
+      "original_sha256": "fff947892fd734fba0690325ae7d64e7f1d63d01f182f604a181873e39e7ed42",
+      "published_sha256": "1418cba43e6ad6f8906e7ede676a0950ea3d175f7c3b5f9ea948a6160f6727ff"
+    },
+    {
+      "original": "overnight/20261030_0220/teachers_12/train_03/manifest.json",
+      "published": "training/demonstrations/train_03/manifest.json",
+      "original_sha256": "feda491e007ee503350a67f59a370fb2b0dd6bea8d704d46f5ee2302f4a447bb",
+      "published_sha256": "f3b87fbe3a33ab23e6c68c76c0ee86617a754aad51cf6aa7eec5877d2b15f82a"
+    },
+    {
+      "original": "overnight/20261030_0220/teachers_12/train_04/manifest.json",
+      "published": "training/demonstrations/train_04/manifest.json",
+      "original_sha256": "ce7f4e41682ab56b3894bf80f18304b15d95ecd197baf2c3f3b0bd350579f3d0",
+      "published_sha256": "d0610248b01f564c2bdd3c5a1952e6c5545336cc2cabc68733fc35e1de6e4444"
+    },
+    {
+      "original": "overnight/20261030_0220/teachers_12/train_05/manifest.json",
+      "published": "training/demonstrations/train_05/manifest.json",
+      "original_sha256": "374f705f90fae96c52f8c42c6284144060f21d07a1fa5f84ca5fbb8d9c85892e",
+      "published_sha256": "4284fb1757cbc9b4544e35e55d4e81a4f73ae5983dec643f5fab7efa193f543a"
+    },
+    {
+      "original": "overnight/20261030_0220/teachers_12/train_06/manifest.json",
+      "published": "training/demonstrations/train_06/manifest.json",
+      "original_sha256": "6a7d89894fde247317b50b3f783a070a71aa789ab44e9361be4f3c17f79e488a",
+      "published_sha256": "135860da02b6f5908735759210df8a8f9b4f7d17a6aa8885fcc8a38b36e39f04"
+    },
+    {
+      "original": "overnight/20261030_0220/teachers_12/train_07/manifest.json",
+      "published": "training/demonstrations/train_07/manifest.json",
+      "original_sha256": "b1cd2ccea6bf63df77e88049aeb0eafdb26e1760b4362237d1b10c708ebb7614",
+      "published_sha256": "ad63c479aa1af710cf13f026fc7b50c98e74459b358d047143e9208e4a03b72b"
+    },
+    {
+      "original": "overnight/20261030_0220/teachers_12/train_08/manifest.json",
+      "published": "training/demonstrations/train_08/manifest.json",
+      "original_sha256": "2fa9decec9ee5bf698720deee3213166e3ab71a97e9893948a7f9aa660936d13",
+      "published_sha256": "22b925f8a06b897e63ad6b6b861a30c5a981f389738e6a71c6459d495a6c76b8"
+    },
+    {
+      "original": "overnight/20261030_0220/teachers_12/train_09/manifest.json",
+      "published": "training/demonstrations/train_09/manifest.json",
+      "original_sha256": "8238e73731e0a152b29bacbdb91e5c43b3de2e25631abe6f600154de1d091c01",
+      "published_sha256": "0dec2986d41ed41c54f6bef3c7435e9d84474b8db57b0aad82c6d62d02d30446"
+    },
+    {
+      "original": "overnight/20261030_0220/teachers_12/train_10/manifest.json",
+      "published": "training/demonstrations/train_10/manifest.json",
+      "original_sha256": "af4ed73d743d472354a4f5ff99266190943db6d85ed8638a8cfc53d56f97e9fd",
+      "published_sha256": "7d70bc7eb8fe5175fe86268de3850130d71afde5474c251162e70c17de7a3814"
+    },
+    {
+      "original": "overnight/20261030_0220/teachers_12/train_11/manifest.json",
+      "published": "training/demonstrations/train_11/manifest.json",
+      "original_sha256": "3498e0df487718301000c0c4a655863533b9cf4fa3c7f2fb8ec5b3edbcdd5521",
+      "published_sha256": "428c370c0d5a5d3a03c83653aa70347dc0db9254dd9c948cbbab0b0cfc5843b6"
+    },
+    {
+      "original": "release_manifest.json",
+      "published": "release_manifest.json",
+      "original_sha256": "6288e6d50f88defc4499aff8fef01d7cb0ffefaa068e75b06cc6f07650951326",
+      "published_sha256": "987aa077c8bfd8b38c53fe9b8a9b25e19ac6baab05e499e0b7b8842415114f14"
+    },
+    {
+      "original": "release_urls.json",
+      "published": "release_urls.json",
+      "original_sha256": "4086ff5e4d1e970a88c40f201ff1316822934f38178b4623eae5c059efff4b84",
+      "published_sha256": "9e3fb5991a01b1935a5ca27a6dd5996346be6df09f63ceff16b0b6cea64772d0"
+    },
+    {
+      "original": "requirements.lock",
+      "published": "requirements.lock",
+      "original_sha256": "1100a236f4cb6d03500a127d5907cd699f5390af785b874b052e163818479c4d",
+      "published_sha256": "1100a236f4cb6d03500a127d5907cd699f5390af785b874b052e163818479c4d"
+    },
+    {
+      "original": "scripts/active_observation.py",
+      "published": "scripts/active_observation.py",
+      "original_sha256": "f78cf95a91616ccf8fa183e43fc63cdc6828f30ba31c6555d8baafecc11f6efb",
+      "published_sha256": "0c18b4aceee727c7dcc626047fd41a114fee807e7ca5993bc689e7a4fd11c7a6"
+    },
+    {
+      "original": "scripts/arm_telemetry.py",
+      "published": "scripts/arm_telemetry.py",
+      "original_sha256": "df9bfb8c2f96bab3efc09b64a9ffebcb21f95a65ef0d917a2a8a3dc7b5da82d3",
+      "published_sha256": "b32ba82edcc0f8d9203f311c0869cd4a5875e024388b874cc0d5ae7a547b3299"
+    },
+    {
+      "original": "scripts/collect_compact_teachers.py",
+      "published": "scripts/collect_compact_teachers.py",
+      "original_sha256": "46ee81cf2f5473f569223fec488f99ab8b356c5a091d19d479dffe22a4ce6e96",
+      "published_sha256": "c06bf534c8b32c98519d1ceb6628a57a3544a63eaf59b7c61a0e16a43e591757"
+    },
+    {
+      "original": "scripts/diagnose_physical_grasp.py",
+      "published": "scripts/diagnose_physical_grasp.py",
+      "original_sha256": "46fda316bcdc681d0430d09416bbad9097d98a89c6bbf14ba2a6e1fa2f252156",
+      "published_sha256": "052a308d433ca197fe1556ed2f92ad89ec1898187fd07d5582329a91a7d45a0a"
+    },
+    {
+      "original": "scripts/fruit_objects.py",
+      "published": "scripts/fruit_objects.py",
+      "original_sha256": "7253b6d170b776c636cc18f86277bbe59a3954235102e23d5a8693380322e76d",
+      "published_sha256": "3ee0bbf92d6ce12fc806711bdd320899d1e6b17c6d5739b96c36e92495d95c31"
+    },
+    {
+      "original": "scripts/occlusion_scene.py",
+      "published": "scripts/occlusion_scene.py",
+      "original_sha256": "fed307b9c98183fa451e6e199cd506dbdcda3ffd9bf3a71184c4610e78a91995",
+      "published_sha256": "0fb09d92548083d433598622a15077b86958a909db3fe4f8f6f6fad261925835"
+    },
+    {
+      "original": "scripts/placement_score.py",
+      "published": "scripts/placement_score.py",
+      "original_sha256": "cc426da2d21f15825face304bf9799dbbab0616073fac956643a771b1b3636de",
+      "published_sha256": "797c060d2be3818ef2c9e743bad65e77ddb76cde9fd8ef7b2a4fdd6b1f77ab12"
+    },
+    {
+      "original": "scripts/prepare_assets.py",
+      "published": "scripts/prepare_assets.py",
+      "original_sha256": "7f96f9b26fd6cce8982eae8a297cc4f1a47f56491234158ffd1e5d2e561ba9c1",
+      "published_sha256": "11204816f4e7aff42d96f3079792ae2018aaa353f6d6a60e70b734da3191a5a1"
+    },
+    {
+      "original": "scripts/run_rollout.py",
+      "published": "scripts/run_rollout.py",
+      "original_sha256": "14dbddaf8577b8ff467650d25aef811affd04caaf959020af771a2186b503ccf",
+      "published_sha256": "a8559a14a4b4d291751124284405aac53357ba31a291a7a07901c23d94df2160"
+    },
+    {
+      "original": "scripts/train_tiny_teacher.py",
+      "published": "scripts/train_tiny_teacher.py",
+      "original_sha256": "3c0574200085d3016b7606867aa9e052c5d417cf62652b0bc52695475dbb7375",
+      "published_sha256": "71f2d579d71df4a9da917710b8c4871263ad39ed4edad8d68b248288db1fa081"
+    },
+    {
+      "original": "tasks/apple_single.bddl",
+      "published": "tasks/apple_single.bddl",
+      "original_sha256": "07b274d2466d7be9b2ee7c01efda28cca5e434625372a4551057aa40a038859b",
+      "published_sha256": "a3d4e56d94b5361f22b1268824142a987f34d684b5a6c6f0d288fc6ba2b93409"
+    },
+    {
+      "original": "tools/publication/check_runtime.py",
+      "published": "tools/publication/check_runtime.py",
+      "original_sha256": "571f8f4235bf92294ec084be553c3da80dd2c513237eb28a819477af062fff87",
+      "published_sha256": "415e5af300380a346927e75c3c74db63d6c22598dd57022684569273f57fc4a5"
+    },
+    {
+      "original": "tools/publication/download_runtime.py",
+      "published": "tools/publication/download_runtime.py",
+      "original_sha256": "37ffb8807f72e42b5013a544cca4c380f3afa0d7510175771c1ced720921b661",
+      "published_sha256": "7185e66b3b6604dab66e45769d3b0b93b2a088178b70d9bee215a5fb7009635a"
+    },
+    {
+      "original": "tools/publication/prepare_publication.py",
+      "published": "tools/publication/prepare_publication.py",
+      "original_sha256": "bd5335b4ccffb2a53e7f910cd6e8acebc7e70548b84cdaacecd9c8cf85e8d58b",
+      "published_sha256": "fa908e21d2fd32faa4e383625abe99b23249af99bb98683f80e8133fee05a0a2"
+    },
+    {
+      "original": "tools/publication/run_known_demo.py",
+      "published": "tools/publication/run_known_demo.py",
+      "original_sha256": "c8865e355cccec3df7b257cb392747d851d53117df9b680543967a7aac04eb1e",
+      "published_sha256": "850b1a9448e40562c58fd1b3d19b1aab00c01db8acb9485da93390156eb7c83e"
+    },
+    {
+      "original": "tools/publication/validate_candidate.py",
+      "published": "tools/publication/validate_candidate.py",
+      "original_sha256": "1ec6db4ed1aac960976feece93cfc2cc6756ccd1b501c0f22758e1debadb206d",
+      "published_sha256": "3c173faddeeb74783d8a825e2b90d04d8fbd551a7c666cc1046cb375f5d1fee8"
+    }
+  ],
+  "csv_content_unchanged": false,
+  "csv_condition_ids_and_metrics_unchanged": true,
+  "diagnostic_csv_path_columns_normalized": [
+    "video",
+    "log_directory",
+    "initial_fixed_rgb",
+    "initial_wrist_rgb"
+  ]
+}

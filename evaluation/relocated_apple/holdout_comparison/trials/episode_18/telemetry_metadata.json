@@ -1,0 +1,55 @@
+{
+  "version": "arm_telemetry_v3_includes_all_leaf_contacts",
+  "position_units": "metre",
+  "force_units": "newton",
+  "time_units": "simulation second",
+  "world_z_up": true,
+  "table_top_world_z_m": 0.9,
+  "initial_object_root_world_m": [
+    -0.11099929526369783,
+    0.16819901760834563,
+    0.933632818154638
+  ],
+  "measured_center_local_m": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "initial_object_center_height_above_table_m": 0.03363281815463792,
+  "object_mass_kg": 0.15,
+  "robot_joint_limits_rad": [
+    [
+      -2.8973,
+      2.8973
+    ],
+    [
+      -1.7628,
+      1.7628
+    ],
+    [
+      -2.8973,
+      2.8973
+    ],
+    [
+      -3.0718,
+      -0.0698
+    ],
+    [
+      -2.8973,
+      2.8973
+    ],
+    [
+      -0.0175,
+      3.7525
+    ],
+    [
+      -2.8973,
+      2.8973
+    ]
+  ],
+  "initial_reference": "settled pose immediately before the first logged control action",
+  "contact_sampling": "end of every 20Hz control step; transient substep contacts may be missed",
+  "lift_success_threshold_m": 0.05,
+  "continuous_hold_seconds": 2,
+  "required_hold_steps": 40
+}

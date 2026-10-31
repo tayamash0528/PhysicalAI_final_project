@@ -1,0 +1,41 @@
+{
+  "base_config_is_original_not_effective_runtime": true,
+  "adopted_overrides": {
+    "device": "cuda",
+    "load_vlm_weights": false,
+    "n_action_steps": 10,
+    "preprocessor_device": "cuda",
+    "trainable_parameter_dtype": "float32",
+    "inference_autocast": "bfloat16",
+    "policy_eval_and_inference_mode": true
+  },
+  "base_chunk_size": 50,
+  "state_dims": 8,
+  "action_dims": 7,
+  "image_keys": [
+    "observation.images.image",
+    "observation.images.image2"
+  ],
+  "raw_image_shape": [
+    256,
+    256,
+    3
+  ],
+  "base_resize_with_padding": [
+    512,
+    512
+  ],
+  "normalization": "base mean/std unchanged for state/action, visual IDENTITY after uint8/255",
+  "processor_repo": "HuggingFaceTB/SmolVLM2-500M-Instruct",
+  "processor_revision": "7b375e1b73b11138ff12fe22c8f2822d8fe03467",
+  "processor_metadata_copied": [
+    "added_tokens.json",
+    "chat_template.json",
+    "config.json",
+    "preprocessor_config.json",
+    "processor_config.json",
+    "special_tokens_map.json",
+    "tokenizer_config.json"
+  ],
+  "tokenizer_vocabulary_and_model_weights_excluded": true
+}

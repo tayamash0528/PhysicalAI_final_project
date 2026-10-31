@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "mode": "subprocess mocked; VLA not executed",
+  "command": [
+    "scripts/run_rollout.py",
+    "--fruit-task",
+    "apple_single",
+    "--episode-setups",
+    "outputs\\entrypoint_check2\\setups.json",
+    "--observer-profile",
+    "rgb_early_approach_v10",
+    "--max-steps",
+    "900",
+    "--n-action-steps",
+    "10",
+    "--visibility-eval-step",
+    "45",
+    "--telemetry",
+    "--trainable-fp32",
+    "--inference-amp",
+    "--expert-delta",
+    "models\\fruit_vla\\expert_delta.safetensors",
+    "--out",
+    "outputs\\entrypoint_check2\\rollout"
+  ],
+  "initial_state_exists": true,
+  "new_simulation_trials": 0
+}

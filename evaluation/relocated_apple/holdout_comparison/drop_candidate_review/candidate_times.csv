@@ -1,0 +1,5 @@
+﻿episode,case,method,occlusion,telemetry_step_zero_based,video_frame,elapsed_sim_seconds,drop_candidate,below_table_candidate,video,manual_status
+episode_02,new_leaf_04,no_reobserve,leaf_visual,696,697,34.85,True,False,experiments/20261031_1145_leaf_holdout/holdout_comparison/trials/episode_02/rollout.mp4,unreviewed_candidate
+episode_02,new_leaf_04,no_reobserve,leaf_visual,697,698,34.9,True,False,experiments/20261031_1145_leaf_holdout/holdout_comparison/trials/episode_02/rollout.mp4,unreviewed_candidate
+episode_16,new_leaf_08,no_reobserve,leaf_visual,206,207,10.35,True,False,experiments/20261031_1145_leaf_holdout/holdout_comparison/trials/episode_16/rollout.mp4,unreviewed_candidate
+episode_16,new_leaf_08,no_reobserve,leaf_visual,207,208,10.4,True,False,experiments/20261031_1145_leaf_holdout/holdout_comparison/trials/episode_16/rollout.mp4,unreviewed_candidate

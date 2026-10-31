@@ -1,0 +1,6 @@
+{
+  "revision": "89cc0a809477e8425c9aa31a561a8f293e76a25c",
+  "files_compared": 663,
+  "content_changes_ignoring_CRLF_only": [],
+  "method": "git ls-tree + local Git blob hashing, no git-lfs/filter process or checkout changes"
+}

@@ -1,0 +1,43 @@
+{
+  "status": "saved_data_training_inference_smoke_completed",
+  "base_model": "HuggingFaceVLA/smolvla_libero",
+  "base_revision": "6721902bc4d61e50a3bfdb11dfb4cb626f05d102",
+  "dataset": "training/initial_demonstration/teacher_episode.npz",
+  "dataset_sha256": "1566f10afc55e0741537b745389113081c20e91d5783cd0a57ca1c1416a1417f",
+  "training_seed": 1000,
+  "held_out_evaluation_seeds": [
+    1001,
+    1002
+  ],
+  "episodes": 1,
+  "frames": 403,
+  "steps": 2000,
+  "batch_size": 1,
+  "chunk_size": 50,
+  "trainable_parameters": 97451872,
+  "trainable_precision": "float32",
+  "precision": "bfloat16 autocast",
+  "optimizer": "AdamW lr=1e-4",
+  "peak_gpu_allocated_bytes": 3335618048,
+  "peak_gpu_reserved_bytes": 3680501760,
+  "mean_step_seconds": 0.21781941664949986,
+  "wall_seconds": 452.28491307700006,
+  "first_loss": 0.30446845293045044,
+  "last_loss": 0.05304000899195671,
+  "probe_parameter": "model.vlm_with_expert.lm_expert.layers.0.self_attn.q_proj.weight",
+  "probe_max_change": 0.020662520080804825,
+  "inference_action": [
+    [
+      0.15670382976531982,
+      0.15031719207763672,
+      -0.17270112037658691,
+      0.0033192867413163185,
+      0.002167176455259323,
+      -0.0013554464094340801,
+      -1.0249207019805908
+    ]
+  ],
+  "simulation_evaluation": "not run by this script",
+  "placement_success_claim": false,
+  "normalization": "unchanged base-checkpoint mean/std; teacher action in OSC units"
+}

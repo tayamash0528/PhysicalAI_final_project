@@ -1,0 +1,36 @@
+{
+  "source_and_setting_checks": {
+    "delta_sha256": true,
+    "source_sha256": true,
+    "asset_sha256": true,
+    "instruction": true,
+    "n_action_steps": true,
+    "max_steps": true,
+    "control_freq_hz": true,
+    "placement_evaluator": true,
+    "observer_profile": true,
+    "observer_rule": true,
+    "trigger_rule": true,
+    "leaf_geometry.height_above_root_m": true,
+    "leaf_geometry.half_size_m": true,
+    "base_model_revision": true
+  },
+  "intentional_differences": [
+    "RGB decision gates dedicated motion only in enabled branch",
+    "45 open-gripper OSC steps, actual wrist viewpoint and eef start posture",
+    "VLA starts after observation, action queue reset at handoff",
+    "Observation consumes shared900-step budget; max remaining VLA855 rather than900",
+    "Subsequent VLA actions/images naturally differ due to changed observations and state"
+  ],
+  "common": [
+    "same checkpoint and model revision",
+    "same instruction/camera identity/preprocessing/state/action transform",
+    "same physics and initial-state/seed within each pair",
+    "same v2 scorer and45simsecond total budget",
+    "both methods use live actual images"
+  ],
+  "unintended_config_differences_found": false,
+  "old5_confirmed_containment": "2/5 ->4/5",
+  "new10_containment": "4/10 ->4/10",
+  "vision_only_causality_established": false
+}

@@ -1,0 +1,7 @@
+﻿episode,case,method,occlusion,telemetry_step_zero_based,video_frame,elapsed_sim_seconds,drop_candidate,below_table_candidate,video,manual_status
+episode_04,clear_00,reobserve,none,225,226,11.3,True,False,experiments/20261031_0925_reobservation/main_comparison/trials/episode_04/rollout.mp4,unreviewed_candidate
+episode_04,clear_00,reobserve,none,226,227,11.35,True,False,experiments/20261031_0925_reobservation/main_comparison/trials/episode_04/rollout.mp4,unreviewed_candidate
+episode_05,clear_00,no_reobserve,none,225,226,11.3,True,False,experiments/20261031_0925_reobservation/main_comparison/trials/episode_05/rollout.mp4,unreviewed_candidate
+episode_05,clear_00,no_reobserve,none,226,227,11.35,True,False,experiments/20261031_0925_reobservation/main_comparison/trials/episode_05/rollout.mp4,unreviewed_candidate
+episode_18,leaf_03,no_reobserve,leaf_visual,484,485,24.25,True,False,experiments/20261031_0925_reobservation/main_comparison/trials/episode_18/rollout.mp4,unreviewed_candidate
+episode_18,leaf_03,no_reobserve,leaf_visual,485,486,24.3,True,False,experiments/20261031_0925_reobservation/main_comparison/trials/episode_18/rollout.mp4,unreviewed_candidate

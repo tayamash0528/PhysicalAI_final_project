@@ -1,0 +1,10 @@
+*
+!Dockerfile
+!vendor/
+!vendor/lerobot/
+!vendor/lerobot/pyproject.toml
+!vendor/lerobot/setup.py
+!vendor/lerobot/README.md
+!vendor/lerobot/LICENSE
+!vendor/lerobot/src/
+!vendor/lerobot/src/**

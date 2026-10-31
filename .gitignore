@@ -1,0 +1,13 @@
+cache/
+vendor/
+outputs/
+__pycache__/
+*.pyc
+*.safetensors
+*.zip
+.env
+.env.*
+assets/apple/apple.obj
+assets/apple/texture.png
+**/locked_assets/**/*.obj
+media/*.mp4

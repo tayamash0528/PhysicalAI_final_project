@@ -1,0 +1,49 @@
+{
+  "files": 302,
+  "bytes": 2330658,
+  "forbidden_files": [],
+  "sensitive_candidates": [
+    {
+      "file": "evaluation/initial/main_comparison/locked_sources/run_rollout.py",
+      "category": "email",
+      "count": 1
+    },
+    {
+      "file": "evaluation/relocated_apple/holdout_comparison/locked_sources/run_rollout.py",
+      "category": "email",
+      "count": 1
+    },
+    {
+      "file": "metadata/diffs/teacher_generation.diff",
+      "category": "email",
+      "count": 1
+    },
+    {
+      "file": "scripts/diagnose_physical_grasp.py",
+      "category": "email",
+      "count": 1
+    },
+    {
+      "file": "scripts/run_rollout.py",
+      "category": "email",
+      "count": 1
+    }
+  ],
+  "zip_checks": [
+    {
+      "filename": "fruit_vla_model_v1.0.zip",
+      "sha256": "93d8776074181e0e219a0f2f65477105162681189dda3c1ab486df27a1d734bb",
+      "bytes": 360492727,
+      "valid": true
+    },
+    {
+      "filename": "fruit_vla_assets_v1.0.zip",
+      "sha256": "99eba7c9e78b186ee781bf1dba88d2aa526f20819aea08936ecf76c9a58419c7",
+      "bytes": 736906,
+      "valid": true
+    }
+  ],
+  "email_candidates_review": "全5件とも行列積@とsim.dataフィールドをメールと誤認。実メールではない",
+  "passed": true,
+  "video_committed": false
+}

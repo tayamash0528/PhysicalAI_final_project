@@ -1,0 +1,73 @@
+{
+  "source_repo": "HuggingFaceVLA/smolvla_libero",
+  "revision": "6721902bc4d61e50a3bfdb11dfb4cb626f05d102",
+  "source_filename": "policy_preprocessor_step_5_normalizer_processor.safetensors",
+  "source_binary_bytes": 416,
+  "source_binary_sha256": "7008ba73c73887e5a7e631d478de9563ec5a0c51b7f0327f2530d7326c4b039e",
+  "binary_included": false,
+  "purpose": "Reviewable mean/std metadata; runtime still expects original base normalization binary",
+  "tensors": {
+    "action.mean": {
+      "dtype": "F32",
+      "shape": [
+        7
+      ],
+      "values_flat": [
+        0.06278156489133835,
+        0.08684080839157104,
+        -0.09037306159734726,
+        0.0005407430580817163,
+        0.005643379874527454,
+        -0.0052290987223386765,
+        -0.0496407225728035
+      ]
+    },
+    "action.std": {
+      "dtype": "F32",
+      "shape": [
+        7
+      ],
+      "values_flat": [
+        0.33552372455596924,
+        0.3784469962120056,
+        0.4447286128997803,
+        0.03924354165792465,
+        0.06339296698570251,
+        0.07797027379274368,
+        0.9987671375274658
+      ]
+    },
+    "observation.state.mean": {
+      "dtype": "F32",
+      "shape": [
+        8
+      ],
+      "values_flat": [
+        -0.04651878401637077,
+        0.034409068524837494,
+        0.7645524740219116,
+        2.9722094535827637,
+        -0.22046978771686554,
+        -0.12557940185070038,
+        0.02691425383090973,
+        -0.027190783992409706
+      ]
+    },
+    "observation.state.std": {
+      "dtype": "F32",
+      "shape": [
+        8
+      ],
+      "values_flat": [
+        0.10494395345449448,
+        0.15176619589328766,
+        0.37851670384407043,
+        0.3442734479904175,
+        0.9069468379020691,
+        0.32539188861846924,
+        0.014175903983414173,
+        0.014058894477784634
+      ]
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "frozen_utc": "2026-10-31T01:00:28.667830+00:00",
+  "core_protocol_unchanged": true,
+  "purpose": "Posthoc analysis implementation of pre-main EVALUATION_SPEC; no changes to policy or conditions.",
+  "files": {
+    "evaluation/initial/tools/analyze_three_stages.py": "f93eb27491353317aedc20d6bd78d1e873a1fe0e306be6b9ae8aee822eab95bc",
+    "evaluation/initial/tools/evaluate_visibility.py": "1f352ed55e1581a3bbb54cd7d891fca2612dffd18b1eacd6b7ad3ecbd090e68a"
+  }
+}

@@ -1,0 +1,948 @@
+{
+  "status": "LOCKED_BEFORE_MAIN_TRIALS",
+  "created_utc": "2026-10-31T02:56:13.387951+00:00",
+  "trials": 20,
+  "cases": 10,
+  "clear_cases": 0,
+  "leaf_cases": 10,
+  "delta": "models/fruit_vla/expert_delta.safetensors",
+  "delta_sha256": "67a1dd9044c21f4b13de96afca496099e02f9531b624879f151fc3996e991ac2",
+  "base_model": {
+    "repo_id": "HuggingFaceVLA/smolvla_libero",
+    "revision": "6721902bc4d61e50a3bfdb11dfb4cb626f05d102",
+    "local_path": "/workspace/cache/huggingface/hub/models--HuggingFaceVLA--smolvla_libero/snapshots/6721902bc4d61e50a3bfdb11dfb4cb626f05d102",
+    "input_features": {
+      "observation.images.image": {
+        "type": "VISUAL",
+        "shape": [
+          3,
+          256,
+          256
+        ]
+      },
+      "observation.images.image2": {
+        "type": "VISUAL",
+        "shape": [
+          3,
+          256,
+          256
+        ]
+      },
+      "observation.state": {
+        "type": "STATE",
+        "shape": [
+          8
+        ]
+      }
+    },
+    "output_features": {
+      "action": {
+        "type": "ACTION",
+        "shape": [
+          7
+        ]
+      }
+    },
+    "config": {
+      "type": "smolvla",
+      "n_obs_steps": 1,
+      "input_features": {
+        "observation.images.image": {
+          "type": "VISUAL",
+          "shape": [
+            3,
+            256,
+            256
+          ]
+        },
+        "observation.images.image2": {
+          "type": "VISUAL",
+          "shape": [
+            3,
+            256,
+            256
+          ]
+        },
+        "observation.state": {
+          "type": "STATE",
+          "shape": [
+            8
+          ]
+        }
+      },
+      "output_features": {
+        "action": {
+          "type": "ACTION",
+          "shape": [
+            7
+          ]
+        }
+      },
+      "device": "cuda",
+      "use_amp": false,
+      "push_to_hub": true,
+      "repo_id": "None",
+      "private": null,
+      "tags": null,
+      "license": null,
+      "chunk_size": 50,
+      "n_action_steps": 1,
+      "normalization_mapping": {
+        "VISUAL": "IDENTITY",
+        "STATE": "MEAN_STD",
+        "ACTION": "MEAN_STD"
+      },
+      "max_state_dim": 32,
+      "max_action_dim": 32,
+      "resize_imgs_with_padding": [
+        512,
+        512
+      ],
+      "empty_cameras": 0,
+      "adapt_to_pi_aloha": false,
+      "use_delta_joint_actions_aloha": false,
+      "tokenizer_max_length": 48,
+      "num_steps": 10,
+      "use_cache": true,
+      "freeze_vision_encoder": true,
+      "train_expert_only": true,
+      "train_state_proj": true,
+      "optimizer_lr": 0.0001,
+      "optimizer_betas": [
+        0.9,
+        0.95
+      ],
+      "optimizer_eps": 1e-08,
+      "optimizer_weight_decay": 1e-10,
+      "optimizer_grad_clip_norm": 10,
+      "scheduler_warmup_steps": 1000,
+      "scheduler_decay_steps": 30000,
+      "scheduler_decay_lr": 2.5e-06,
+      "vlm_model_name": "HuggingFaceTB/SmolVLM2-500M-Instruct",
+      "load_vlm_weights": true,
+      "add_image_special_tokens": false,
+      "attention_mode": "cross_attn",
+      "prefix_length": 0,
+      "pad_language_to": "longest",
+      "num_expert_layers": -1,
+      "num_vlm_layers": 0,
+      "self_attn_every_n_layers": 2,
+      "expert_width_multiplier": 0.5,
+      "min_period": 0.004,
+      "max_period": 4.0
+    },
+    "files": [
+      ".gitattributes",
+      "README.md",
+      "config.json",
+      "model.safetensors",
+      "policy_postprocessor.json",
+      "policy_postprocessor_step_1_unnormalizer_processor.safetensors",
+      "policy_preprocessor.json",
+      "policy_preprocessor_step_5_normalizer_processor.safetensors"
+    ]
+  },
+  "source_sha256": {
+    "scripts/run_rollout.py": "a8559a14a4b4d291751124284405aac53357ba31a291a7a07901c23d94df2160",
+    "scripts/active_observation.py": "0c18b4aceee727c7dcc626047fd41a114fee807e7ca5993bc689e7a4fd11c7a6",
+    "scripts/occlusion_scene.py": "0fb09d92548083d433598622a15077b86958a909db3fe4f8f6f6fad261925835",
+    "scripts/arm_telemetry.py": "b32ba82edcc0f8d9203f311c0869cd4a5875e024388b874cc0d5ae7a547b3299",
+    "scripts/placement_score.py": "797c060d2be3818ef2c9e743bad65e77ddb76cde9fd8ef7b2a4fdd6b1f77ab12",
+    "scripts/fruit_objects.py": "3ee0bbf92d6ce12fc806711bdd320899d1e6b17c6d5739b96c36e92495d95c31"
+  },
+  "asset_sha256": {
+    "tasks/apple_single.bddl": "a3d4e56d94b5361f22b1268824142a987f34d684b5a6c6f0d288fc6ba2b93409",
+    "assets/apple/apple.xml": "6c8e3e1d6411b2fa6a58ade259e8c57dd670388308bc6a1e878cbc21e3b37a13",
+    "assets/apple/apple.obj": "d8abbbd3dcf0475a07cf9abb794ceaf51fb5e7ad291ce53b8ae5c3c99a1793a7",
+    "assets/tray/tray.xml": "2c04115730f6053f2c693caf19091ad0c8d8190092afaa322a27c568b2f999b9"
+  },
+  "episode_setups_sha256": "a67bffea0852da875b6c7240ded3ceb6015cd0623af3395d505a414672b1ad96",
+  "reserved_layouts_file": "evaluation/relocated_apple/NEW_POSITIONS.json",
+  "reserved_layouts_sha256": "7f91561fa4e6b3a0765319a8eef81ca5afdced553969bc5c0db927e8a1e47f10",
+  "max_steps": 900,
+  "max_sim_seconds": 45,
+  "control_freq_hz": 20,
+  "n_action_steps": 10,
+  "instruction": "pick up the apple and place it in the tray",
+  "placement_evaluator": "v2_open_command_and_75mm_gap_40_steps",
+  "grasp_definition": "50mm above initial fruit center with bilateral contact continuously40steps=2seconds; contact alone separate",
+  "observer_profile": "rgb_early_approach_v10",
+  "observer_rule": {
+    "version": "rgb_early_approach_v10",
+    "steps_per_move": 45,
+    "max_moves": 1,
+    "candidate_offsets_m": [
+      [
+        0.02,
+        0.04,
+        -0.01
+      ]
+    ],
+    "candidate_world_rotvec_rad": [
+      [
+        0,
+        0,
+        0
+      ]
+    ],
+    "selection": "Initial RGB-only occlusion trigger; fixed small early-approach observation, no object pose/count.",
+    "scope": "Small elevated visual leaf on initial wrist ray; open gripper, preserve initial wrist orientation.",
+    "uses_object_truth": false,
+    "success_proxy_min_red_pixels": 200
+  },
+  "trigger_rule": {
+    "min_green_pixels": 250,
+    "min_red_share": 0.75,
+    "scope": "red apple and green rigid leaf in this synthetic scene; not a general detector",
+    "version": "rgb_green_red_trigger_v1"
+  },
+  "matched_visibility_eval_step": 45,
+  "leaf_geometry": {
+    "selected_utc": "2026-10-31T00:33:08.808357+00:00",
+    "basis": "All2 development cases:near-wrist small32x28mm leaf atroot+220mm; early_high actual visible-red ratio approx1.0 aftersmallmove. Larger motions/rotations avoided. No VLA outcomes used yet.",
+    "height_above_root_m": 0.22,
+    "half_size_m": [
+      0.016,
+      0.014,
+      0.001
+    ],
+    "observer_profile": "rgb_early_approach_v10",
+    "motion_m": [
+      0.02,
+      0.04,
+      -0.01
+    ],
+    "steps": 45,
+    "scope": "Visual-only occlusion, no branch support or leaf collision. Fixed camera sees apple. Root placement GT used only during scene setup.",
+    "model": "old_C_B4_1250",
+    "n_action_steps": 10,
+    "max_total_steps": 900,
+    "selected_for_main_utc": "2026-10-31T00:47:46.703913+00:00",
+    "development_results_file": "development_v10/summary.json",
+    "development_placement": {
+      "no_reobserve": "1/2",
+      "reobserve": "2/2"
+    },
+    "development_grasp_hold2s": {
+      "no_reobserve": "2/2",
+      "reobserve": "2/2"
+    },
+    "clear_skip_sanity": {
+      "both_placement_success": true,
+      "observation_steps_both": 0,
+      "action_max_difference": 0.0
+    },
+    "no_main_outcomes_seen": true,
+    "main_trials": 20,
+    "primary_goal": "Compare observation/grasp/placement separately, not guarantee improvement",
+    "no_more_tuning_after_main": true
+  },
+  "leaf_contacts_enabled": false,
+  "support_omitted": true,
+  "fixed_camera_sees_apple": true,
+  "operation_images_updated_in_both_methods": true,
+  "observation_in_shared_total_time": true,
+  "initial_states": [
+    {
+      "case_id": "new_leaf_00",
+      "seed": 10400,
+      "occlusion": "leaf_visual",
+      "setup_evaluation_only": {
+        "initial_state": "training/demonstrations/train_00/initial_sim_state.npy",
+        "apple_xy": [
+          -0.1164,
+          0.18860000000000002
+        ],
+        "tray_xy": [
+          0.04,
+          0.15
+        ],
+        "occlusion": "leaf_visual",
+        "leaf_height_above_root_m": 0.22,
+        "leaf_anchor": "initial_wrist_ray",
+        "leaf_half_size_m": [
+          0.016,
+          0.014,
+          0.001
+        ]
+      },
+      "state_file_sha256": "9b2aecb1e96c0c720ac48d0db081029f6ae8937babc0b40c38d8f5b6243e2ce4",
+      "state_array_sha256": "4f87b7459187e10428476a11d16c7adc0d22eaba50593558e85587cbf6b3c49a",
+      "initial_rgb_trigger": {
+        "trigger": true,
+        "metrics": {
+          "views": {
+            "image": {
+              "red_pixels": 287,
+              "green_pixels": 57,
+              "green_centroid_x_px": 105.73684210526316,
+              "red_centroid_y_px": 136.50174216027875
+            },
+            "image2": {
+              "red_pixels": 69,
+              "green_pixels": 2005,
+              "green_centroid_x_px": 223.1790523690773,
+              "red_centroid_y_px": 96.89855072463769
+            }
+          },
+          "red_pixels": 356,
+          "green_pixels": 2062,
+          "red_share": 0.14722911497105046
+        },
+        "reason": "green occluder with weak red evidence",
+        "inputs": [
+          "actual image RGB",
+          "actual image2 RGB"
+        ],
+        "uses_object_truth": false
+      },
+      "object_positions_evaluation_only": {
+        "apple_1": [
+          -0.1163996377215705,
+          0.188600401089895,
+          0.9336328181555827
+        ],
+        "tray_1": [
+          0.04,
+          0.15,
+          0.9039781521965804
+        ]
+      }
+    },
+    {
+      "case_id": "new_leaf_01",
+      "seed": 10401,
+      "occlusion": "leaf_visual",
+      "setup_evaluation_only": {
+        "initial_state": "training/demonstrations/train_00/initial_sim_state.npy",
+        "apple_xy": [
+          -0.11860000000000001,
+          0.16720000000000002
+        ],
+        "tray_xy": [
+          0.04,
+          0.15
+        ],
+        "occlusion": "leaf_visual",
+        "leaf_height_above_root_m": 0.22,
+        "leaf_anchor": "initial_wrist_ray",
+        "leaf_half_size_m": [
+          0.016,
+          0.014,
+          0.001
+        ]
+      },
+      "state_file_sha256": "a495aec87aba72133bd2ea1317073c6ab38aa9fb7625296103377aab59a7cd90",
+      "state_array_sha256": "0db876889f1be1b8aac1eefbecbd31ac021035266be20b6a56b8c521e5886afb",
+      "initial_rgb_trigger": {
+        "trigger": true,
+        "metrics": {
+          "views": {
+            "image": {
+              "red_pixels": 287,
+              "green_pixels": 59,
+              "green_centroid_x_px": 108.08474576271186,
+              "red_centroid_y_px": 136.26132404181186
+            },
+            "image2": {
+              "red_pixels": 46,
+              "green_pixels": 2002,
+              "green_centroid_x_px": 212.2942057942058,
+              "red_centroid_y_px": 97.82608695652173
+            }
+          },
+          "red_pixels": 333,
+          "green_pixels": 2061,
+          "red_share": 0.13909774436090225
+        },
+        "reason": "green occluder with weak red evidence",
+        "inputs": [
+          "actual image RGB",
+          "actual image2 RGB"
+        ],
+        "uses_object_truth": false
+      },
+      "object_positions_evaluation_only": {
+        "apple_1": [
+          -0.11859938347075236,
+          0.1671979169049432,
+          0.9336328181588202
+        ],
+        "tray_1": [
+          0.04,
+          0.15,
+          0.9039781521965804
+        ]
+      }
+    },
+    {
+      "case_id": "new_leaf_02",
+      "seed": 10402,
+      "occlusion": "leaf_visual",
+      "setup_evaluation_only": {
+        "initial_state": "training/demonstrations/train_00/initial_sim_state.npy",
+        "apple_xy": [
+          -0.1246,
+          0.2104
+        ],
+        "tray_xy": [
+          0.04,
+          0.15
+        ],
+        "occlusion": "leaf_visual",
+        "leaf_height_above_root_m": 0.22,
+        "leaf_anchor": "initial_wrist_ray",
+        "leaf_half_size_m": [
+          0.016,
+          0.014,
+          0.001
+        ]
+      },
+      "state_file_sha256": "40dc16ae7bbf99e30e92d127c574ea9e1a8b67c68d3bb0249b54d2544b9d04e3",
+      "state_array_sha256": "bbef2898850f5df78d362b3e969aa9fde2ed23c630e3da2ae1399ae57f6bfba2",
+      "initial_rgb_trigger": {
+        "trigger": true,
+        "metrics": {
+          "views": {
+            "image": {
+              "red_pixels": 282,
+              "green_pixels": 55,
+              "green_centroid_x_px": 102.9090909090909,
+              "red_centroid_y_px": 135.03191489361703
+            },
+            "image2": {
+              "red_pixels": 4,
+              "green_pixels": 2006,
+              "green_centroid_x_px": 234.10518444666002,
+              "red_centroid_y_px": 112.5
+            }
+          },
+          "red_pixels": 286,
+          "green_pixels": 2061,
+          "red_share": 0.12185769066893908
+        },
+        "reason": "green occluder with weak red evidence",
+        "inputs": [
+          "actual image RGB",
+          "actual image2 RGB"
+        ],
+        "uses_object_truth": false
+      },
+      "object_positions_evaluation_only": {
+        "apple_1": [
+          -0.12460002746247358,
+          0.21040136915372876,
+          0.9336328181609014
+        ],
+        "tray_1": [
+          0.04,
+          0.15,
+          0.9039781521965804
+        ]
+      }
+    },
+    {
+      "case_id": "new_leaf_03",
+      "seed": 10403,
+      "occlusion": "leaf_visual",
+      "setup_evaluation_only": {
+        "initial_state": "training/demonstrations/train_00/initial_sim_state.npy",
+        "apple_xy": [
+          -0.12140000000000001,
+          0.1771
+        ],
+        "tray_xy": [
+          0.04,
+          0.15
+        ],
+        "occlusion": "leaf_visual",
+        "leaf_height_above_root_m": 0.22,
+        "leaf_anchor": "initial_wrist_ray",
+        "leaf_half_size_m": [
+          0.016,
+          0.014,
+          0.001
+        ]
+      },
+      "state_file_sha256": "fe6e43ec05e4ca9014c8b28325ae80dafd9f5006e61f13c78dc446d163593eba",
+      "state_array_sha256": "37d2faf8b6b3ee7e4842bbfb9b2817bcf71ac9d04e085e416283fbfc16779a25",
+      "initial_rgb_trigger": {
+        "trigger": true,
+        "metrics": {
+          "views": {
+            "image": {
+              "red_pixels": 287,
+              "green_pixels": 56,
+              "green_centroid_x_px": 106.82142857142857,
+              "red_centroid_y_px": 135.52961672473867
+            },
+            "image2": {
+              "red_pixels": 58,
+              "green_pixels": 2003,
+              "green_centroid_x_px": 217.2626060908637,
+              "red_centroid_y_px": 99.72413793103448
+            }
+          },
+          "red_pixels": 345,
+          "green_pixels": 2059,
+          "red_share": 0.1435108153078203
+        },
+        "reason": "green occluder with weak red evidence",
+        "inputs": [
+          "actual image RGB",
+          "actual image2 RGB"
+        ],
+        "uses_object_truth": false
+      },
+      "object_positions_evaluation_only": {
+        "apple_1": [
+          -0.12139955207044328,
+          0.17709870917269685,
+          0.9336328181553644
+        ],
+        "tray_1": [
+          0.04,
+          0.15,
+          0.9039781521965804
+        ]
+      }
+    },
+    {
+      "case_id": "new_leaf_04",
+      "seed": 10404,
+      "occlusion": "leaf_visual",
+      "setup_evaluation_only": {
+        "initial_state": "training/demonstrations/train_00/initial_sim_state.npy",
+        "apple_xy": [
+          -0.1111,
+          0.2049
+        ],
+        "tray_xy": [
+          0.04,
+          0.15
+        ],
+        "occlusion": "leaf_visual",
+        "leaf_height_above_root_m": 0.22,
+        "leaf_anchor": "initial_wrist_ray",
+        "leaf_half_size_m": [
+          0.016,
+          0.014,
+          0.001
+        ]
+      },
+      "state_file_sha256": "897ebf27e7fc1d5536edeca5c282aa45186650d828e756a93177408581ddb0e6",
+      "state_array_sha256": "9316ccfb594e179504e768fda85fa622497a0c51e268c5fbbf8fe6dc1c038514",
+      "initial_rgb_trigger": {
+        "trigger": true,
+        "metrics": {
+          "views": {
+            "image": {
+              "red_pixels": 297,
+              "green_pixels": 49,
+              "green_centroid_x_px": 103.59183673469387,
+              "red_centroid_y_px": 137.66329966329965
+            },
+            "image2": {
+              "red_pixels": 59,
+              "green_pixels": 2004,
+              "green_centroid_x_px": 231.64970059880238,
+              "red_centroid_y_px": 94.89830508474576
+            }
+          },
+          "red_pixels": 356,
+          "green_pixels": 2053,
+          "red_share": 0.1477791614777916
+        },
+        "reason": "green occluder with weak red evidence",
+        "inputs": [
+          "actual image RGB",
+          "actual image2 RGB"
+        ],
+        "uses_object_truth": false
+      },
+      "object_positions_evaluation_only": {
+        "apple_1": [
+          -0.11109978838360961,
+          0.20490179444462384,
+          0.9336328181636342
+        ],
+        "tray_1": [
+          0.04,
+          0.15,
+          0.9039781521965804
+        ]
+      }
+    },
+    {
+      "case_id": "new_leaf_05",
+      "seed": 10405,
+      "occlusion": "leaf_visual",
+      "setup_evaluation_only": {
+        "initial_state": "training/demonstrations/train_00/initial_sim_state.npy",
+        "apple_xy": [
+          -0.1359,
+          0.1913
+        ],
+        "tray_xy": [
+          0.04,
+          0.15
+        ],
+        "occlusion": "leaf_visual",
+        "leaf_height_above_root_m": 0.22,
+        "leaf_anchor": "initial_wrist_ray",
+        "leaf_half_size_m": [
+          0.016,
+          0.014,
+          0.001
+        ]
+      },
+      "state_file_sha256": "c598c637582c720246e44ce8c9cef00b5faa6e2e0597dca15034e9b363d32e4d",
+      "state_array_sha256": "ed847b8a147f4cc5725241d1992e0fd064d6bcb7cae8e50b6586eb85d181ae68",
+      "initial_rgb_trigger": {
+        "trigger": true,
+        "metrics": {
+          "views": {
+            "image": {
+              "red_pixels": 276,
+              "green_pixels": 57,
+              "green_centroid_x_px": 105.57894736842105,
+              "red_centroid_y_px": 132.6159420289855
+            },
+            "image2": {
+              "red_pixels": 68,
+              "green_pixels": 1957,
+              "green_centroid_x_px": 224.25702606029637,
+              "red_centroid_y_px": 107.88235294117646
+            }
+          },
+          "red_pixels": 344,
+          "green_pixels": 2014,
+          "red_share": 0.1458863443596268
+        },
+        "reason": "green occluder with weak red evidence",
+        "inputs": [
+          "actual image RGB",
+          "actual image2 RGB"
+        ],
+        "uses_object_truth": false
+      },
+      "object_positions_evaluation_only": {
+        "apple_1": [
+          -0.13589992916563154,
+          0.19129845985682495,
+          0.9336328181566361
+        ],
+        "tray_1": [
+          0.04,
+          0.15,
+          0.9039781521965804
+        ]
+      }
+    },
+    {
+      "case_id": "new_leaf_06",
+      "seed": 10406,
+      "occlusion": "leaf_visual",
+      "setup_evaluation_only": {
+        "initial_state": "training/demonstrations/train_00/initial_sim_state.npy",
+        "apple_xy": [
+          -0.1335,
+          0.225
+        ],
+        "tray_xy": [
+          0.04,
+          0.15
+        ],
+        "occlusion": "leaf_visual",
+        "leaf_height_above_root_m": 0.22,
+        "leaf_anchor": "initial_wrist_ray",
+        "leaf_half_size_m": [
+          0.016,
+          0.014,
+          0.001
+        ]
+      },
+      "state_file_sha256": "8a347fb08651ad9b27e5a16031372b2d9d2f6c7532f10f643abf784d3a77797f",
+      "state_array_sha256": "50e2f81379c769f506501e56fb264b447897cd09341d51080a80cad57ebbadf1",
+      "initial_rgb_trigger": {
+        "trigger": true,
+        "metrics": {
+          "views": {
+            "image": {
+              "red_pixels": 280,
+              "green_pixels": 57,
+              "green_centroid_x_px": 101.57894736842105,
+              "red_centroid_y_px": 133.25
+            },
+            "image2": {
+              "red_pixels": 0,
+              "green_pixels": 1640,
+              "green_centroid_x_px": 238.0487804878049,
+              "red_centroid_y_px": null
+            }
+          },
+          "red_pixels": 280,
+          "green_pixels": 1697,
+          "red_share": 0.14162873039959534
+        },
+        "reason": "green occluder with weak red evidence",
+        "inputs": [
+          "actual image RGB",
+          "actual image2 RGB"
+        ],
+        "uses_object_truth": false
+      },
+      "object_positions_evaluation_only": {
+        "apple_1": [
+          -0.1335003243700401,
+          0.22500171758910714,
+          0.9336328181642586
+        ],
+        "tray_1": [
+          0.04,
+          0.15,
+          0.9039781521965804
+        ]
+      }
+    },
+    {
+      "case_id": "new_leaf_07",
+      "seed": 10407,
+      "occlusion": "leaf_visual",
+      "setup_evaluation_only": {
+        "initial_state": "training/demonstrations/train_00/initial_sim_state.npy",
+        "apple_xy": [
+          -0.12710000000000002,
+          0.1942
+        ],
+        "tray_xy": [
+          0.04,
+          0.15
+        ],
+        "occlusion": "leaf_visual",
+        "leaf_height_above_root_m": 0.22,
+        "leaf_anchor": "initial_wrist_ray",
+        "leaf_half_size_m": [
+          0.016,
+          0.014,
+          0.001
+        ]
+      },
+      "state_file_sha256": "0336cc389329cad7b129a101992597b9c1c8050bfc42dc7f194b18ad404216d0",
+      "state_array_sha256": "2fd3340063cf70110b5e96c8cfaa8c5b9d6986c32148331f49df1dd13932f722",
+      "initial_rgb_trigger": {
+        "trigger": true,
+        "metrics": {
+          "views": {
+            "image": {
+              "red_pixels": 286,
+              "green_pixels": 57,
+              "green_centroid_x_px": 105.0701754385965,
+              "red_centroid_y_px": 134.46153846153845
+            },
+            "image2": {
+              "red_pixels": 75,
+              "green_pixels": 2003,
+              "green_centroid_x_px": 225.90813779331003,
+              "red_centroid_y_px": 103.4
+            }
+          },
+          "red_pixels": 361,
+          "green_pixels": 2060,
+          "red_share": 0.14911193721602645
+        },
+        "reason": "green occluder with weak red evidence",
+        "inputs": [
+          "actual image RGB",
+          "actual image2 RGB"
+        ],
+        "uses_object_truth": false
+      },
+      "object_positions_evaluation_only": {
+        "apple_1": [
+          -0.12709985000178745,
+          0.1941998611430366,
+          0.9336328181546475
+        ],
+        "tray_1": [
+          0.04,
+          0.15,
+          0.9039781521965804
+        ]
+      }
+    },
+    {
+      "case_id": "new_leaf_08",
+      "seed": 10408,
+      "occlusion": "leaf_visual",
+      "setup_evaluation_only": {
+        "initial_state": "training/demonstrations/train_00/initial_sim_state.npy",
+        "apple_xy": [
+          -0.1115,
+          0.19590000000000002
+        ],
+        "tray_xy": [
+          0.04,
+          0.15
+        ],
+        "occlusion": "leaf_visual",
+        "leaf_height_above_root_m": 0.22,
+        "leaf_anchor": "initial_wrist_ray",
+        "leaf_half_size_m": [
+          0.016,
+          0.014,
+          0.001
+        ]
+      },
+      "state_file_sha256": "191624a8ba3fa19d0b650555fdf11425672c7a839a88bffb5c1c12c90b39987c",
+      "state_array_sha256": "4cbc25bbc718e797fd46c8d98e5a7c32515e1a0e7772d42457f896dd6509c33c",
+      "initial_rgb_trigger": {
+        "trigger": true,
+        "metrics": {
+          "views": {
+            "image": {
+              "red_pixels": 299,
+              "green_pixels": 58,
+              "green_centroid_x_px": 104.65517241379311,
+              "red_centroid_y_px": 137.59866220735785
+            },
+            "image2": {
+              "red_pixels": 74,
+              "green_pixels": 2010,
+              "green_centroid_x_px": 227.02139303482588,
+              "red_centroid_y_px": 94.32432432432432
+            }
+          },
+          "red_pixels": 373,
+          "green_pixels": 2068,
+          "red_share": 0.1528062269561655
+        },
+        "reason": "green occluder with weak red evidence",
+        "inputs": [
+          "actual image RGB",
+          "actual image2 RGB"
+        ],
+        "uses_object_truth": false
+      },
+      "object_positions_evaluation_only": {
+        "apple_1": [
+          -0.11149967279150769,
+          0.19590128156127132,
+          0.9336328181597865
+        ],
+        "tray_1": [
+          0.04,
+          0.15,
+          0.9039781521965804
+        ]
+      }
+    },
+    {
+      "case_id": "new_leaf_09",
+      "seed": 10409,
+      "occlusion": "leaf_visual",
+      "setup_evaluation_only": {
+        "initial_state": "training/demonstrations/train_00/initial_sim_state.npy",
+        "apple_xy": [
+          -0.111,
+          0.16820000000000002
+        ],
+        "tray_xy": [
+          0.04,
+          0.15
+        ],
+        "occlusion": "leaf_visual",
+        "leaf_height_above_root_m": 0.22,
+        "leaf_anchor": "initial_wrist_ray",
+        "leaf_half_size_m": [
+          0.016,
+          0.014,
+          0.001
+        ]
+      },
+      "state_file_sha256": "cee4c8980da91f2a6f20b85392612b22cea2e709e7b0db7fbb1fc789c9027f59",
+      "state_array_sha256": "7fec6e52c3edf4243b1e830f7d4b49bcdf4ef9226d44bd904c24e6fcc1463351",
+      "initial_rgb_trigger": {
+        "trigger": true,
+        "metrics": {
+          "views": {
+            "image": {
+              "red_pixels": 285,
+              "green_pixels": 50,
+              "green_centroid_x_px": 107.88,
+              "red_centroid_y_px": 137.58245614035087
+            },
+            "image2": {
+              "red_pixels": 47,
+              "green_pixels": 2011,
+              "green_centroid_x_px": 212.96867230233715,
+              "red_centroid_y_px": 94.57446808510639
+            }
+          },
+          "red_pixels": 332,
+          "green_pixels": 2061,
+          "red_share": 0.13873798579189303
+        },
+        "reason": "green occluder with weak red evidence",
+        "inputs": [
+          "actual image RGB",
+          "actual image2 RGB"
+        ],
+        "uses_object_truth": false
+      },
+      "object_positions_evaluation_only": {
+        "apple_1": [
+          -0.1109992927678405,
+          0.16819901409319934,
+          0.9336328181546439
+        ],
+        "tray_1": [
+          0.04,
+          0.15,
+          0.9039781521965804
+        ]
+      }
+    }
+  ],
+  "order_seed": 271031,
+  "selection_evidence": "evaluation/initial/MAIN_SELECTION.json",
+  "selection_evidence_sha256": "a9f2baa7f20c4d1b60881403259cf73f0e941ea9c8dd3df5a6d2d86e2e30bf79",
+  "no_results_seen_before_lock": true,
+  "no_tuning_after_main": true,
+  "counts_and_positions_not_policy_inputs": true,
+  "evaluation_spec_file": "evaluation/initial/EVALUATION_SPEC.json",
+  "evaluation_spec_sha256": "8c211820edc4604bcc5a4f783d6eb48a4dd87fc470a003ff3d1b98602af77196",
+  "docker_image_id": "sha256:bf7c598eb3ab761de983d36d071442a4a9e896c2afa2405180b808d665ac1549",
+  "runtime": {
+    "python": "3.12.16",
+    "torch": "2.7.1 CUDA12.6",
+    "lerobot": "0.6.2",
+    "lerobot_revision": "89cc0a809477e8425c9aa31a561a8f293e76a25c",
+    "hf_libero": "0.1.4",
+    "robosuite": "1.4.0",
+    "mujoco": "3.8.1"
+  },
+  "protocol_tools_sha256": {
+    "evaluation/relocated_apple/tools/prepare_holdout.py": "ea5dc3f3207b7d3e380302629d837ccb47f093d21047e7767803f83cd31853b2",
+    "evaluation/relocated_apple/tools/generate_layouts.py": "cfba459312f8507fd4a25b0be278782fe2dc96381cb292b794444eed4ffb5918",
+    "evaluation/initial/tools/run_protocol.py": "905c697bcbe6fae1ad223e4cd98d17818c1ee66e60801652edca561681f98841"
+  },
+  "parent_protocol_file": "evaluation/initial/main_comparison/LOCK.json",
+  "parent_protocol_sha256": "7c0c5401e5390dc5452f39e42e7c69304a0f3a286265e6bce5f7c36c30604a3d",
+  "position_audit_sha256": "0fd1020fe02c394c9f9e17f62babfa1b2c86204a6f1fd5662fc6a8f58df71cfa",
+  "new_evaluation_results_seen_before_lock": false,
+  "evaluation_role": "new_positions_fixed_adopted_procedure_leaf_only",
+  "old5_result_preserved": "2/5 no_reobserve vs4/5 reobserve confirmed",
+  "supplemental_asset_sha256": {
+    "assets/apple/texture.png": "eb00cac918d9cdcbe350e37410787e60016ebbd61457e46354cce3a018343d6b"
+  },
+  "plan_sha256": "88a74fe67b995e4ba7e3fdb035d995a28006f24e60a256a2aa4b1a954600de5e",
+  "parent_prelaunch_metadata_added_utc": "2026-10-31T00:57:15.390973+00:00",
+  "prelaunch_metadata_added_utc": "2026-10-31T02:57:15.130614+00:00",
+  "supplemental_position_audit_note_sha256": "c8e288714dbf05024305ef9780ef3fafc47600399594de18ecbe6e339dc25fd8",
+  "publication_path_adapter": {
+    "original_lock_sha256": "562c145cf71aa38cbf9cb900a35c021890df9b86a56d31cb7d8c1b16d4095f22",
+    "original_lock_file": "metadata/original_protocols/relocated_apple_lock.json",
+    "performance_tuning": false
+  }
+}

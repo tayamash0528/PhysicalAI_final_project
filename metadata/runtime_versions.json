@@ -1,0 +1,15 @@
+{
+  "lerobot": "0.6.2",
+  "hf-libero": "0.1.4",
+  "robosuite": "1.4.0",
+  "mujoco": "3.8.1",
+  "torch": "2.7.1",
+  "torchvision": "0.22.1",
+  "transformers": "5.5.4",
+  "safetensors": "0.8.0",
+  "numpy": "2.2.6",
+  "scipy": "1.18.1",
+  "Pillow": "12.3.0",
+  "imageio": "2.38.1",
+  "matplotlib": "3.11.2"
+}

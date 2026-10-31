@@ -1,0 +1,11 @@
+{
+  "reason": "force_update再描画はObservable.update(timestep=model_timestep)も呼ぶため、観察移動の2番目以降のfeedback actionに微小差が出た。",
+  "v2_initial_state8_max_difference": 0,
+  "v2_operation_start_state8_max_difference": 1.6942620277404785e-05,
+  "v2_observation_action_max_difference": 0.000600291872102296,
+  "correction": "同一カメラ・同一画像規約のsim.renderだけで取得し、既存robot_stateとObservableの状態を保持。表示前の実RGB一致も検査。",
+  "fixed_cases_unchanged": true,
+  "weights_and_control_and_success_predicates_unchanged": true,
+  "v2_preserved_not_used_as_exact_factorial_main": true,
+  "v3_hook_sha256": "f5a129c091096fdbc65ec873cafc972553bb46dd7b9fd4ef602bfe244f5141a8"
+}

@@ -1,0 +1,68 @@
+{
+  "episodes": [
+    "training/demonstrations/train_00/teacher_episode.npz",
+    "training/demonstrations/train_01/teacher_episode.npz",
+    "training/demonstrations/train_02/teacher_episode.npz",
+    "training/demonstrations/train_03/teacher_episode.npz",
+    "training/demonstrations/train_04/teacher_episode.npz",
+    "training/demonstrations/train_05/teacher_episode.npz",
+    "training/demonstrations/train_06/teacher_episode.npz",
+    "training/demonstrations/train_07/teacher_episode.npz",
+    "training/demonstrations/train_08/teacher_episode.npz",
+    "training/demonstrations/train_09/teacher_episode.npz",
+    "training/demonstrations/train_10/teacher_episode.npz",
+    "training/demonstrations/train_11/teacher_episode.npz"
+  ],
+  "evaluation_locations": [
+    [
+      -0.1190442533,
+      0.2262070835
+    ],
+    [
+      -0.1158592701,
+      0.2196100864
+    ],
+    [
+      -0.14,
+      0.12
+    ],
+    [
+      -0.11,
+      0.13
+    ],
+    [
+      -0.135,
+      0.18
+    ],
+    [
+      -0.105,
+      0.22
+    ],
+    [
+      -0.14,
+      0.235
+    ],
+    [
+      -0.13,
+      0.115
+    ],
+    [
+      -0.1,
+      0.175
+    ],
+    [
+      -0.145,
+      0.215
+    ],
+    [
+      -0.115,
+      0.24
+    ],
+    [
+      -0.097,
+      0.23
+    ]
+  ],
+  "success_count": 12,
+  "split": "train"
+}

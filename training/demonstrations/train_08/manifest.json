@@ -1,0 +1,93 @@
+{
+  "mode": "diagnostic_GT_servo_NOT_VLA",
+  "gt_used": true,
+  "success_included_in_vla_metrics": false,
+  "place_requested": true,
+  "dataset_saved": true,
+  "initial_setup_tray_xy_m": [
+    0.04,
+    0.15
+  ],
+  "initial_setup_apple_xy_m": [
+    -0.09,
+    0.1
+  ],
+  "compact_observation_driven_teacher": true,
+  "source_sha256": "87c9135518ce6a39f21ed811f55f52e3c2bc1b60d79570b217b379e1ead2c476",
+  "seed": 1208,
+  "initial_state_sha256": "91d9edeb338729b204b5639c365d81fa2758dafd1e74d2ce9b5098d07fb2b2cf",
+  "pre_registered_criterion": {
+    "lift_relative_initial_m": 0.05,
+    "continuous_bilateral_hold_seconds": 2.0
+  },
+  "requested_lift_m": 0.1,
+  "control_hz": 20,
+  "position_servo_gain": 0.5,
+  "max_commanded_translation_m": 0.01,
+  "initial_padmid_minus_eef_m": [
+    0.00020439840815381083,
+    -3.0170815279102706e-08,
+    0.0035941927175300314
+  ],
+  "grasp_eef_target_m": [
+    -0.09020386810447173,
+    0.09992442578196366,
+    0.930038633000248
+  ],
+  "telemetry": {
+    "version": "arm_telemetry_v2_positive_command_closes_panda",
+    "position_units": "metre",
+    "force_units": "newton",
+    "time_units": "simulation second",
+    "world_z_up": true,
+    "table_top_world_z_m": 0.9,
+    "initial_object_root_world_m": [
+      -0.08999946969631792,
+      0.09992439561114838,
+      0.9336328257177781
+    ],
+    "measured_center_local_m": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "initial_object_center_height_above_table_m": 0.03363282571777804,
+    "object_mass_kg": 0.15,
+    "robot_joint_limits_rad": [
+      [
+        -2.8973,
+        2.8973
+      ],
+      [
+        -1.7628,
+        1.7628
+      ],
+      [
+        -2.8973,
+        2.8973
+      ],
+      [
+        -3.0718,
+        -0.0698
+      ],
+      [
+        -2.8973,
+        2.8973
+      ],
+      [
+        -0.0175,
+        3.7525
+      ],
+      [
+        -2.8973,
+        2.8973
+      ]
+    ],
+    "initial_reference": "settled pose immediately before the first logged control action",
+    "contact_sampling": "end of every 20Hz control step; transient substep contacts may be missed",
+    "lift_success_threshold_m": 0.05,
+    "continuous_hold_seconds": 2,
+    "required_hold_steps": 40
+  },
+  "no_teleport_fixed_constraints_or_disabled_contacts": true
+}

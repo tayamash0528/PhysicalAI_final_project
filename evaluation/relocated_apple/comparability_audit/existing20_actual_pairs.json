@@ -1,0 +1,160 @@
+{
+  "all10_pairs_passed": true,
+  "source_snapshot_current_and_LOCK_match": {
+    "scripts/run_rollout.py": true,
+    "scripts/active_observation.py": true,
+    "scripts/occlusion_scene.py": true,
+    "scripts/arm_telemetry.py": true,
+    "scripts/placement_score.py": true,
+    "scripts/fruit_objects.py": true
+  },
+  "pairs": [
+    {
+      "case": "clear_00",
+      "seed": 8400,
+      "initial_state_sha256": "29a0331d7cce2844b8c6579a5009b4c5377af78adfc857ac463d20e915cdc657",
+      "setup_difference_only_active_flag": true,
+      "observation_steps": {
+        "reobserve": 0,
+        "no_reobserve": 0
+      },
+      "containment": {
+        "reobserve": true,
+        "no_reobserve": true
+      }
+    },
+    {
+      "case": "clear_01",
+      "seed": 8401,
+      "initial_state_sha256": "8c20f3171db27ab7db97c6dfeba11375e48f3de7c6d568f1614c442cbefa2673",
+      "setup_difference_only_active_flag": true,
+      "observation_steps": {
+        "no_reobserve": 0,
+        "reobserve": 0
+      },
+      "containment": {
+        "no_reobserve": true,
+        "reobserve": true
+      }
+    },
+    {
+      "case": "clear_02",
+      "seed": 8402,
+      "initial_state_sha256": "a42ca31e9eaf8b31af08fb6debfb112f285b9f5c96204a1f0ba880877bfdcefb",
+      "setup_difference_only_active_flag": true,
+      "observation_steps": {
+        "no_reobserve": 0,
+        "reobserve": 0
+      },
+      "containment": {
+        "no_reobserve": true,
+        "reobserve": true
+      }
+    },
+    {
+      "case": "clear_03",
+      "seed": 8403,
+      "initial_state_sha256": "07290814f5d6cdd15f9b5fd794da0ff2b529790445d333319327e35314f80480",
+      "setup_difference_only_active_flag": true,
+      "observation_steps": {
+        "reobserve": 0,
+        "no_reobserve": 0
+      },
+      "containment": {
+        "reobserve": true,
+        "no_reobserve": true
+      }
+    },
+    {
+      "case": "clear_04",
+      "seed": 8404,
+      "initial_state_sha256": "b530204f7e11ef666ebded7369fe91154a15df9eed7349df5ce10b808aec1a6b",
+      "setup_difference_only_active_flag": true,
+      "observation_steps": {
+        "reobserve": 0,
+        "no_reobserve": 0
+      },
+      "containment": {
+        "reobserve": true,
+        "no_reobserve": true
+      }
+    },
+    {
+      "case": "leaf_00",
+      "seed": 8405,
+      "initial_state_sha256": "dd03c3e8040c9148f698f0b87edd67aa0d7f50e007a99f1809b697ef1342df21",
+      "setup_difference_only_active_flag": true,
+      "observation_steps": {
+        "no_reobserve": 0,
+        "reobserve": 45
+      },
+      "containment": {
+        "no_reobserve": true,
+        "reobserve": true
+      }
+    },
+    {
+      "case": "leaf_01",
+      "seed": 8406,
+      "initial_state_sha256": "11a7da60331e8ef775d58a13dad0b48d9c2bb40f3db3c25ead82579d9409ec6b",
+      "setup_difference_only_active_flag": true,
+      "observation_steps": {
+        "reobserve": 45,
+        "no_reobserve": 0
+      },
+      "containment": {
+        "reobserve": true,
+        "no_reobserve": true
+      }
+    },
+    {
+      "case": "leaf_02",
+      "seed": 8407,
+      "initial_state_sha256": "96ae37916ce04ab76effacc21fca5f7834566ae64e05f0040fe458e3eedc6416",
+      "setup_difference_only_active_flag": true,
+      "observation_steps": {
+        "reobserve": 45,
+        "no_reobserve": 0
+      },
+      "containment": {
+        "reobserve": true,
+        "no_reobserve": false
+      }
+    },
+    {
+      "case": "leaf_03",
+      "seed": 8408,
+      "initial_state_sha256": "fc5f77ea52f39d4c2f19f8ec7cc389e8ebc7b0748702686a8126a77201e8504d",
+      "setup_difference_only_active_flag": true,
+      "observation_steps": {
+        "no_reobserve": 0,
+        "reobserve": 45
+      },
+      "containment": {
+        "no_reobserve": false,
+        "reobserve": false
+      }
+    },
+    {
+      "case": "leaf_04",
+      "seed": 8409,
+      "initial_state_sha256": "d7e0952d3e41900461b65a54ec20bcaf0ea2bb4fc48cd1a90a443ad55c1f814b",
+      "setup_difference_only_active_flag": true,
+      "observation_steps": {
+        "reobserve": 45,
+        "no_reobserve": 0
+      },
+      "containment": {
+        "reobserve": true,
+        "no_reobserve": false
+      }
+    }
+  ],
+  "old_leaf_result_confirmed": "2/5->4/5",
+  "policy_inputs_recorded": [
+    "two camera RGB images",
+    "8D eef/gripper state",
+    "instruction"
+  ],
+  "control_mode": "relative"
+}

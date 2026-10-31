@@ -1,0 +1,86 @@
+{
+  "mode": "diagnostic_GT_servo_NOT_VLA",
+  "gt_used": true,
+  "success_included_in_vla_metrics": false,
+  "place_requested": true,
+  "dataset_saved": true,
+  "initial_setup_tray_xy_m": null,
+  "compact_observation_driven_teacher": true,
+  "source_sha256": "1ac2db773c2521249333e9a183af916c8bfe7b26256c1b7a3f99ccee343cfe43",
+  "seed": 1000,
+  "initial_state_sha256": "b67ef1a2efa59ca711c1d1377a7524d235b0ca83e1320b8d84cf6924260dddc6",
+  "pre_registered_criterion": {
+    "lift_relative_initial_m": 0.05,
+    "continuous_bilateral_hold_seconds": 2.0
+  },
+  "requested_lift_m": 0.1,
+  "control_hz": 20,
+  "position_servo_gain": 0.5,
+  "max_commanded_translation_m": 0.01,
+  "initial_padmid_minus_eef_m": [
+    0.0002043984081459005,
+    -3.0154729353639456e-08,
+    0.0035941927175304755
+  ],
+  "grasp_eef_target_m": [
+    -0.07705725575502453,
+    0.17176351123329528,
+    0.9300386254432449
+  ],
+  "telemetry": {
+    "version": "arm_telemetry_v2_positive_command_closes_panda",
+    "position_units": "metre",
+    "force_units": "newton",
+    "time_units": "simulation second",
+    "world_z_up": true,
+    "table_top_world_z_m": 0.9,
+    "initial_object_root_world_m": [
+      -0.07685285734687863,
+      0.17176348107856593,
+      0.9336328181607754
+    ],
+    "measured_center_local_m": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "initial_object_center_height_above_table_m": 0.033632818160775346,
+    "object_mass_kg": 0.15,
+    "robot_joint_limits_rad": [
+      [
+        -2.8973,
+        2.8973
+      ],
+      [
+        -1.7628,
+        1.7628
+      ],
+      [
+        -2.8973,
+        2.8973
+      ],
+      [
+        -3.0718,
+        -0.0698
+      ],
+      [
+        -2.8973,
+        2.8973
+      ],
+      [
+        -0.0175,
+        3.7525
+      ],
+      [
+        -2.8973,
+        2.8973
+      ]
+    ],
+    "initial_reference": "settled pose immediately before the first logged control action",
+    "contact_sampling": "end of every 20Hz control step; transient substep contacts may be missed",
+    "lift_success_threshold_m": 0.05,
+    "continuous_hold_seconds": 2,
+    "required_hold_steps": 40
+  },
+  "no_teleport_fixed_constraints_or_disabled_contacts": true
+}

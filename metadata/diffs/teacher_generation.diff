@@ -1,0 +1,56 @@
+--- evidence/diagnose_compact12_executed.py
++++ scripts/diagnose_physical_grasp.py
+@@ -16,6 +16,7 @@
+ p.add_argument('--tray-xy',type=float,nargs=2,default=None,help='Initial scene setup only; never a policy input')
+ p.add_argument('--compact',action='store_true',help='Remove non-observable long stationary dwell before stage changes')
+ p.add_argument('--apple-xy',type=float,nargs=2,default=None,help='Initial scene setup only')
++p.add_argument('--wrist-reference-json',default=None,help='Proprioceptive reference orientation and local pad offset for a post-observation teacher')
+ a=p.parse_args();out=Path(a.out);out.mkdir(parents=True,exist_ok=False)
+ random.seed(a.seed);np.random.seed(a.seed)
+ task=SimpleNamespace(name='apple_single',language='diagnostic grasp only',problem_folder='',
+@@ -42,12 +43,17 @@
+ initial=tele.initial_pos.copy()
+ padmid=(np.mean(sim.data.geom_xpos[tele.left_pad],axis=0)+np.mean(sim.data.geom_xpos[tele.right_pad],axis=0))/2
+ offset=padmid-np.asarray(obs['robot_state']['eef']['pos'])
++wrist_reference=json.loads(Path(a.wrist_reference_json).read_text()) if a.wrist_reference_json else None
++if wrist_reference:
++    from scipy.spatial.transform import Rotation
++    reference_mat=np.asarray(wrist_reference['eef_rotation_matrix'])
++    offset=reference_mat@np.asarray(wrist_reference['padmid_offset_eef_local_m'])
+ grasp=initial-offset
+ manifest={'mode':'diagnostic_GT_servo_NOT_VLA','gt_used':True,'success_included_in_vla_metrics':False,
+     'place_requested':a.place,'dataset_saved':a.save_dataset,
+     'initial_setup_tray_xy_m':a.tray_xy,
+     'initial_setup_apple_xy_m':a.apple_xy,
+-    'compact_observation_driven_teacher':a.compact,
++    'compact_observation_driven_teacher':a.compact,'wrist_reference_json':a.wrist_reference_json,
+     'source_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
+     'seed':a.seed,'initial_state_sha256':hashlib.sha256(initial_state.tobytes()).hexdigest(),
+     'pre_registered_criterion':{'lift_relative_initial_m':.05,'continuous_bilateral_hold_seconds':2.0},
+@@ -79,7 +85,12 @@
+         for j in range(limit):
+             current=np.asarray(obs['robot_state']['eef']['pos'])
+             desired_delta=np.clip(.5*(target-current),-.01,.01)
+-            action=np.r_[desired_delta/.05,[0,0,0],grip]
++            rot_command=np.zeros(3);ori_error=0.
++            if wrist_reference:
++                current_mat=Rotation.from_quat(obs['robot_state']['eef']['quat']).as_matrix()
++                err=Rotation.from_matrix(reference_mat@current_mat.T).as_rotvec();ori_error=float(np.linalg.norm(err))
++                rot_command=np.clip(.5*err,-.03,.03)/.5
++            action=np.r_[desired_delta/.05,rot_command,grip]
+             if a.save_dataset:
+                 observed=env_processor.observation(rr.preprocess_observation(dict(obs,robot_state=rr.batched_state(obs['robot_state']))))
+                 for key in ['image','image2']:
+@@ -97,10 +108,10 @@
+             step+=1
+             if a.compact:
+                 error=float(np.linalg.norm(target-np.asarray(obs['robot_state']['eef']['pos'])))
+-                if phase in ['descend','lower_to_tray'] and j>=15 and error<.008:break
++                if phase in ['descend','lower_to_tray'] and j>=15 and error<.008 and ori_error<.03:break
+                 if phase=='close' and j>=5 and last['stages']['bilateral_contact']:break
+                 if phase=='release' and j>=5 and gripper_released(obs['robot_state']['gripper']['qpos'],action[-1]):break
+-            if phase in ['approach','descend','lift','transport','lower_to_tray','retreat'] and j>=15 and np.linalg.norm(target-np.asarray(obs['robot_state']['eef']['pos']))<.003:break
++            if phase in ['approach','descend','lift','transport','lower_to_tray','retreat'] and j>=15 and np.linalg.norm(target-np.asarray(obs['robot_state']['eef']['pos']))<.003 and ori_error<.03:break
+         summary.append({'phase':phase,'steps':j+1,'target_eef_m':target.tolist(),
+                         'last_eef_error_m':float(np.linalg.norm(target-np.asarray(obs['robot_state']['eef']['pos']))),
+                         'last_measurement':last})

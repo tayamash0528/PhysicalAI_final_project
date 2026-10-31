@@ -1,0 +1,193 @@
+{
+  "audited_utc": "2026-10-31T03:27:45.842160+00:00",
+  "new_actions_or_tuning": false,
+  "all20_match_official_CSV": true,
+  "old5_data_and_protocol_unchanged": {
+    "main_comparison/results.csv": true,
+    "main_comparison/results_summary.json": true,
+    "main_comparison/LOCK.json": true
+  },
+  "audits": [
+    {
+      "episode": "episode_00",
+      "case_id": "new_leaf_01",
+      "method": "no_reobserve",
+      "steps": 900,
+      "max_bilateral_50mm_hold_samples": 605,
+      "containment_success": false,
+      "all_time_height_contact_release_hold_checks_passed": true
+    },
+    {
+      "episode": "episode_01",
+      "case_id": "new_leaf_01",
+      "method": "reobserve",
+      "steps": 900,
+      "max_bilateral_50mm_hold_samples": 0,
+      "containment_success": false,
+      "all_time_height_contact_release_hold_checks_passed": true
+    },
+    {
+      "episode": "episode_02",
+      "case_id": "new_leaf_04",
+      "method": "no_reobserve",
+      "steps": 784,
+      "max_bilateral_50mm_hold_samples": 410,
+      "containment_success": true,
+      "all_time_height_contact_release_hold_checks_passed": true
+    },
+    {
+      "episode": "episode_03",
+      "case_id": "new_leaf_04",
+      "method": "reobserve",
+      "steps": 900,
+      "max_bilateral_50mm_hold_samples": 0,
+      "containment_success": false,
+      "all_time_height_contact_release_hold_checks_passed": true
+    },
+    {
+      "episode": "episode_04",
+      "case_id": "new_leaf_02",
+      "method": "reobserve",
+      "steps": 765,
+      "max_bilateral_50mm_hold_samples": 476,
+      "containment_success": true,
+      "all_time_height_contact_release_hold_checks_passed": true
+    },
+    {
+      "episode": "episode_05",
+      "case_id": "new_leaf_02",
+      "method": "no_reobserve",
+      "steps": 900,
+      "max_bilateral_50mm_hold_samples": 261,
+      "containment_success": false,
+      "all_time_height_contact_release_hold_checks_passed": true
+    },
+    {
+      "episode": "episode_06",
+      "case_id": "new_leaf_00",
+      "method": "reobserve",
+      "steps": 900,
+      "max_bilateral_50mm_hold_samples": 0,
+      "containment_success": false,
+      "all_time_height_contact_release_hold_checks_passed": true
+    },
+    {
+      "episode": "episode_07",
+      "case_id": "new_leaf_00",
+      "method": "no_reobserve",
+      "steps": 768,
+      "max_bilateral_50mm_hold_samples": 193,
+      "containment_success": true,
+      "all_time_height_contact_release_hold_checks_passed": true
+    },
+    {
+      "episode": "episode_08",
+      "case_id": "new_leaf_05",
+      "method": "no_reobserve",
+      "steps": 900,
+      "max_bilateral_50mm_hold_samples": 426,
+      "containment_success": false,
+      "all_time_height_contact_release_hold_checks_passed": true
+    },
+    {
+      "episode": "episode_09",
+      "case_id": "new_leaf_05",
+      "method": "reobserve",
+      "steps": 900,
+      "max_bilateral_50mm_hold_samples": 0,
+      "containment_success": false,
+      "all_time_height_contact_release_hold_checks_passed": true
+    },
+    {
+      "episode": "episode_10",
+      "case_id": "new_leaf_06",
+      "method": "no_reobserve",
+      "steps": 900,
+      "max_bilateral_50mm_hold_samples": 0,
+      "containment_success": false,
+      "all_time_height_contact_release_hold_checks_passed": true
+    },
+    {
+      "episode": "episode_11",
+      "case_id": "new_leaf_06",
+      "method": "reobserve",
+      "steps": 695,
+      "max_bilateral_50mm_hold_samples": 423,
+      "containment_success": true,
+      "all_time_height_contact_release_hold_checks_passed": true
+    },
+    {
+      "episode": "episode_12",
+      "case_id": "new_leaf_03",
+      "method": "reobserve",
+      "steps": 900,
+      "max_bilateral_50mm_hold_samples": 0,
+      "containment_success": false,
+      "all_time_height_contact_release_hold_checks_passed": true
+    },
+    {
+      "episode": "episode_13",
+      "case_id": "new_leaf_03",
+      "method": "no_reobserve",
+      "steps": 418,
+      "max_bilateral_50mm_hold_samples": 159,
+      "containment_success": true,
+      "all_time_height_contact_release_hold_checks_passed": true
+    },
+    {
+      "episode": "episode_14",
+      "case_id": "new_leaf_07",
+      "method": "reobserve",
+      "steps": 607,
+      "max_bilateral_50mm_hold_samples": 205,
+      "containment_success": true,
+      "all_time_height_contact_release_hold_checks_passed": true
+    },
+    {
+      "episode": "episode_15",
+      "case_id": "new_leaf_07",
+      "method": "no_reobserve",
+      "steps": 393,
+      "max_bilateral_50mm_hold_samples": 149,
+      "containment_success": true,
+      "all_time_height_contact_release_hold_checks_passed": true
+    },
+    {
+      "episode": "episode_16",
+      "case_id": "new_leaf_08",
+      "method": "no_reobserve",
+      "steps": 900,
+      "max_bilateral_50mm_hold_samples": 17,
+      "containment_success": false,
+      "all_time_height_contact_release_hold_checks_passed": true
+    },
+    {
+      "episode": "episode_17",
+      "case_id": "new_leaf_08",
+      "method": "reobserve",
+      "steps": 900,
+      "max_bilateral_50mm_hold_samples": 172,
+      "containment_success": false,
+      "all_time_height_contact_release_hold_checks_passed": true
+    },
+    {
+      "episode": "episode_18",
+      "case_id": "new_leaf_09",
+      "method": "reobserve",
+      "steps": 613,
+      "max_bilateral_50mm_hold_samples": 287,
+      "containment_success": true,
+      "all_time_height_contact_release_hold_checks_passed": true
+    },
+    {
+      "episode": "episode_19",
+      "case_id": "new_leaf_09",
+      "method": "no_reobserve",
+      "steps": 900,
+      "max_bilateral_50mm_hold_samples": 241,
+      "containment_success": false,
+      "all_time_height_contact_release_hold_checks_passed": true
+    }
+  ],
+  "limits": "Footprint boolean was logged by unchanged executed geometry code; no per-step object rotation for independent vertex re-render.20Hz sampled intervals, not continuous substep verification."
+}

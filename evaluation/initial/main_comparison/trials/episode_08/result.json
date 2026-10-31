@@ -1,0 +1,176 @@
+{
+  "episode": 8,
+  "seed": 8402,
+  "init_state_index": 8,
+  "initial_state_sha256": "a42ca31e9eaf8b31af08fb6debfb112f285b9f5c96204a1f0ba880877bfdcefb",
+  "setup_only": {
+    "case_id": "clear_02",
+    "initial_state": "evaluation/initial/main_comparison/initial_states/clear_02/state.npy",
+    "scene_prepared": true,
+    "occlusion": "none",
+    "leaf_half_size_m": null,
+    "seed": 8402,
+    "active_reobservation": false,
+    "split": "reserved_positions_never_executed_before_main"
+  },
+  "steps": 462,
+  "native_success": false,
+  "project_success": true,
+  "stage": "B_apple_single",
+  "sim_seconds": 23.1,
+  "wall_seconds_including_reset": 49.46298100000013,
+  "inference_seconds": 22.491062665000754,
+  "sim_step_wall_seconds": 16.817761130001145,
+  "stop_reason": "project_placement_success",
+  "placement_evaluator_version": "v2_open_command_and_75mm_gap_40_steps",
+  "telemetry_stage_counts": {
+    "approach_within_50mm_padmid": 320,
+    "close_command": 268,
+    "strong_close_command": 264,
+    "left_contact": 283,
+    "right_contact": 295,
+    "bilateral_contact": 283,
+    "lift_50mm": 237,
+    "lift_50mm_hold_2s_bilateral": 198
+  },
+  "manipulation_source": "finetuned SmolVLA.select_action",
+  "reobservation_count": 0,
+  "observation_steps": 0,
+  "vla_steps": 462,
+  "observation_wall_seconds": 0.0,
+  "manipulation_wall_seconds": 46.71389744699036,
+  "decision_wall_seconds": 0.0016063490002125036,
+  "phase_handoff_wall_offset_s": null,
+  "image_update_contract": "fresh actual camera observations each control step; action chunk length unchanged",
+  "reobservation_decision": {
+    "trigger": false,
+    "metrics": {
+      "views": {
+        "image": {
+          "red_pixels": 284,
+          "green_pixels": 0,
+          "green_centroid_x_px": null,
+          "red_centroid_y_px": 133.3450704225352
+        },
+        "image2": {
+          "red_pixels": 978,
+          "green_pixels": 0,
+          "green_centroid_x_px": null,
+          "red_centroid_y_px": 105.42535787321063
+        }
+      },
+      "red_pixels": 1262,
+      "green_pixels": 0,
+      "red_share": 1.0
+    },
+    "reason": "sufficient red evidence or no green occluder",
+    "inputs": [
+      "actual image RGB",
+      "actual image2 RGB"
+    ],
+    "uses_object_truth": false,
+    "enabled": false,
+    "executed": false,
+    "rule": {
+      "version": "rgb_early_approach_v10",
+      "steps_per_move": 45,
+      "max_moves": 1,
+      "candidate_offsets_m": [
+        [
+          0.02,
+          0.04,
+          -0.01
+        ]
+      ],
+      "candidate_world_rotvec_rad": [
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "selection": "Initial RGB-only occlusion trigger; fixed small early-approach observation, no object pose/count.",
+      "scope": "Small elevated visual leaf on initial wrist ray; open gripper, preserve initial wrist orientation.",
+      "uses_object_truth": false,
+      "success_proxy_min_red_pixels": 200
+    },
+    "trigger_rule": {
+      "min_green_pixels": 250,
+      "min_red_share": 0.75,
+      "scope": "red apple and green rigid leaf in this synthetic scene; not a general detector",
+      "version": "rgb_green_red_trigger_v1"
+    },
+    "observer_profile": "rgb_early_approach_v10",
+    "candidate_rule": {
+      "version": "rgb_early_approach_v10",
+      "steps_per_move": 45,
+      "max_moves": 1,
+      "candidate_offsets_m": [
+        [
+          0.02,
+          0.04,
+          -0.01
+        ]
+      ],
+      "candidate_world_rotvec_rad": [
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "selection": "Initial RGB-only occlusion trigger; fixed small early-approach observation, no object pose/count.",
+      "scope": "Small elevated visual leaf on initial wrist ray; open gripper, preserve initial wrist orientation.",
+      "uses_object_truth": false,
+      "success_proxy_min_red_pixels": 200
+    },
+    "target_eef_m": null,
+    "views_before": {
+      "image": {
+        "actual_camera": "agentview",
+        "position_world_m": [
+          0.6586131746834771,
+          0.0,
+          1.6103500240372424
+        ],
+        "rotation_to_world": [
+          -7.268184498698815e-08,
+          -0.6282664504107425,
+          0.7779982437565529,
+          0.9999999999999858,
+          7.268184498698815e-08,
+          1.521152659944569e-07,
+          -1.521152659944569e-07,
+          0.7779982437565529,
+          0.6282664504107283
+        ]
+      },
+      "image2": {
+        "actual_camera": "robot0_eye_in_hand",
+        "position_world_m": [
+          -0.15303792215905412,
+          2.4631220210186842e-05,
+          1.2672841355231343
+        ],
+        "rotation_to_world": [
+          0.0004918296895981555,
+          0.9983867450712564,
+          0.05677733147636016,
+          -0.9999998786606122,
+          0.0004926243586239609,
+          -5.204413289217058e-13,
+          -2.796989702252492e-05,
+          -0.05677732458703333,
+          0.9983868662149064
+        ]
+      }
+    },
+    "image_frame_before": 0,
+    "decision_wall_seconds": 0.0016063490002125036,
+    "decision_wall_offset_s": 2.596405185000094,
+    "initial_image_acquisition_wall_offset_s": 2.5288639059999696
+  },
+  "occlusion": "none",
+  "method": "no_reobserve",
+  "case_id": "clear_02"
+}

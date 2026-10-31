@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "experiments": [
+    {
+      "experiment": "initial",
+      "formal_trials": 20,
+      "fixed_hashes_match": true
+    },
+    {
+      "experiment": "relocated_apple",
+      "formal_trials": 20,
+      "fixed_hashes_match": true
+    }
+  ],
+  "python_sources_parsed": 42,
+  "main_document_links_resolved": true,
+  "performance_runs_started": 0
+}

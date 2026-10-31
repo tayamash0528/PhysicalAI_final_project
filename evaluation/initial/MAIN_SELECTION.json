@@ -1,0 +1,40 @@
+{
+  "selected_utc": "2026-10-31T00:33:08.808357+00:00",
+  "basis": "All2 development cases:near-wrist small32x28mm leaf atroot+220mm; early_high actual visible-red ratio approx1.0 aftersmallmove. Larger motions/rotations avoided. No VLA outcomes used yet.",
+  "height_above_root_m": 0.22,
+  "half_size_m": [
+    0.016,
+    0.014,
+    0.001
+  ],
+  "observer_profile": "rgb_early_approach_v10",
+  "motion_m": [
+    0.02,
+    0.04,
+    -0.01
+  ],
+  "steps": 45,
+  "scope": "Visual-only occlusion, no branch support or leaf collision. Fixed camera sees apple. Root placement GT used only during scene setup.",
+  "model": "old_C_B4_1250",
+  "n_action_steps": 10,
+  "max_total_steps": 900,
+  "selected_for_main_utc": "2026-10-31T00:47:46.703913+00:00",
+  "development_results_file": "development_v10/summary.json",
+  "development_placement": {
+    "no_reobserve": "1/2",
+    "reobserve": "2/2"
+  },
+  "development_grasp_hold2s": {
+    "no_reobserve": "2/2",
+    "reobserve": "2/2"
+  },
+  "clear_skip_sanity": {
+    "both_placement_success": true,
+    "observation_steps_both": 0,
+    "action_max_difference": 0.0
+  },
+  "no_main_outcomes_seen": true,
+  "main_trials": 20,
+  "primary_goal": "Compare observation/grasp/placement separately, not guarantee improvement",
+  "no_more_tuning_after_main": true
+}
