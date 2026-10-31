@@ -128,7 +128,7 @@
       "original": "docs/readme_validation.md",
       "published": "docs/readme_validation.md",
       "original_sha256": "e62833be7fc09e60b5e8f93b4f12e01781c5c17d24eddd3caf7b97c98e69bfb2",
-      "published_sha256": "39e97b7b2f0206150c2fea239cfb7624fdc0e5b7af2d9b1cee2c85f3086fc26c"
+      "published_sha256": "76519f38501b3978f804780e76e8184c1793ccd6bb1df8d7e195c1ef5e90cdd7"
     },
     {
       "original": "docs/reproduction.md",
@@ -1418,7 +1418,7 @@
       "original": "metadata/source_comparison.json",
       "published": "metadata/source_comparison.json",
       "original_sha256": "0fa1c00510588fd1abf8d14a39e270649804e0a1a4a455cbe2674fb24c7d4f6f",
-      "published_sha256": "284d35bb463c7a4673e6b3544899b8eaef2540e730ff5d1f6ec73697d3c6cc7b"
+      "published_sha256": "06fbab7d4e636d9ef31039119f924b3cfa5f89facccd6862c329f58e94755ac9"
     },
     {
       "original": "metadata/training_data_structure.json",
@@ -1664,9 +1664,10 @@
   "csv_content_unchanged": false,
   "csv_condition_ids_and_metrics_unchanged": true,
   "diagnostic_csv_path_columns_normalized": [
-    "video",
-    "log_directory",
     "initial_fixed_rgb",
-    "initial_wrist_rgb"
+    "initial_wrist_rgb",
+    "log_directory",
+    "observation_end_wrist_rgb",
+    "video"
   ]
 }

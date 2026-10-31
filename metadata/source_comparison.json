@@ -638,5 +638,6 @@
       "role": "historical development/preparation snapshot",
       "unified_diff": "review_metadata/diffs/history_overnight__20261030_0220__config_c_multi12_b4__executed_training_source.py.diff"
     }
-  ]
+  ],
+  "comparison_scope": "採用実験時と公開準備前の照合記録。公開用パス変更後の照合はalgorithm_path_only_validation.jsonとpublication_path_map.jsonを参照。"
 }

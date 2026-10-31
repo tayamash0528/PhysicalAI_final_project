@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "repository": "https://github.com/tayamash0528/PhysicalAI_final_project",
+  "authentication": "gh stored authentication; token not exposed",
+  "fresh_clone_commit": "3ddc8bac2a4d20d609d5d6d56974688fcc0df893",
+  "release_tag": "v1.0.0",
+  "downloaded_while_draft": true,
+  "unauthenticated_access_tested": false,
+  "public_visibility_changed": false,
+  "model_and_asset_files": [
+    {
+      "filename": "fruit_vla_model_v1.0.zip",
+      "bytes": 360492727,
+      "sha256": "93d8776074181e0e219a0f2f65477105162681189dda3c1ab486df27a1d734bb",
+      "zip_crc_valid": true,
+      "installed_content_hashes_valid": true
+    },
+    {
+      "filename": "fruit_vla_assets_v1.0.zip",
+      "bytes": 736906,
+      "sha256": "99eba7c9e78b186ee781bf1dba88d2aa526f20819aea08936ecf76c9a58419c7",
+      "zip_crc_valid": true,
+      "installed_content_hashes_valid": true
+    }
+  ],
+  "new_training_or_performance_trials": 0
+}

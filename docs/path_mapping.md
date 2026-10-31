@@ -1,5 +1,17 @@
 # 公開用の名前と元成果の対応
 
+主な配布・閲覧名は次のとおり。元MP4はYouTube用としてローカルに保持し、Gitへは登録しない。
+
+|元成果|公開・提出用の名前|
+|---|---|
+|fruit_vla_C1250.zip|Release: fruit_vla_model_v1.0.zip|
+|fruit_vla_adopted_assets.zip|Release: fruit_vla_assets_v1.0.zip|
+|experiments/20261031_0925_reobservation/main_comparison/results.csv|results/initial_comparison.csv|
+|experiments/20261031_1145_leaf_holdout/holdout_comparison/results.csv|results/relocated_apple_comparison.csv|
+|diagnostics/20261031_1814_leaf_motion/factorial_diagnostic.csv|results/occlusion_motion_diagnostic.csv|
+|submission/video/summary_148/fruit_vla_148s_summary_ja.mp4|ローカル: media/fruit_vla_demo.mp4（Git対象外）|
+|fruit_vla_report_DRAFT.pdf|docs/project_report.pdf（更新ページを追記、正式提出名は確認待ち）|
+
 元成果はローカルで保持している。公開用コピーのパスのみ変更し、評価の数値・CSV内の条件IDは変更していない。CSV内の動画・画像パスは実験時の出典であり、公開コピーの実在パスとは区別する。
 
 |実験時の名前|公開用の名前|
@@ -23,4 +35,4 @@
 
 提出動画のローカルコピーはmedia/fruit_vla_demo.mp4（Gitには含めない）。元はsubmission/video/summary_148/fruit_vla_148s_summary_ja.mp4。YouTube URLは確定待ち。PDFはdocs/project_report.pdfを内容確認用とし、正式提出名はOmniCampus名確認後に設定する。
 
-診断CSVは個人ホスト絶対パスを除くため、video・log_directory・initial_fixed_rgb・initial_wrist_rgb列だけをプロジェクト相対パスへ変更した。条件ID・成否・時刻・数値は元CSVと同一。最初と別配置のCSVはbyte一致。
+診断CSVは個人ホスト絶対パスを除くため、video・log_directory・initial_fixed_rgb・initial_wrist_rgb・observation_end_wrist_rgb列だけをプロジェクト相対パスへ変更した。条件ID・成否・時刻・数値は元CSVと同一。最初と別配置のCSVはbyte一致。

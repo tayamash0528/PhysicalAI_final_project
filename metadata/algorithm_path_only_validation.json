@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "scope": "scriptsの変更は公開用パス文字列のみ。ASTを照合。",
+  "files": [
+    "active_observation.py",
+    "arm_telemetry.py",
+    "collect_compact_teachers.py",
+    "diagnose_physical_grasp.py",
+    "fruit_objects.py",
+    "occlusion_scene.py",
+    "placement_score.py",
+    "prepare_assets.py",
+    "run_rollout.py",
+    "train_tiny_teacher.py"
+  ],
+  "policy_tuning": false
+}

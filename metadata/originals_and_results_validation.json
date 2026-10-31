@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "original_adopted_files_unchanged": 119,
+  "comparison_csvs_byte_identical": 2,
+  "diagnostic_rows_metrics_and_ids_unchanged": 12,
+  "diagnostic_path_columns_only": [
+    "initial_fixed_rgb",
+    "initial_wrist_rgb",
+    "log_directory",
+    "observation_end_wrist_rgb",
+    "video"
+  ],
+  "new_performance_trials": 0
+}
