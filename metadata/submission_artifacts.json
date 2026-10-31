@@ -1,0 +1,24 @@
+{
+  "description": "現在の提出資料・動画の案内。過去の作業記録とは区別する。",
+  "pdf": {
+    "included_in_current_git_tree": false,
+    "local_path": "docs/project_report.pdf",
+    "retained_locally": true,
+    "gitignore_rule": "/docs/project_report.pdf",
+    "submission_destination": "OmniCampusへ別途提出",
+    "content_modified": false,
+    "historical_commits_retain_pdf": true,
+    "historical_validation_record": "metadata/pdf_validation.json"
+  },
+  "video": {
+    "url": "https://youtu.be/uYTpWKR6QEs",
+    "link_text": "実演動画（YouTube・2分28秒）",
+    "duration_seconds": 148,
+    "visibility": "ユーザー申告ではYouTubeの限定公開",
+    "readme_location": "概要直後",
+    "included_in_git": false,
+    "fetch_verified": false,
+    "playback_verified": false,
+    "verification_note": "この環境のweb取得はCache missで失敗。公開設定・動画内容は変更していない。"
+  }
+}

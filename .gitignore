@@ -11,3 +11,4 @@ assets/apple/apple.obj
 assets/apple/texture.png
 **/locked_assets/**/*.obj
 media/*.mp4
+/docs/project_report.pdf

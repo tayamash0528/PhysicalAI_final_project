@@ -4,6 +4,10 @@
 
 葉で対象が見づらいとき、動く前にカメラで見直すことが果実回収に役立つかを調べた。LIBERO／MuJoCoのPandaアームで、**机上のリンゴ1個をトレーへ回収する動作**を構築した。枝からの切離し、種類の判別・仕分け、実農場実証は対象外である。
 
+[実演動画（YouTube・2分28秒）](https://youtu.be/uYTpWKR6QEs)
+
+実演動画はYouTubeで限定公開。MP4はGitに含めない。説明資料はOmniCampusへ別途提出するため、PDFはこのリポジトリに同梱しない。
+
 リポジトリとReleaseは現在Private。閲覧・取得には権限のあるGitHubアカウントでの認証が必要。Public化後の未認証アクセスはまだ確認していない。
 
 ## 仕組みと自作部分
@@ -34,8 +38,7 @@ VLAは画像・言葉・ロボットの状態から次の動きを出すAI。公
 - [最初の比較CSV](results/initial_comparison.csv)／[集計](results/initial_comparison_summary.json)
 - [置き場所変更の比較CSV](results/relocated_apple_comparison.csv)／[集計](results/relocated_apple_comparison_summary.json)
 - [最終診断CSV](results/occlusion_motion_diagnostic.csv)／[診断報告](evaluation/occlusion_motion/DIAGNOSTIC_REPORT.md)
-- 動画：148秒の完成版をYouTubeへ掲載予定。URLは未確定。MP4はGitへ含めない。
-- [動画の日本語字幕](media/fruit_vla_demo_ja.srt)／[説明資料](docs/project_report.pdf)
+- [動画の日本語字幕](media/fruit_vla_demo_ja.srt)
 
 最終診断は失敗分析のため事後選定した3配置。葉を消しても移動後に失敗する位置A、葉を消すと成功する位置B、全条件で成功する位置Cがあった。本比較とは別集計で、姿勢が唯一の原因などとは結論しない。
 
@@ -92,4 +95,4 @@ docker run --rm --gpus all --shm-size 2g -e HF_HUB_OFFLINE=1 @mounts $image pyth
 
 自作コードはMIT、上流モデル・ライブラリ・素材には各権利者の条件が適用される。LeRobot／SmolVLA／MuJoCoはApache-2.0、LIBERO／robosuiteはMIT、YCBのリンゴ形状・textureはCC BY 4.0。全体へ単一ライセンスを上書きしていない。[第三者通知](THIRD_PARTY_NOTICES.md)／[ライセンス原文](licenses/Apache-2.0.txt)。
 
-YouTubeへの登録・提出・Public化は未実施。YouTube URLとPDFの正式提出名は[提出前の残作業](docs/submission_pending.md)に記録する。
+YouTubeの実演動画リンクは冒頭に掲載した。OmniCampusへの提出とGitHubのPublic化は未実施。[提出前の残作業](docs/submission_pending.md)を参照。
