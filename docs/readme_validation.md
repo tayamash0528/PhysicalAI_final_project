@@ -4,7 +4,7 @@
 
 過去のDocker構築・既知配置の実行は既存キャッシュを使用した別の確認であり、新しい公開パスで空環境から実行した証明ではない。[過去の検証記録](archive/publication_validation_history.md)。
 
-認証済みRelease取得の検査記録はmetadata/github_release_verification.json。Public化後の未認証取得は別途必要。[名称対応表](path_mapping.md)／[再現手順](reproduction.md)／[提出前の残作業](submission_pending.md)。
+認証済みRelease取得の検査記録はmetadata/github_release_verification.json。Public化後の未認証取得は2026-11-01に確認済み。詳細は[配布手順の確認記録](distribution.md#公開未認証取得の確認2026-11-01)を参照。[名称対応表](path_mapping.md)／[再現手順](reproduction.md)／[提出前の残作業](submission_pending.md)。
 
 別cloneでPrivate Releaseのモデル・アセットをgh認証で取得し、ZIP CRC・ZIP全体と内容のSHA・配置後SHA・固定条件の検査を通過した。metadata/github_release_verification.jsonに保存。動画MP4はGit対象外。公開準備時にはPDFの追記ページを画像として確認した。この過去の確認記録はmetadata/pdf_validation.jsonに保持する。
 
