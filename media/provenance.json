@@ -1,8 +1,17 @@
 {
-  "original": "submission/video/summary_148/fruit_vla_148s_summary_ja.mp4",
-  "published": "media/fruit_vla_demo.mp4",
-  "sha256": "ef4f2acd3f8de3e80ba4b94f8342d02b78775daf6603dd21798dd8c709009331",
+  "original": "submission/video/wording_revision_148/fruit_vla_demo_final_ja.mp4",
+  "published": "https://youtu.be/Gy2tz8IkIt8",
+  "title": "PAI最終課題_82444",
+  "sha256": "31a2c6c59676cdfd264196f3c30c2f92446f3fc7b44c253af61cb184007ed11f",
   "duration": 148,
   "fps": 40,
-  "new_experiments": false
+  "width": 1920,
+  "height": 1080,
+  "audio": false,
+  "subtitles": "media/fruit_vla_demo_ja.srt",
+  "subtitles_sha256": "4ca2d83c1b0ec6cb4ab9a0e445690b5a32f2316177d6bd1f09116986aca61908",
+  "new_experiments": false,
+  "previous_local_copy": "media/fruit_vla_demo.mp4",
+  "previous_local_copy_is_current": false,
+  "previous_validation": "metadata/video_history/summary_148.json"
 }

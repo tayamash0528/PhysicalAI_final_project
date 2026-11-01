@@ -2,23 +2,34 @@
   "description": "現在の提出資料・動画の案内。過去の作業記録とは区別する。",
   "pdf": {
     "included_in_current_git_tree": false,
-    "local_path": "docs/project_report.pdf",
+    "local_path": "submission/final_video_update_20261102/説明資料_PAI最終課題_tayamash.pdf",
     "retained_locally": true,
-    "gitignore_rule": "/docs/project_report.pdf",
     "submission_destination": "OmniCampusへ別途提出",
-    "content_modified": false,
+    "content_modified": true,
     "historical_commits_retain_pdf": true,
-    "historical_validation_record": "metadata/pdf_validation.json"
+    "historical_validation_record": "metadata/pdf_validation.json",
+    "historical_local_path": "docs/project_report.pdf",
+    "pages": 8,
+    "source_sha256": "73dbf358426ae110678fe7ee95a2c84faa2dbd755edd1982abf2ac02793ddd1a",
+    "sha256": "0f57dbdb8acf1273e03510a6c80fbc975b68fcae323b2bb32ad3760f6e7917fc",
+    "change_scope": "動画の表示URLとリンク先のみ。本文・図・数値・参考文献・引用番号は不変。",
+    "current_validation_record": "metadata/submission_pdf_validation.json",
+    "historical_gitignore_rule": "/docs/project_report.pdf"
   },
   "video": {
-    "url": "https://youtu.be/uYTpWKR6QEs",
+    "url": "https://youtu.be/Gy2tz8IkIt8",
     "link_text": "実演動画（YouTube・2分28秒）",
     "duration_seconds": 148,
-    "visibility": "ユーザー申告ではYouTubeの限定公開",
+    "visibility": "公開／限定公開の区分は未確認",
     "readme_location": "概要直後",
     "included_in_git": false,
     "fetch_verified": false,
     "playback_verified": false,
-    "verification_note": "この環境のweb取得はCache missで失敗。公開設定・動画内容は変更していない。"
+    "verification_note": "YouTube oEmbedでタイトルを確認。本編ページの取得・本編再生・公開区分は未確認。動画内容や公開設定は変更していない。",
+    "title": "PAI最終課題_82444",
+    "metadata_fetch_verified": true,
+    "local_source": "submission/video/wording_revision_148/fruit_vla_demo_final_ja.mp4",
+    "sha256": "31a2c6c59676cdfd264196f3c30c2f92446f3fc7b44c253af61cb184007ed11f",
+    "subtitles": "media/fruit_vla_demo_ja.srt"
   }
 }

@@ -1,0 +1,34 @@
+{
+  "record_kind": "過去の148秒版の公開準備時点の記録",
+  "current_video": false,
+  "youtube_url": "https://youtu.be/uYTpWKR6QEs",
+  "provenance": {
+    "original": "submission/video/summary_148/fruit_vla_148s_summary_ja.mp4",
+    "published": "media/fruit_vla_demo.mp4",
+    "sha256": "ef4f2acd3f8de3e80ba4b94f8342d02b78775daf6603dd21798dd8c709009331",
+    "duration": 148,
+    "fps": 40,
+    "new_experiments": false
+  },
+  "video_validation": {
+    "passed": true,
+    "duration_seconds": 148,
+    "width": 1920,
+    "height": 1080,
+    "fps": 40,
+    "frames": 5920,
+    "audio": false,
+    "all_frames_decoded": true,
+    "source_images_match_action_hashes": true,
+    "synchronization_and_final_frames_passed": true,
+    "result_numbers_match_saved_csvs": true,
+    "original_files_unchanged": true,
+    "output_sha256": "ef4f2acd3f8de3e80ba4b94f8342d02b78775daf6603dd21798dd8c709009331",
+    "bytes": 18033016,
+    "visual_review": "qa/visual_review.md（抽出画面を目視確認した記録）",
+    "visual_review_completed": true,
+    "remaining_problems": []
+  },
+  "captions_sha256": "e4dd00313db16ce84229d2eda275693a6cfcd2431f2c760f5a8216c32d4411b7",
+  "captions_retained_in_prior_git_commits": true
+}
