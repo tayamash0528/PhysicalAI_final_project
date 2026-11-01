@@ -1,5 +1,7 @@
 # 再観察を組み込んだVLA果実回収システムの構築と評価
 
+コードと採用重み・アセットをGitHubとReleaseで公開しています。
+
 [GitHubリポジトリ](https://github.com/tayamash0528/PhysicalAI_final_project) ／ [配布Release v1.0.0](https://github.com/tayamash0528/PhysicalAI_final_project/releases/tag/v1.0.0)
 
 葉で対象が見づらいとき、動く前にカメラで見直すことが果実回収に役立つかを調べた。LIBERO／MuJoCoのPandaアームで、**机上のリンゴ1個をトレーへ回収する動作**を構築した。枝からの切離し、種類の判別・仕分け、実農場実証は対象外である。
@@ -8,7 +10,7 @@
 
 実演動画はYouTubeで限定公開。MP4はGitに含めない。説明資料はOmniCampusへ別途提出するため、PDFはこのリポジトリに同梱しない。
 
-リポジトリとReleaseは現在Private。閲覧・取得には権限のあるGitHubアカウントでの認証が必要。Public化後の未認証アクセスはまだ確認していない。
+2026-11-01にリポジトリのPublic状態とv1.0.0 Releaseの公開を確認した。認証なしでcloneと両配布ZIPの取得・SHA256照合を完了しており、取得にGitHubへのログインは不要。
 
 ## 仕組みと自作部分
 
@@ -46,17 +48,17 @@ VLAは画像・言葉・ロボットの状態から次の動きを出すAI。公
 
 Windows＋Docker DesktopのLinuxコンテナ、GPU連携済みNVIDIA GPUを使用。確認環境はRTX 4070 SUPER 12GB。Python 3.12.16、PyTorch 2.7.1、LeRobot 0.6.2、robosuite 1.4.0、MuJoCo 3.8.1。20Hzはシミュレータ制御周波数で、実時間の推論速度ではない。
 
-権限のあるアカウントで `gh auth login` を行う。トークンやパスワードをチャットや設定ファイルへ書かない。
+ホスト側にGitとPython 3.10以上を用意し、PowerShellで実行する。
 
 ```powershell
-gh repo clone tayamash0528/PhysicalAI_final_project
+git clone https://github.com/tayamash0528/PhysicalAI_final_project.git
 cd PhysicalAI_final_project
-python tools/publication/prepare_publication.py install --release-dir cache/releases --download --github-auth
+python tools/publication/prepare_publication.py install --release-dir cache/releases --download
 python tools/publication/prepare_publication.py upstream
 docker build --progress plain --pull=false -t fruit-vla:publication .
 ```
 
-採用重みは通常のGitへ含めない。[fruit_vla_model_v1.0.zip](https://github.com/tayamash0528/PhysicalAI_final_project/releases/download/v1.0.0/fruit_vla_model_v1.0.zip) と [fruit_vla_assets_v1.0.zip](https://github.com/tayamash0528/PhysicalAI_final_project/releases/download/v1.0.0/fruit_vla_assets_v1.0.zip) を取得し、ZIPと各内容のSHA256を確認して配置する。[配布manifest](release_manifest.json)／[URL設定](release_urls.json)。Public化後は未認証取得を別途確認する。
+採用重みは通常のGitへ含めない。[fruit_vla_model_v1.0.zip](https://github.com/tayamash0528/PhysicalAI_final_project/releases/download/v1.0.0/fruit_vla_model_v1.0.zip) と [fruit_vla_assets_v1.0.zip](https://github.com/tayamash0528/PhysicalAI_final_project/releases/download/v1.0.0/fruit_vla_assets_v1.0.zip) を取得し、ZIPと各内容のSHA256を確認して配置する。[配布manifest](release_manifest.json)／[URL設定](release_urls.json)。2026-11-01に認証なしで両ZIPを取得し、ZIP全体と内部の全10ファイルが既存manifestの容量・SHA256に一致することを確認した。[取得確認の詳細](docs/distribution.md#公開未認証取得の確認2026-11-01)。
 
 重み本体のSHA256：`67a1dd9044c21f4b13de96afca496099e02f9531b624879f151fc3996e991ac2`。配置先 `models/fruit_vla/expert_delta.safetensors`。ベースSmolVLAだけでは再現できない。
 
@@ -95,4 +97,4 @@ docker run --rm --gpus all --shm-size 2g -e HF_HUB_OFFLINE=1 @mounts $image pyth
 
 自作コードはMIT、上流モデル・ライブラリ・素材には各権利者の条件が適用される。LeRobot／SmolVLA／MuJoCoはApache-2.0、LIBERO／robosuiteはMIT、YCBのリンゴ形状・textureはCC BY 4.0。全体へ単一ライセンスを上書きしていない。[第三者通知](THIRD_PARTY_NOTICES.md)／[ライセンス原文](licenses/Apache-2.0.txt)。
 
-YouTubeの実演動画リンクは冒頭に掲載した。OmniCampusへの提出とGitHubのPublic化は未実施。[提出前の残作業](docs/submission_pending.md)を参照。
+YouTubeの実演動画リンクは冒頭に掲載した。提出時にはログアウト状態でコード・Release・動画へアクセスできることを確認する。[提出前の残作業](docs/submission_pending.md)を参照。

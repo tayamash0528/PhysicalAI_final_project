@@ -8,10 +8,10 @@
 
 ## 2. コード・配布ファイルを準備
 
-GitHubからcloneし、そのルートで実行する。Private中は権限のあるアカウントでgh auth loginを済ませる。[配布手順](distribution.md)と[全容量・SHA一覧](../release_manifest.json)を参照。
+GitHubからcloneし、そのルートで実行する。リポジトリとv1.0.0 ReleaseはPublicであり、以下の取得手順に認証は不要。[配布手順](distribution.md)と[全容量・SHA一覧](../release_manifest.json)を参照。
 
 ```powershell
-python tools/publication/prepare_publication.py install --release-dir cache/releases --download --github-auth
+python tools/publication/prepare_publication.py install --release-dir cache/releases --download
 python tools/publication/prepare_publication.py upstream
 ```
 
@@ -89,4 +89,4 @@ docker run --rm @mounts $image python evaluation/initial/tools/analyze_three_sta
 
 ## 7. 今回の登録と残作業
 
-GitHubとv1.0.0 Releaseに登録し、release_urls.jsonに実URLを設定する。Private中は認証済みで取得・SHA・ZIPを検査する。Public変更後の未認証取得、第三者の新規PC・空キャッシュでの全工程は未確認。今回は新しいVLA試行・学習・比較実験を開始していない。
+GitHubとv1.0.0 Releaseへの登録、release_urls.jsonへの実URL設定は完了している。従来のPrivate環境では認証済みで取得・SHA・ZIPを検査した。2026-11-01にPublic状態、認証なしのcloneと両配布ZIPの取得、ZIP本体・内部全10ファイルの容量・SHA256を確認した。詳細は[未認証取得の確認](distribution.md#公開未認証取得の確認2026-11-01)を参照。第三者の新規PC・空キャッシュでの全工程は未確認。今回は新しいVLA試行・学習・比較実験を開始していない。

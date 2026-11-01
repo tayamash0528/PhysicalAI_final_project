@@ -1,6 +1,6 @@
 # 公開・提出前に残る作業
 
-- リポジトリとReleaseはPrivateを維持する。Publicへの変更と、その後の未認証clone・Release取得・SHA256確認は未実施。
+- 2026-11-01にリポジトリのPublic状態とv1.0.0 Releaseの公開を確認した。認証なしでclone・両配布ZIPの取得を行い、ZIP本体と内部全10ファイルが既存manifestの容量・SHA256に一致した。[確認記録](distribution.md#公開未認証取得の確認2026-11-01)。空キャッシュの新規PCでの構築・実行は、この取得確認に含めない。
 - 実演動画はユーザーがYouTubeへ限定公開でアップロード済み。[実演動画（YouTube・2分28秒）](https://youtu.be/uYTpWKR6QEs)をREADME冒頭にも掲載した。全体公開済みとは扱わない。リンク先の取得・再生はこの環境では確認できていない。
 - 課題指定の動画タイトルは `PAI最終課題_omnicampusアカウント名orアカウントID`。通常のMP4名 `fruit_vla_demo.mp4` とは別に設定する。
 - 説明資料はOmniCampusへ別途提出するため、PDFはGitに同梱しない。`docs/project_report.pdf` はローカルに保持し、このファイルだけを.gitignoreへ追加した。過去のコミットに含まれるPDFは履歴に残る。
